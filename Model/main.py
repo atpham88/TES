@@ -25,58 +25,45 @@ def main_params():
 
     # Model main parameters:
     ir = 0.03                                       # interest rate
-    alpha = 3600                                    # Conversion from khW to kJ
-
-    mass_W = 2000000                                # size of the water tank (g)
-    mass_A = 2000                                   # mass of air in building 9g)
-    c_W = 4.184                                     # Specific heat capacity of water (J/g C)
-    c_A = 1.012                                     # Specific heat capacity of air (J/g C)
+    alpha = 3600                                    # Conversion from kWh to kJ
+    gamma = 1.055/alpha                             # Conversion from BTU to kWh
 
     app = 'Water'                                   # 'Water' == water boiling, 'Air' Building Heating/Coaling
-    if app == 'Water':
-        m = mass_W
-        c = c_W
-    elif app == 'Air':
-        m = mass_A
-        c = c_A
 
     # TES parameters:
-    capex_T = 1455000                               # CAPEX ($/MW)
+    capex_T_kW = 1455                                  # CAPEX ($/kW)
+    capex_T = capex_T_kW/alpha
     life_T = 15                                     # Storage life time (years)
-    fixed_OM_T = 36370                              # Fixed TES OM cost ($/MW-year)
-    p_T_fixed = 0                                   # TES energy cost ($/kWh/h)
-    p_T = 0                                         # TES operating cost ($/MWh)
+    fixed_OM_T_kW = 36.37                           # Fixed TES OM cost ($/kW-year)
+    fixed_OM_T = fixed_OM_T_kW/alpha
+    p_T_fixed = 0                                   # TES energy cost ($/kJ/h)
+    p_T = 0                                         # TES operating cost ($/kJ)
     ef_T = 0.85                                     # Round trip efficiency
-    f_d  = 0.90                                     # Discharging efficiency
+    f_d  = 0.98                                     # Discharging efficiency
     f_c = ef_T/f_d                                  # Charging efficiency
-    k_T = 5                                         # Capacity of storage (MV)
 
     # Heat pump parameters:
-    capex_H = 1455000                               # CAPEX ($/MW)
-    life_H = 15                                     # Storage life time (years)
-    fixed_OM_H = 36370                              # Fixed TES OM cost ($/MW-year)
-    p_H_fixed = 0                                   # TES energy cost ($/kWh/h)
-    p_H = 0                                         # TES operating cost ($/MWh)
-    eta_x = 0.95                                    # Factor deviating from Carnot efficiency
-    temp_L = 13
-    temp_H = 70
-    eta_C = eta_x*(temp_H/(temp_H-temp_L))          # Coefficient of performance (COP)
+    capex_H = 1000                                  # CAPEX ($/BTU)
+    life_H = 30                                     # Heat pump life time (years)
+    fixed_OM_H = 10                                 # Fixed heat pump OM cost ($/BTU-year)
+    p_H = 0                                         # Heat pump operating cost ($/kJ)
+    eta_C = 3.1                                     # Coefficient of performance (COP)
 
     # Model's scope:
-    hour = 24
+    hour = 8670
 
-    return (super_comp,ir,alpha,m,c,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,ef_T,f_d,f_c,k_T,capex_H,life_H,fixed_OM_H,p_H_fixed,p_H,eta_x,temp_L,temp_H,eta_C,hour,app)
+    return (super_comp,ir,alpha,gamma,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,ef_T,f_d,f_c,capex_H,life_H,fixed_OM_H,p_H,eta_C,hour,app)
 
 
 def main_function():
-    (super_comp,ir,alpha,m,c,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,ef_T,f_d,f_c,k_T,capex_H,life_H,fixed_OM_H,p_H_fixed,p_H,eta_x,temp_L,temp_H,eta_C,hour,app) = main_params()
+    (super_comp,ir,alpha,gamma,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,ef_T,f_d,f_c,capex_H,life_H,fixed_OM_H,p_H,eta_C,hour,app) = main_params()
 
     (model_dir, load_folder, results_folder) = working_directory(super_comp)
 
     T = main_sets(hour)
 
-    model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,
-                ef_T,f_d,f_c,k_T,capex_H,life_H,fixed_OM_H,p_H_fixed,p_H,eta_x,temp_L,temp_H,eta_C,hour,app,T)
+    model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,gamma,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,
+                ef_T,f_d,f_c,capex_H,life_H,fixed_OM_H,p_H,eta_C,hour,app,T)
 
 
 # %% Set working directory:
@@ -97,20 +84,20 @@ def main_sets(hour):
     return T
 
 # %% Solving HDV model:
-def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,
-                ef_T,f_d,f_c,k_T,capex_H,life_H,fixed_OM_H,p_H_fixed,p_H,eta_x,temp_L,temp_H,eta_C,hour,app,T):
+def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,gamma,capex_T,life_T,fixed_OM_T,p_T_fixed,p_T,
+                ef_T,f_d,f_c,capex_H,life_H,fixed_OM_H,p_H,eta_C,hour,app,T):
 
         # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, temp_orig, temp_desire, p_W = load_data(model_dir, load_folder, app, T, hour)
+    d_heating, p_W = load_data(model_dir, load_folder, app, T, hour)
 
     # Storage:
     (p_TK, p_TC) = storage_data(ir, life_T, capex_T, fixed_OM_T, p_T_fixed)
 
     # Heat pump:
-    p_HK = heatpump_data(ir, life_H, capex_H, fixed_OM_H, p_H_fixed)
+    p_HK = heatpump_data(ir, life_H, capex_H, fixed_OM_H)
 
 
     # %% Define variables and ordered set:
@@ -120,6 +107,7 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
     model.k_H = Var(within=NonNegativeReals)  # Heat pump capacity
 
     # Energy capacity by technology:
+    model.k_T = Var(within=NonNegativeReals)  # Power rating of TES
     model.e_T = Var(within=NonNegativeReals)  # TES energy capacity
 
     # Generation by technology:
@@ -130,18 +118,15 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
     # TES states of charges:
     model.x_T = Var(T, within=NonNegativeReals)  # Battery state of charge
 
-    # Whole number variables:
-    model.u_T = Var(within=NonNegativeIntegers)  # Number of TES units built
-
     # %% Formulate constraints and  objective functions:
     # Constraints:
     # TES constraints:
     def ub_d_TES(model, t):
-        return model.i_T[t] <= k_T*model.u_T
+        return model.i_T[t] <= model.k_T
     model.ub_d_T = Constraint(T, rule=ub_d_TES)
 
     def ub_g_TES(model, t):
-        return model.g_T[t] <= k_T*model.u_T
+        return model.g_T[t] <= model.k_T
     model.ub_g_T = Constraint(T, rule=ub_g_TES)
 
     def ub_g_x_TES(model, t):
@@ -156,21 +141,25 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
         return model.x_T[t] == model.x_T[model.T.prevw(t)] + f_c * model.i_T[t] - f_d * model.g_T[t]
     model.x_t = Constraint(model.T, rule=x_TES)
 
-    # Heat pump output to TES inflow:
+    # Heat pump's electricity demand:
+    def d_heat_pump(model, t):
+        return model.k_H * gamma == model.d_T[t]
+    model.heat_pump_d = Constraint(T, rule=d_heat_pump)
+
+    # Heat pump's output to TES inflow:
     def i_TES(model, t):
-        return model.i_T[t] == eta_C *1/alpha * model.d_T[t]
+        return model.i_T[t] == eta_C * alpha * model.d_T[t]
     model.inflow_const = Constraint(T, rule=i_TES)
 
     # Market clearing condition:
     def market_clearing(model, t):
-        return model.g_T[t] >= 1/1000*m*c*(temp_desire-temp_orig)
+        return model.g_T[t] >= alpha * d_heating[t]
     model.mc_const = Constraint(T, rule=market_clearing)
 
     # Objective function:
     def obj_function(model):
-        return sum(p_TK * model.u_T* k_T + p_TC * model.e_T + sum(p_T * model.g_T[t] for t in T)) \
-               + sum(p_HK* model.k_H + p_H*model.i_T[t] for t in T) \
-               + sum(p_W * model.g_W[t] for t in T)
+        return p_TK * model.k_T + p_TC * model.e_T + sum(p_T * model.g_T[t] for t in T) \
+               + sum(p_HK * model.k_H + p_H * model.i_T[t] for t in T) + sum(p_W * model.d_T[t] for t in T)
 
     model.obj_func = Objective(rule=obj_function)
 
@@ -192,10 +181,6 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
     # Print variable outputs:
     total_cost = value(model.obj_func)
 
-    k_H_star = np.zeros(1)
-    u_T_star = np.zeros(1)
-    e_T_star = np.zeros(1)
-
     g_T_star = np.zeros(hour)
     i_T_star = np.zeros(hour)
     d_T_star = np.zeros(hour)
@@ -204,7 +189,7 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
 
     k_H_star = value(model.k_H)
     e_T_star = value(model.e_T)
-    u_T_star = value(model.u_T)
+    k_T_star = value(model.k_T)
 
     for t in T:
         g_T_star[t] = value(model.g_T[t])
@@ -220,7 +205,7 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
     results_book = xw.Workbook(update_results_folder + 'TES_model_results.xlsx')
     result_sheet_pr = results_book.add_worksheet('power rating')
     result_sheet_bg = results_book.add_worksheet('TES discharge')
-    result_sheet_wg = results_book.add_worksheet('purchased electrcity')
+    result_sheet_wg = results_book.add_worksheet('purchased electricity')
     result_sheet_ob = results_book.add_worksheet('total cost')
     result_sheet_bi = results_book.add_worksheet('TES inflow')
     result_sheet_bs = results_book.add_worksheet('TES SOC')
@@ -235,16 +220,16 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
     result_sheet_ob.write("A2", total_cost / 1000000)
 
     # Write power rating results:
-    result_sheet_pr.write("A1", "number of TES unit built")
+    result_sheet_pr.write("A1", "TES power rating (kJ)")
     result_sheet_pr.write("B1", "TES energy capacity (kJ)")
-    result_sheet_pr.write("C1", "Heat pump capacity (kJ)")
+    result_sheet_pr.write("C1", "Heat pump capacity (BTU)")
 
-    result_sheet_pr.write(1, 1, u_T_star)
-    result_sheet_pr.write(1, 2, e_T_star)
-    result_sheet_pr.write(1, 3, k_H_star)
+    result_sheet_pr.write(1, 0, k_T_star)
+    result_sheet_pr.write(1, 1, e_T_star)
+    result_sheet_pr.write(1, 2, k_H_star)
 
     # write TES discharge results:
-    result_sheet_bg.write("A1", "TES discharge")
+    result_sheet_bg.write("A1", "TES discharge (kJ)")
 
     for item in T:
         result_sheet_bg.write(0, item + 1, hour_number[item])
@@ -253,7 +238,7 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
         result_sheet_bg.write(1, item_2 + 1, g_T_star[item_2])
 
     # write purchased gen results:
-    result_sheet_wg.write("A1", "Purchased electricity")
+    result_sheet_wg.write("A1", "Purchased electricity (kWh)")
 
     for item in T:
         result_sheet_wg.write(0, item + 1, hour_number[item])
@@ -262,7 +247,7 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
         result_sheet_wg.write(1, item_2 + 1, d_T_star[item_2])
 
     # TES inflow results:
-    result_sheet_bi.write("A1", "TES indlow")
+    result_sheet_bi.write("A1", "TES inflow (kJ)")
 
     for item in T:
         result_sheet_bi.write(0, item + 1, hour_number[item])
@@ -271,7 +256,7 @@ def model_solve(model_dir,load_folder,results_folder,super_comp,ir,alpha,m,c,cap
         result_sheet_bi.write(1, item_2 + 1, i_T_star[item_2])
 
     # TES SOC results:
-    result_sheet_bs.write("A1", "TES SOC")
+    result_sheet_bs.write("A1", "TES SOC (kJ)")
 
     for item in T:
         result_sheet_bs.write(0, item + 1, hour_number[item])
