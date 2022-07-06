@@ -4,6 +4,7 @@ Updated 11/27/2021
 TES Model for Building and Water Heating
 Original approach -- No temperature considered
 No CAPEX
+Power rating as a function of SOC
 """
 
 import numpy as np
@@ -17,13 +18,15 @@ import xlsxwriter as xw
 
 from get_load_data import load_data
 from get_COP_params import est_COP
+
 from calendar import monthrange
 from datetime import date
 
 start_time = time.time()
 
 # %% Main parameters:
-def main_params(year, mon_to_run, include_TES, super_comp, used_cop, cop_type, e_T, p_T, ef_T, f_d, k_T, k_H, ir):
+def main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
+                p_T, ef_T, f_d, c_salt, k_H, ir):
 
     if mon_to_run == 'Year':
         day = 365                                   # Equivalent days
@@ -35,21 +38,34 @@ def main_params(year, mon_to_run, include_TES, super_comp, used_cop, cop_type, e
     hour = day * 24
     starting_hour = starting_day * 24
 
+    bigM = 99999999
+
     # TES parameters:
     f_c = ef_T/f_d                                  # Charging efficiency
-    return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, k_T, e_T, k_H,
-            include_TES, starting_hour, mon_to_run, cop_type, used_cop)
+    v_salt = e_T/c_salt                             # Volume of TES salt (kg)
 
+    # Piecewise linear function of power rating vs SOC:
+    xData = [0, 0.12515, 0.16612, 0.93776, 0.97024, 1]
+    yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt,
+             3.593809041/1000*v_salt, 0.000118282/1000*v_salt]
+    #xData = [0, 0.12515, 1]
+    #yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 3.593809041/1000*v_salt]
+    return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, v_salt, c_salt, e_T, k_H,
+            include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
+            xData, yData)
 
-def main_function(year, mon_to_run, include_TES, super_comp, used_cop, cop_type, e_T, p_T, ef_T, f_d, k_T, k_H, ir):
-    (super_comp, ir, p_T, ef_T, f_d, f_c, hour, k_T, e_T, k_H,
-     include_TES, starting_hour, mon_to_run, cop_type, used_cop) = main_params(year, mon_to_run, include_TES, super_comp,
-                                                                               used_cop, cop_type, e_T, p_T, ef_T, f_d,
-                                                                               k_T, k_H, ir)
+def main_function_VarK(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
+                       p_T, ef_T, f_d, c_salt, k_H , ir):
+    (super_comp, ir, p_T, ef_T, f_d, f_c, hour, v_salt, c_salt, e_T, k_H,
+     include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
+     xData, yData) = main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
+                                 p_T, ef_T, f_d, c_salt, k_H , ir)
     (model_dir, load_folder, results_folder) = working_directory(super_comp)
     T = main_sets(hour)
-    model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,
-                hour, T, k_T, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop)
+    model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T,
+                v_salt, c_salt, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop,
+                bigM, include_bigM, xData, yData)
+
 
 # %% Set working directory:
 def working_directory(super_comp):
@@ -69,8 +85,9 @@ def main_sets(hour):
     return T
 
 # %% Solving HDV model:
-def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,
-                hour, T, k_T, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop):
+def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,  hour, T,
+                v_salt, c_salt, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop,
+                bigM, include_bigM, xData, yData):
 
         # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
@@ -93,10 +110,10 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     # TES states of charges:
     if include_TES:
+        model.k_T = Var(T, bounds=(0, max(yData)))                  # TES power rating
         model.x_T = Var(T, within=NonNegativeReals)                 # TES state of charge
-        model.vT = Var(T, within=Binary)                            # binary variable: == 1 when TES discharges
-    # Heat pump being on or off:
-    model.vH = Var(T, within=Binary)                                # binary variable: == 1 when HP charges TES
+        model.xpt_T = Var(T, bounds=(0, 1))                         # SOC in percentage
+        model.v = Var(T, within=Binary)                             # binary variable: == 1 when TES charges
 
     # %% Formulate constraints and  objective functions:
     # Constraints:
@@ -104,11 +121,11 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_TES:
         # Heat pump's output to charge TES:
         def ub_d_TES(model, t):
-            return model.g_HT[t] <= k_T * model.vH[t]
+            return model.g_HT[t] <= model.k_T[t]
         model.ub_d_T = Constraint(T, rule=ub_d_TES)
 
         def ub_g_TES(model, t):
-            return model.g_T[t] <= k_T * model.vT[t]
+            return model.g_T[t] <= model.k_T[t]
         model.ub_g_T = Constraint(T, rule=ub_g_TES)
 
         def ub_g_x_TES(model, t):
@@ -122,6 +139,10 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         def x_TES(model, t):
             return model.x_T[t] == model.x_T[model.T.prevw(t)] + f_c * model.g_HT[t] - 1/f_d * model.g_T[t]
         model.x_t = Constraint(model.T, rule=x_TES)
+
+        def x_pt(model, t):
+            return model.xpt_T[t] == model.x_T[t]/e_T
+        model.x_pt_t = Constraint(model.T, rule=x_pt)
 
     # Heat pump's total load:
     def hp_load_tot(model, t):
@@ -137,11 +158,28 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
             return model.g_HL[t] == model.g[t]
         model.hp_load_const = Constraint(T, rule=hp_load)
 
-    # TES cannot charge and discharge at the same time:
+    # Piece-wise linear power rating vs SOC constraints:
     if include_TES:
-        def TES_balance(model, t):
-            return model.vT[t] + model.vH[t] <= 1
-        model.TES_balance_const = Constraint(T, rule=TES_balance)
+        model.piecewise = Piecewise(T, model.xpt_T, model.k_T, pw_pts=xData, pw_constr_type='EQ', f_rule=yData, pw_repn='SOS2')
+
+    # Big M constraints:
+    if include_bigM:
+        if include_TES:
+            def big_M_1(model, t):
+                return model.g_HT[t] <= bigM*model.v[t]
+            model.bigM_const1 = Constraint(T, rule=big_M_1)
+
+            def big_M_2(model, t):
+                return model.v[t] <= bigM*model.g_HT[t]
+            model.bigM_const2 = Constraint(T, rule=big_M_2)
+
+            def big_M_3(model, t):
+                return model.g_T[t] <= bigM*(1-model.v[t])
+            model.bigM_const3 = Constraint(T, rule=big_M_3)
+
+            def big_M_4(model, t):
+                return (1-model.v[t]) <= bigM*model.g_T[t]
+            model.bigM_const4 = Constraint(T, rule=big_M_4)
 
     # Electricity purchased needs to be enough to power heat pump
     def i_TES(model, t):
