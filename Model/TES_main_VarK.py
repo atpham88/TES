@@ -26,7 +26,7 @@ start_time = time.time()
 
 # %% Main parameters:
 def main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
-                p_T, ef_T, f_d, c_salt, k_H, ir):
+                p_T, ef_T, f_d, c_salt, k_H, ir, single_building, city_to_run, building_no, building_id):
 
     if mon_to_run == 'Year':
         day = 365                                   # Equivalent days
@@ -45,38 +45,48 @@ def main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_co
     v_salt = e_T/c_salt                             # Volume of TES salt (kg)
 
     # Piecewise linear function of power rating vs SOC:
-    xData = [0, 0.12515, 0.16612, 0.93776, 0.97024, 1]
-    yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt,
-             3.593809041/1000*v_salt, 0.000118282/1000*v_salt]
-    #xData = [0, 0.12515, 1]
-    #yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 3.593809041/1000*v_salt]
+    #xData = [0, 0.12515, 0.16612, 0.93776, 0.97024, 1]
+    #yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt,
+    #         3.593809041/1000*v_salt, 0.000118282/1000*v_salt]
+    xData = [0, 0.16612, 1]
+    yData = [0.093011908/1000*v_salt, 2.799542923/1000*v_salt, 3.593809041/1000*v_salt]
+    #xData = [0, 0.16612,  0.93776, 0.97024, 1]
+    #yData = [0.093011908/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt, 3.593809041/1000*v_salt,  0.000118282/1000*v_salt]
     return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, v_salt, c_salt, e_T, k_H,
             include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
-            xData, yData)
+            xData, yData, single_building, city_to_run, building_no, building_id)
 
 def main_function_VarK(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
-                       p_T, ef_T, f_d, c_salt, k_H , ir):
+                       p_T, ef_T, f_d, c_salt, k_H , ir, single_building, city_to_run, building_no, building_id):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, v_salt, c_salt, e_T, k_H,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
-     xData, yData) = main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
-                                 p_T, ef_T, f_d, c_salt, k_H , ir)
-    (model_dir, load_folder, results_folder) = working_directory(super_comp)
+     xData, yData, single_building, city_to_run,
+     building_no, building_id) = main_params(year, mon_to_run, include_TES, include_bigM, super_comp,
+                                             used_cop, cop_type, e_T, p_T, ef_T, f_d, c_salt, k_H , ir,
+                                             single_building, city_to_run, building_no, building_id)
+    (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T,
                 v_salt, c_salt, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop,
-                bigM, include_bigM, xData, yData)
+                bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id)
 
 
 # %% Set working directory:
-def working_directory(super_comp):
+def working_directory(super_comp, single_building, city_to_run):
     if super_comp == 1:
         model_dir = '/home/anph/projects/Thermal Storage/Data/'
-        load_folder = 'load/'
-        results_folder = '/home/anph/projects/Thermal Storage/Results/'
+        load_folder ='400 Buildings - EB/' + city_to_run + '/'
+        if single_building:
+            results_folder = '/home/anph/projects/Thermal Storage/Results/' + city_to_run + '/Single/'
+        else:
+            results_folder = '/home/anph/projects/Thermal Storage/Results/' + city_to_run + '/All/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\Thermal Storage\\Data\\'
-        load_folder = 'load\\'
-        results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\Thermal Storage\\Results\\'
+        load_folder = '400 Buildings - EB\\' + city_to_run + '\\'
+        if single_building:
+            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\Thermal Storage\\Results\\' + city_to_run + '\\Single\\'
+        else:
+            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\Thermal Storage\\Results\\' + city_to_run + '\\All\\'
     return model_dir, load_folder, results_folder
 
 # %% Define set:
@@ -87,13 +97,13 @@ def main_sets(hour):
 # %% Solving HDV model:
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,  hour, T,
                 v_salt, c_salt, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop,
-                bigM, include_bigM, xData, yData):
+                bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id):
 
-        # %% Set model type - Concrete Model:
+    # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W = load_data(model_dir, load_folder, T, hour, starting_hour)
+    d_heating, p_W = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
 
     # %% Define variables and ordered set:
@@ -160,7 +170,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     # Piece-wise linear power rating vs SOC constraints:
     if include_TES:
-        model.piecewise = Piecewise(T, model.xpt_T, model.k_T, pw_pts=xData, pw_constr_type='EQ', f_rule=yData, pw_repn='SOS2')
+        model.piecewise = Piecewise(T, model.k_T, model.xpt_T, pw_pts=xData, pw_constr_type='EQ', f_rule=yData, pw_repn='SOS2')
 
     # Big M constraints:
     if include_bigM:
@@ -209,6 +219,8 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # Solve TES model:
     # model.dual = Suffix(direction=Suffix.IMPORT_EXPORT)
     solver = SolverFactory('cplex')
+    #solver.options['mipgap'] = 0.005
+    solver.options['mipgap'] = 0.027
     results = solver.solve(model, tee=True)
     # model.pprint()
     #model.display()
@@ -246,7 +258,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         os.makedirs(update_results_folder)
 
     results_book = xw.Workbook(update_results_folder + 'Results_' + '_includeTES_' + str(include_TES)
-                               + '_month_' + str(mon_to_run) + '_' + cop_type + '_COPused_' + used_cop +'.xlsx')
+                               + '_month_' + str(mon_to_run) + '_' + cop_type + 'Building_id_' + str(building_id+1) + '.xlsx')
 
     result_sheet_ob = results_book.add_worksheet('total cost')
     result_sheet_d = results_book.add_worksheet('load')
