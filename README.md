@@ -1,6 +1,6 @@
 # Model Overview
 
-The TES model is an optimization-based model that minimizes the total cost of purchasing electricity from utilities to meet buildings space heating load using a system of TES coupled with heat pump.
+The TES model is an optimization-based model that minimizes the total energy cost to meet buildings space/water heating load using a system of thermal energy storage coupled with heat pump.
 
 # Running Model
 Run model from dashboard.py.
