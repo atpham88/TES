@@ -25,7 +25,7 @@ from datetime import date
 start_time = time.time()
 
 # %% Main parameters:
-def main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
+def main_params(year, mon_to_run, include_TES, replace_TES_w_Battery, include_bigM, super_comp, used_cop, cop_type, e_T,
                 p_T, ef_T, f_d, c_salt, k_H, ir, single_building, city_to_run, building_no, building_id):
 
     if mon_to_run == 'Year':
@@ -45,25 +45,30 @@ def main_params(year, mon_to_run, include_TES, include_bigM, super_comp, used_co
     v_salt = e_T/c_salt                             # Volume of TES salt (kg)
 
     # Piecewise linear function of power rating vs SOC:
-    #xData = [0, 0.12515, 0.16612, 0.93776, 0.97024, 1]
-    #yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt,
-    #         3.593809041/1000*v_salt, 0.000118282/1000*v_salt]
-    xData = [0, 0.16612, 1]
-    yData = [0.093011908/1000*v_salt, 2.799542923/1000*v_salt, 3.593809041/1000*v_salt]
-    #xData = [0, 0.16612,  0.93776, 0.97024, 1]
-    #yData = [0.093011908/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt, 3.593809041/1000*v_salt,  0.000118282/1000*v_salt]
+    if not replace_TES_w_Battery:
+        # xData = [0, 0.12515, 0.16612, 0.93776, 0.97024, 1]
+        # yData = [0.093011908/1000*v_salt, 1.230146328/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt,
+        #         3.593809041/1000*v_salt, 0.000118282/1000*v_salt]
+        xData = [0, 0.16612, 1]
+        yData = [0.093011908/1000*v_salt, 2.799542923/1000*v_salt, 3.593809041/1000*v_salt]
+        #xData = [0, 0.16612,  0.93776, 0.97024, 1]
+        #yData = [0.093011908/1000*v_salt, 2.799542923/1000*v_salt, 2.469752325/1000*v_salt, 3.593809041/1000*v_salt,  0.000118282/1000*v_salt]
+    elif replace_TES_w_Battery:
+        xData = [0, 0.16612, 1]
+        yData = [0.093011908 / 1000 * v_salt, 2.799542923 / 1000 * v_salt, 3.593809041 / 1000 * v_salt]
     return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, v_salt, c_salt, e_T, k_H,
             include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
             xData, yData, single_building, city_to_run, building_no, building_id)
 
-def main_function_VarK(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type, e_T,
+def main_function_VarK(year, mon_to_run, include_TES, replace_TES_w_Battery, include_bigM, super_comp, used_cop, cop_type, e_T,
                        p_T, ef_T, f_d, c_salt, k_H , ir, single_building, city_to_run, building_no, building_id):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, v_salt, c_salt, e_T, k_H,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
      xData, yData, single_building, city_to_run,
-     building_no, building_id) = main_params(year, mon_to_run, include_TES, include_bigM, super_comp,
+     building_no, building_id) = main_params(year, mon_to_run, include_TES, replace_TES_w_Battery, include_bigM, super_comp,
                                              used_cop, cop_type, e_T, p_T, ef_T, f_d, c_salt, k_H , ir,
                                              single_building, city_to_run, building_no, building_id)
+
     (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T,
@@ -258,7 +263,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         os.makedirs(update_results_folder)
 
     results_book = xw.Workbook(update_results_folder + 'Results_' + '_includeTES_' + str(include_TES)
-                               + '_month_' + str(mon_to_run) + '_' + cop_type + 'Building_id_' + str(building_id+1) + '.xlsx')
+                               + '_month_' + str(mon_to_run) + '_' + cop_type + '_Building_id_' + str(building_id+1) + '.xlsx')
 
     result_sheet_ob = results_book.add_worksheet('total cost')
     result_sheet_d = results_book.add_worksheet('load')

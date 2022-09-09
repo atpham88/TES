@@ -7,11 +7,12 @@ def main():
     # Define Switches:
     super_comp = 0                          # ==1: run on super computer, ==0: run on local laptop
     city_to_run = 'Detroit'                 # Name of city to running building/s located in
-    single_building = False                  # == True: run only one single building in a city
+    single_building = False                 # == True: run only one single building in a city
                                             # == False: run all buildings in that city
-    building_no = 3                         # == ID of building to run (if running single building)
+    building_no = 5                         # == ID of building to run (if running single building)
 
-    include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
+    include_TES = True                     # Using coupled TES and heat pump, == False: Using heat pump only
+    replace_TES_w_Battery = False            # Replace a TES system with battery
 
     # If include_TES = True, these options can be chosen:
     include_pw_func = True                  # Include piecewise linear function for power rating vs energy capacity
@@ -52,10 +53,10 @@ def main():
         k_H = k_H_star                           # Heat pump capacity (kWh)
 
         if include_pw_func:
-            main_function_VarK(year, mon_to_run, include_TES, include_bigM, super_comp, used_cop, cop_type,
+            main_function_VarK(year, mon_to_run, include_TES, replace_TES_w_Battery, include_bigM, super_comp, used_cop, cop_type,
                                e_T, p_T, ef_T, f_d, c_salt, k_H, ir, single_building, city_to_run, building_no, building_id)
         else:
-            main_function(year, mon_to_run, include_TES, super_comp, used_cop, cop_type,
+            main_function(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp, used_cop, cop_type,
                           e_T, p_T, ef_T, f_d, k_T, k_H, ir, single_building, city_to_run, building_no, building_id)
 
 main()
