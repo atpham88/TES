@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="605f844f-2eaf-4d02-beae-1e4cec97be2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/01bae9c2-a0c1-451e-8b83-acd748f20eed/01bae9c2-a0c1-451e-8b83-acd748f20eed.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/01bae9c2-a0c1-451e-8b83-acd748f20eed/01bae9c2-a0c1-451e-8b83-acd748f20eed.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/01bae9c2-a0c1-451e-8b83-acd748f20eed/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/01bae9c2-a0c1-451e-8b83-acd748f20eed/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/01bae9c2-a0c1-451e-8b83-acd748f20eed/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/01bae9c2-a0c1-451e-8b83-acd748f20eed/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/02b9f71d-3c50-42e3-9e24-1b3de739bab2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/02b9f71d-3c50-42e3-9e24-1b3de739bab2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/enduse_timeseries.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/enduse_timeseries.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/02b9f71d-3c50-42e3-9e24-1b3de739bab2/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0617f948-f2ee-4707-8318-319d31f97a3b/0617f948-f2ee-4707-8318-319d31f97a3b.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0617f948-f2ee-4707-8318-319d31f97a3b/0617f948-f2ee-4707-8318-319d31f97a3b.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0617f948-f2ee-4707-8318-319d31f97a3b/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0617f948-f2ee-4707-8318-319d31f97a3b/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0617f948-f2ee-4707-8318-319d31f97a3b/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0617f948-f2ee-4707-8318-319d31f97a3b/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c521e84-fedc-490e-ad9e-baad94433e26/0c521e84-fedc-490e-ad9e-baad94433e26.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c521e84-fedc-490e-ad9e-baad94433e26/0c521e84-fedc-490e-ad9e-baad94433e26.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c521e84-fedc-490e-ad9e-baad94433e26/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c521e84-fedc-490e-ad9e-baad94433e26/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c521e84-fedc-490e-ad9e-baad94433e26/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c521e84-fedc-490e-ad9e-baad94433e26/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c802a1f-d0f0-4166-b3b0-a32dc746f097/0c802a1f-d0f0-4166-b3b0-a32dc746f097.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c802a1f-d0f0-4166-b3b0-a32dc746f097/0c802a1f-d0f0-4166-b3b0-a32dc746f097.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c802a1f-d0f0-4166-b3b0-a32dc746f097/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c802a1f-d0f0-4166-b3b0-a32dc746f097/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c802a1f-d0f0-4166-b3b0-a32dc746f097/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0c802a1f-d0f0-4166-b3b0-a32dc746f097/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d583de9-af22-43f5-a2e7-83f5644d2954/0d583de9-af22-43f5-a2e7-83f5644d2954.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d583de9-af22-43f5-a2e7-83f5644d2954/0d583de9-af22-43f5-a2e7-83f5644d2954.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d583de9-af22-43f5-a2e7-83f5644d2954/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d583de9-af22-43f5-a2e7-83f5644d2954/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d583de9-af22-43f5-a2e7-83f5644d2954/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d583de9-af22-43f5-a2e7-83f5644d2954/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d8bc7e6-653e-46ec-9c4e-177f820cc171/0d8bc7e6-653e-46ec-9c4e-177f820cc171.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d8bc7e6-653e-46ec-9c4e-177f820cc171/0d8bc7e6-653e-46ec-9c4e-177f820cc171.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d8bc7e6-653e-46ec-9c4e-177f820cc171/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d8bc7e6-653e-46ec-9c4e-177f820cc171/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d8bc7e6-653e-46ec-9c4e-177f820cc171/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0d8bc7e6-653e-46ec-9c4e-177f820cc171/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0dfcc9d6-08a9-4745-b3cb-840d69b7e5ed/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0e35ec01-7427-4ed4-94c8-b6d1c292ae16/0e35ec01-7427-4ed4-94c8-b6d1c292ae16.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0e35ec01-7427-4ed4-94c8-b6d1c292ae16/0e35ec01-7427-4ed4-94c8-b6d1c292ae16.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0e35ec01-7427-4ed4-94c8-b6d1c292ae16/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0e35ec01-7427-4ed4-94c8-b6d1c292ae16/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0e35ec01-7427-4ed4-94c8-b6d1c292ae16/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0e35ec01-7427-4ed4-94c8-b6d1c292ae16/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0eefdf0b-3117-4f9e-b539-098f7bda957a/0eefdf0b-3117-4f9e-b539-098f7bda957a.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0eefdf0b-3117-4f9e-b539-098f7bda957a/0eefdf0b-3117-4f9e-b539-098f7bda957a.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0eefdf0b-3117-4f9e-b539-098f7bda957a/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0eefdf0b-3117-4f9e-b539-098f7bda957a/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0eefdf0b-3117-4f9e-b539-098f7bda957a/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/0eefdf0b-3117-4f9e-b539-098f7bda957a/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bb6d37-df72-427b-8827-651190b2009e/10bb6d37-df72-427b-8827-651190b2009e.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bb6d37-df72-427b-8827-651190b2009e/10bb6d37-df72-427b-8827-651190b2009e.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bb6d37-df72-427b-8827-651190b2009e/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bb6d37-df72-427b-8827-651190b2009e/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bb6d37-df72-427b-8827-651190b2009e/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bb6d37-df72-427b-8827-651190b2009e/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/10bf8a0b-9cc2-4426-9d67-0ac2d367bb2f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1346a54d-aad1-4919-a8fa-3c417cc56dbc/1346a54d-aad1-4919-a8fa-3c417cc56dbc.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1346a54d-aad1-4919-a8fa-3c417cc56dbc/1346a54d-aad1-4919-a8fa-3c417cc56dbc.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1346a54d-aad1-4919-a8fa-3c417cc56dbc/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1346a54d-aad1-4919-a8fa-3c417cc56dbc/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1346a54d-aad1-4919-a8fa-3c417cc56dbc/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1346a54d-aad1-4919-a8fa-3c417cc56dbc/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/14869620-07b7-4cbf-b5d4-9243d01864c7/14869620-07b7-4cbf-b5d4-9243d01864c7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/14869620-07b7-4cbf-b5d4-9243d01864c7/14869620-07b7-4cbf-b5d4-9243d01864c7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/14869620-07b7-4cbf-b5d4-9243d01864c7/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/14869620-07b7-4cbf-b5d4-9243d01864c7/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/14869620-07b7-4cbf-b5d4-9243d01864c7/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/14869620-07b7-4cbf-b5d4-9243d01864c7/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1561479d-37a0-4acd-afbc-57e36372d529/1561479d-37a0-4acd-afbc-57e36372d529.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1561479d-37a0-4acd-afbc-57e36372d529/1561479d-37a0-4acd-afbc-57e36372d529.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1561479d-37a0-4acd-afbc-57e36372d529/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1561479d-37a0-4acd-afbc-57e36372d529/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1561479d-37a0-4acd-afbc-57e36372d529/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1561479d-37a0-4acd-afbc-57e36372d529/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/195c3a04-ff97-4d76-bf89-0128f1394301/195c3a04-ff97-4d76-bf89-0128f1394301.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/195c3a04-ff97-4d76-bf89-0128f1394301/195c3a04-ff97-4d76-bf89-0128f1394301.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/195c3a04-ff97-4d76-bf89-0128f1394301/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/195c3a04-ff97-4d76-bf89-0128f1394301/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/195c3a04-ff97-4d76-bf89-0128f1394301/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/195c3a04-ff97-4d76-bf89-0128f1394301/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/19b6b6c4-94f4-4059-90c1-36af6825ddde/19b6b6c4-94f4-4059-90c1-36af6825ddde.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/19b6b6c4-94f4-4059-90c1-36af6825ddde/19b6b6c4-94f4-4059-90c1-36af6825ddde.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/19b6b6c4-94f4-4059-90c1-36af6825ddde/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/19b6b6c4-94f4-4059-90c1-36af6825ddde/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/19b6b6c4-94f4-4059-90c1-36af6825ddde/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/19b6b6c4-94f4-4059-90c1-36af6825ddde/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1a58c903-fa15-497b-9f56-b8e13f0a7595/1a58c903-fa15-497b-9f56-b8e13f0a7595.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1a58c903-fa15-497b-9f56-b8e13f0a7595/1a58c903-fa15-497b-9f56-b8e13f0a7595.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1a58c903-fa15-497b-9f56-b8e13f0a7595/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1a58c903-fa15-497b-9f56-b8e13f0a7595/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1a58c903-fa15-497b-9f56-b8e13f0a7595/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1a58c903-fa15-497b-9f56-b8e13f0a7595/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1d43d6d5-bbbc-421b-9b69-a8c230053f12/1d43d6d5-bbbc-421b-9b69-a8c230053f12.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1d43d6d5-bbbc-421b-9b69-a8c230053f12/1d43d6d5-bbbc-421b-9b69-a8c230053f12.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1d43d6d5-bbbc-421b-9b69-a8c230053f12/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1d43d6d5-bbbc-421b-9b69-a8c230053f12/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1d43d6d5-bbbc-421b-9b69-a8c230053f12/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/1d43d6d5-bbbc-421b-9b69-a8c230053f12/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/22744344-31ac-442b-a243-227beee15ddd/22744344-31ac-442b-a243-227beee15ddd.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/22744344-31ac-442b-a243-227beee15ddd/22744344-31ac-442b-a243-227beee15ddd.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/22744344-31ac-442b-a243-227beee15ddd/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/22744344-31ac-442b-a243-227beee15ddd/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/22744344-31ac-442b-a243-227beee15ddd/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/22744344-31ac-442b-a243-227beee15ddd/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2816cf38-d4fa-42e6-9d79-669b561b6a82/2816cf38-d4fa-42e6-9d79-669b561b6a82.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2816cf38-d4fa-42e6-9d79-669b561b6a82/2816cf38-d4fa-42e6-9d79-669b561b6a82.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2816cf38-d4fa-42e6-9d79-669b561b6a82/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2816cf38-d4fa-42e6-9d79-669b561b6a82/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2816cf38-d4fa-42e6-9d79-669b561b6a82/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2816cf38-d4fa-42e6-9d79-669b561b6a82/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/288823aa-9687-4ef4-a21c-79a51538b5f9/288823aa-9687-4ef4-a21c-79a51538b5f9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/288823aa-9687-4ef4-a21c-79a51538b5f9/288823aa-9687-4ef4-a21c-79a51538b5f9.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/288823aa-9687-4ef4-a21c-79a51538b5f9/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/288823aa-9687-4ef4-a21c-79a51538b5f9/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/288823aa-9687-4ef4-a21c-79a51538b5f9/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/288823aa-9687-4ef4-a21c-79a51538b5f9/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a0756a5-95df-459b-a824-0086d647f3e4/2a0756a5-95df-459b-a824-0086d647f3e4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a0756a5-95df-459b-a824-0086d647f3e4/2a0756a5-95df-459b-a824-0086d647f3e4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a0756a5-95df-459b-a824-0086d647f3e4/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a0756a5-95df-459b-a824-0086d647f3e4/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a0756a5-95df-459b-a824-0086d647f3e4/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a0756a5-95df-459b-a824-0086d647f3e4/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2a7bd027-35ac-4f29-a1c4-2a730e8fa0d4/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2b0b61a1-e6c2-4362-9b08-7fb33f71bdfc/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2bc1080d-4fb1-480e-b152-d4d02d90fe51/2bc1080d-4fb1-480e-b152-d4d02d90fe51.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2bc1080d-4fb1-480e-b152-d4d02d90fe51/2bc1080d-4fb1-480e-b152-d4d02d90fe51.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2bc1080d-4fb1-480e-b152-d4d02d90fe51/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2bc1080d-4fb1-480e-b152-d4d02d90fe51/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2bc1080d-4fb1-480e-b152-d4d02d90fe51/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2bc1080d-4fb1-480e-b152-d4d02d90fe51/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cbc241f-3c0f-44de-aeb6-02c584fbfd2d/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cdd78d8-6878-49cc-a501-e8d372e161be/2cdd78d8-6878-49cc-a501-e8d372e161be.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cdd78d8-6878-49cc-a501-e8d372e161be/2cdd78d8-6878-49cc-a501-e8d372e161be.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cdd78d8-6878-49cc-a501-e8d372e161be/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cdd78d8-6878-49cc-a501-e8d372e161be/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cdd78d8-6878-49cc-a501-e8d372e161be/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2cdd78d8-6878-49cc-a501-e8d372e161be/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2dcf10d8-396f-432a-ba91-c513bc176eb4/2dcf10d8-396f-432a-ba91-c513bc176eb4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2dcf10d8-396f-432a-ba91-c513bc176eb4/2dcf10d8-396f-432a-ba91-c513bc176eb4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2dcf10d8-396f-432a-ba91-c513bc176eb4/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2dcf10d8-396f-432a-ba91-c513bc176eb4/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2dcf10d8-396f-432a-ba91-c513bc176eb4/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2dcf10d8-396f-432a-ba91-c513bc176eb4/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2e2c1b4b-d293-4a14-bec9-727ede79c545/2e2c1b4b-d293-4a14-bec9-727ede79c545.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2e2c1b4b-d293-4a14-bec9-727ede79c545/2e2c1b4b-d293-4a14-bec9-727ede79c545.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2e2c1b4b-d293-4a14-bec9-727ede79c545/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2e2c1b4b-d293-4a14-bec9-727ede79c545/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2e2c1b4b-d293-4a14-bec9-727ede79c545/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2e2c1b4b-d293-4a14-bec9-727ede79c545/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2ed8e4f6-20a6-41ab-a100-f329c1b521ae/2ed8e4f6-20a6-41ab-a100-f329c1b521ae.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2ed8e4f6-20a6-41ab-a100-f329c1b521ae/2ed8e4f6-20a6-41ab-a100-f329c1b521ae.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2ed8e4f6-20a6-41ab-a100-f329c1b521ae/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2ed8e4f6-20a6-41ab-a100-f329c1b521ae/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2ed8e4f6-20a6-41ab-a100-f329c1b521ae/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/2ed8e4f6-20a6-41ab-a100-f329c1b521ae/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/31636113-8baf-41f0-a600-453f7f150168/31636113-8baf-41f0-a600-453f7f150168.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/31636113-8baf-41f0-a600-453f7f150168/31636113-8baf-41f0-a600-453f7f150168.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/31636113-8baf-41f0-a600-453f7f150168/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/31636113-8baf-41f0-a600-453f7f150168/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/31636113-8baf-41f0-a600-453f7f150168/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/31636113-8baf-41f0-a600-453f7f150168/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/332fec9a-2ff0-42b2-ae2d-edb5af4f9553/332fec9a-2ff0-42b2-ae2d-edb5af4f9553.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/332fec9a-2ff0-42b2-ae2d-edb5af4f9553/332fec9a-2ff0-42b2-ae2d-edb5af4f9553.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/332fec9a-2ff0-42b2-ae2d-edb5af4f9553/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/332fec9a-2ff0-42b2-ae2d-edb5af4f9553/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/332fec9a-2ff0-42b2-ae2d-edb5af4f9553/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/332fec9a-2ff0-42b2-ae2d-edb5af4f9553/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/33c4dfc4-fcaa-4530-98f8-aa2e5570fa50/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35a9ea51-b446-4461-a2bc-47e9395fe778/35a9ea51-b446-4461-a2bc-47e9395fe778.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35a9ea51-b446-4461-a2bc-47e9395fe778/35a9ea51-b446-4461-a2bc-47e9395fe778.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35a9ea51-b446-4461-a2bc-47e9395fe778/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35a9ea51-b446-4461-a2bc-47e9395fe778/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35a9ea51-b446-4461-a2bc-47e9395fe778/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35a9ea51-b446-4461-a2bc-47e9395fe778/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35faf115-6205-467d-9bda-cc4512d140f5/35faf115-6205-467d-9bda-cc4512d140f5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35faf115-6205-467d-9bda-cc4512d140f5/35faf115-6205-467d-9bda-cc4512d140f5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35faf115-6205-467d-9bda-cc4512d140f5/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35faf115-6205-467d-9bda-cc4512d140f5/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35faf115-6205-467d-9bda-cc4512d140f5/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/35faf115-6205-467d-9bda-cc4512d140f5/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/36269792-9e9e-4678-aa00-d7dabaa91257/36269792-9e9e-4678-aa00-d7dabaa91257.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/36269792-9e9e-4678-aa00-d7dabaa91257/36269792-9e9e-4678-aa00-d7dabaa91257.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/36269792-9e9e-4678-aa00-d7dabaa91257/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/36269792-9e9e-4678-aa00-d7dabaa91257/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/36269792-9e9e-4678-aa00-d7dabaa91257/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/36269792-9e9e-4678-aa00-d7dabaa91257/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3711157d-0e45-4004-b885-8036d7079006/3711157d-0e45-4004-b885-8036d7079006.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3711157d-0e45-4004-b885-8036d7079006/3711157d-0e45-4004-b885-8036d7079006.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3711157d-0e45-4004-b885-8036d7079006/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3711157d-0e45-4004-b885-8036d7079006/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3711157d-0e45-4004-b885-8036d7079006/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3711157d-0e45-4004-b885-8036d7079006/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3a989252-9f76-490a-9f82-61ae14f2f152/3a989252-9f76-490a-9f82-61ae14f2f152.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3a989252-9f76-490a-9f82-61ae14f2f152/3a989252-9f76-490a-9f82-61ae14f2f152.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3a989252-9f76-490a-9f82-61ae14f2f152/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3a989252-9f76-490a-9f82-61ae14f2f152/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3a989252-9f76-490a-9f82-61ae14f2f152/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3a989252-9f76-490a-9f82-61ae14f2f152/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3baf99ac-68ff-4131-9168-97c135f8cfb7/3baf99ac-68ff-4131-9168-97c135f8cfb7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3baf99ac-68ff-4131-9168-97c135f8cfb7/3baf99ac-68ff-4131-9168-97c135f8cfb7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3baf99ac-68ff-4131-9168-97c135f8cfb7/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3baf99ac-68ff-4131-9168-97c135f8cfb7/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3baf99ac-68ff-4131-9168-97c135f8cfb7/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3baf99ac-68ff-4131-9168-97c135f8cfb7/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c64341f-e06b-431d-bae0-22550adcf0f3/3c64341f-e06b-431d-bae0-22550adcf0f3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c64341f-e06b-431d-bae0-22550adcf0f3/3c64341f-e06b-431d-bae0-22550adcf0f3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c64341f-e06b-431d-bae0-22550adcf0f3/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c64341f-e06b-431d-bae0-22550adcf0f3/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c64341f-e06b-431d-bae0-22550adcf0f3/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c64341f-e06b-431d-bae0-22550adcf0f3/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c693ea1-8097-48f1-870d-ab5586e4f147/3c693ea1-8097-48f1-870d-ab5586e4f147.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c693ea1-8097-48f1-870d-ab5586e4f147/3c693ea1-8097-48f1-870d-ab5586e4f147.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c693ea1-8097-48f1-870d-ab5586e4f147/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c693ea1-8097-48f1-870d-ab5586e4f147/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c693ea1-8097-48f1-870d-ab5586e4f147/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3c693ea1-8097-48f1-870d-ab5586e4f147/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e5ac36f-df34-4692-a4cd-2ad0632f1912/3e5ac36f-df34-4692-a4cd-2ad0632f1912.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e5ac36f-df34-4692-a4cd-2ad0632f1912/3e5ac36f-df34-4692-a4cd-2ad0632f1912.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e5ac36f-df34-4692-a4cd-2ad0632f1912/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e5ac36f-df34-4692-a4cd-2ad0632f1912/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e5ac36f-df34-4692-a4cd-2ad0632f1912/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e5ac36f-df34-4692-a4cd-2ad0632f1912/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e91e0fb-802f-443b-bbae-6cae3a344cc8/3e91e0fb-802f-443b-bbae-6cae3a344cc8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e91e0fb-802f-443b-bbae-6cae3a344cc8/3e91e0fb-802f-443b-bbae-6cae3a344cc8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e91e0fb-802f-443b-bbae-6cae3a344cc8/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e91e0fb-802f-443b-bbae-6cae3a344cc8/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e91e0fb-802f-443b-bbae-6cae3a344cc8/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3e91e0fb-802f-443b-bbae-6cae3a344cc8/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3f2975a9-a105-4a0e-a27a-d55a363f2933/3f2975a9-a105-4a0e-a27a-d55a363f2933.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3f2975a9-a105-4a0e-a27a-d55a363f2933/3f2975a9-a105-4a0e-a27a-d55a363f2933.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3f2975a9-a105-4a0e-a27a-d55a363f2933/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3f2975a9-a105-4a0e-a27a-d55a363f2933/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3f2975a9-a105-4a0e-a27a-d55a363f2933/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/3f2975a9-a105-4a0e-a27a-d55a363f2933/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4263fc7d-fd2f-4205-b1c6-d3ab897d9b76/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4277c811-1192-4db7-b368-8f68515d4769/4277c811-1192-4db7-b368-8f68515d4769.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4277c811-1192-4db7-b368-8f68515d4769/4277c811-1192-4db7-b368-8f68515d4769.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4277c811-1192-4db7-b368-8f68515d4769/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4277c811-1192-4db7-b368-8f68515d4769/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4277c811-1192-4db7-b368-8f68515d4769/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4277c811-1192-4db7-b368-8f68515d4769/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/42a340cc-0c1e-4b56-b773-e5d4c4e024ad/42a340cc-0c1e-4b56-b773-e5d4c4e024ad.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/42a340cc-0c1e-4b56-b773-e5d4c4e024ad/42a340cc-0c1e-4b56-b773-e5d4c4e024ad.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/42a340cc-0c1e-4b56-b773-e5d4c4e024ad/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/42a340cc-0c1e-4b56-b773-e5d4c4e024ad/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/42a340cc-0c1e-4b56-b773-e5d4c4e024ad/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/42a340cc-0c1e-4b56-b773-e5d4c4e024ad/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4444fad5-c225-4496-affd-41a055c70310/4444fad5-c225-4496-affd-41a055c70310.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4444fad5-c225-4496-affd-41a055c70310/4444fad5-c225-4496-affd-41a055c70310.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4444fad5-c225-4496-affd-41a055c70310/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4444fad5-c225-4496-affd-41a055c70310/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4444fad5-c225-4496-affd-41a055c70310/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4444fad5-c225-4496-affd-41a055c70310/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4c314ce9-b48f-4ce0-aae3-609bcebaffc9/4c314ce9-b48f-4ce0-aae3-609bcebaffc9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4c314ce9-b48f-4ce0-aae3-609bcebaffc9/4c314ce9-b48f-4ce0-aae3-609bcebaffc9.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4c314ce9-b48f-4ce0-aae3-609bcebaffc9/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4c314ce9-b48f-4ce0-aae3-609bcebaffc9/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4c314ce9-b48f-4ce0-aae3-609bcebaffc9/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4c314ce9-b48f-4ce0-aae3-609bcebaffc9/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4e49dde7-675d-406e-9bde-c5d5e5669a72/4e49dde7-675d-406e-9bde-c5d5e5669a72.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4e49dde7-675d-406e-9bde-c5d5e5669a72/4e49dde7-675d-406e-9bde-c5d5e5669a72.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4e49dde7-675d-406e-9bde-c5d5e5669a72/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4e49dde7-675d-406e-9bde-c5d5e5669a72/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4e49dde7-675d-406e-9bde-c5d5e5669a72/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4e49dde7-675d-406e-9bde-c5d5e5669a72/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4fcea9e1-43d2-453f-bc43-de14d260d272/4fcea9e1-43d2-453f-bc43-de14d260d272.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4fcea9e1-43d2-453f-bc43-de14d260d272/4fcea9e1-43d2-453f-bc43-de14d260d272.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4fcea9e1-43d2-453f-bc43-de14d260d272/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4fcea9e1-43d2-453f-bc43-de14d260d272/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4fcea9e1-43d2-453f-bc43-de14d260d272/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/4fcea9e1-43d2-453f-bc43-de14d260d272/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/54e1d0b2-f8c9-4772-bddb-7e427679b57c/54e1d0b2-f8c9-4772-bddb-7e427679b57c.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/54e1d0b2-f8c9-4772-bddb-7e427679b57c/54e1d0b2-f8c9-4772-bddb-7e427679b57c.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/54e1d0b2-f8c9-4772-bddb-7e427679b57c/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/54e1d0b2-f8c9-4772-bddb-7e427679b57c/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/54e1d0b2-f8c9-4772-bddb-7e427679b57c/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/54e1d0b2-f8c9-4772-bddb-7e427679b57c/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/580828d4-8149-494a-99ad-ca770a1c4e6f/580828d4-8149-494a-99ad-ca770a1c4e6f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/580828d4-8149-494a-99ad-ca770a1c4e6f/580828d4-8149-494a-99ad-ca770a1c4e6f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/580828d4-8149-494a-99ad-ca770a1c4e6f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/580828d4-8149-494a-99ad-ca770a1c4e6f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/580828d4-8149-494a-99ad-ca770a1c4e6f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/580828d4-8149-494a-99ad-ca770a1c4e6f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5ac2908d-f359-4763-a1ae-0dfc5b39c1d5/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5d3b5d9a-9135-4c10-b03b-2945a3df45b4/5d3b5d9a-9135-4c10-b03b-2945a3df45b4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5d3b5d9a-9135-4c10-b03b-2945a3df45b4/5d3b5d9a-9135-4c10-b03b-2945a3df45b4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5d3b5d9a-9135-4c10-b03b-2945a3df45b4/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5d3b5d9a-9135-4c10-b03b-2945a3df45b4/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5d3b5d9a-9135-4c10-b03b-2945a3df45b4/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5d3b5d9a-9135-4c10-b03b-2945a3df45b4/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5eeb381b-9610-4437-b036-59936428191f/5eeb381b-9610-4437-b036-59936428191f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5eeb381b-9610-4437-b036-59936428191f/5eeb381b-9610-4437-b036-59936428191f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5eeb381b-9610-4437-b036-59936428191f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5eeb381b-9610-4437-b036-59936428191f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5eeb381b-9610-4437-b036-59936428191f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/5eeb381b-9610-4437-b036-59936428191f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60db1b08-8f11-4536-adea-d8c1aed47b68/60db1b08-8f11-4536-adea-d8c1aed47b68.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60db1b08-8f11-4536-adea-d8c1aed47b68/60db1b08-8f11-4536-adea-d8c1aed47b68.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60db1b08-8f11-4536-adea-d8c1aed47b68/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60db1b08-8f11-4536-adea-d8c1aed47b68/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60db1b08-8f11-4536-adea-d8c1aed47b68/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60db1b08-8f11-4536-adea-d8c1aed47b68/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60df0d47-36f5-4872-887f-397a240048be/60df0d47-36f5-4872-887f-397a240048be.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60df0d47-36f5-4872-887f-397a240048be/60df0d47-36f5-4872-887f-397a240048be.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60df0d47-36f5-4872-887f-397a240048be/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60df0d47-36f5-4872-887f-397a240048be/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60df0d47-36f5-4872-887f-397a240048be/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/60df0d47-36f5-4872-887f-397a240048be/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/61c9bc1b-cb61-4faf-b5d8-550c4fd9eec8/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/638c7dd6-136f-47e5-a8d9-fa82348024f8/638c7dd6-136f-47e5-a8d9-fa82348024f8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/638c7dd6-136f-47e5-a8d9-fa82348024f8/638c7dd6-136f-47e5-a8d9-fa82348024f8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/638c7dd6-136f-47e5-a8d9-fa82348024f8/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/638c7dd6-136f-47e5-a8d9-fa82348024f8/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/638c7dd6-136f-47e5-a8d9-fa82348024f8/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/638c7dd6-136f-47e5-a8d9-fa82348024f8/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/688a0274-31ae-488d-97ea-971288837c22/688a0274-31ae-488d-97ea-971288837c22.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/688a0274-31ae-488d-97ea-971288837c22/688a0274-31ae-488d-97ea-971288837c22.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/688a0274-31ae-488d-97ea-971288837c22/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/688a0274-31ae-488d-97ea-971288837c22/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/688a0274-31ae-488d-97ea-971288837c22/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/688a0274-31ae-488d-97ea-971288837c22/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6bced194-90ed-4868-bf2e-812b16083419/6bced194-90ed-4868-bf2e-812b16083419.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6bced194-90ed-4868-bf2e-812b16083419/6bced194-90ed-4868-bf2e-812b16083419.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6bced194-90ed-4868-bf2e-812b16083419/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6bced194-90ed-4868-bf2e-812b16083419/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6bced194-90ed-4868-bf2e-812b16083419/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6bced194-90ed-4868-bf2e-812b16083419/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6c669c55-076b-4433-af03-0d8c8a843852/6c669c55-076b-4433-af03-0d8c8a843852.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6c669c55-076b-4433-af03-0d8c8a843852/6c669c55-076b-4433-af03-0d8c8a843852.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6c669c55-076b-4433-af03-0d8c8a843852/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6c669c55-076b-4433-af03-0d8c8a843852/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6c669c55-076b-4433-af03-0d8c8a843852/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6c669c55-076b-4433-af03-0d8c8a843852/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6ca6c5fa-f55a-45ce-83ed-02acd9145e93/6ca6c5fa-f55a-45ce-83ed-02acd9145e93.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6ca6c5fa-f55a-45ce-83ed-02acd9145e93/6ca6c5fa-f55a-45ce-83ed-02acd9145e93.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6ca6c5fa-f55a-45ce-83ed-02acd9145e93/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6ca6c5fa-f55a-45ce-83ed-02acd9145e93/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6ca6c5fa-f55a-45ce-83ed-02acd9145e93/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6ca6c5fa-f55a-45ce-83ed-02acd9145e93/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e0d9222-a605-45b7-a6b3-705ff3266a85/6e0d9222-a605-45b7-a6b3-705ff3266a85.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e0d9222-a605-45b7-a6b3-705ff3266a85/6e0d9222-a605-45b7-a6b3-705ff3266a85.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e0d9222-a605-45b7-a6b3-705ff3266a85/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e0d9222-a605-45b7-a6b3-705ff3266a85/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e0d9222-a605-45b7-a6b3-705ff3266a85/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e0d9222-a605-45b7-a6b3-705ff3266a85/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e5446f9-18a3-46ef-ae85-5ba88c16a9bb/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e99a4b1-8832-4b61-80d6-685f9d7be9e6/6e99a4b1-8832-4b61-80d6-685f9d7be9e6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e99a4b1-8832-4b61-80d6-685f9d7be9e6/6e99a4b1-8832-4b61-80d6-685f9d7be9e6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e99a4b1-8832-4b61-80d6-685f9d7be9e6/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e99a4b1-8832-4b61-80d6-685f9d7be9e6/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e99a4b1-8832-4b61-80d6-685f9d7be9e6/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6e99a4b1-8832-4b61-80d6-685f9d7be9e6/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6fafc99a-94fc-497d-a660-3cc9202f3f1b/6fafc99a-94fc-497d-a660-3cc9202f3f1b.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6fafc99a-94fc-497d-a660-3cc9202f3f1b/6fafc99a-94fc-497d-a660-3cc9202f3f1b.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6fafc99a-94fc-497d-a660-3cc9202f3f1b/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6fafc99a-94fc-497d-a660-3cc9202f3f1b/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6fafc99a-94fc-497d-a660-3cc9202f3f1b/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/6fafc99a-94fc-497d-a660-3cc9202f3f1b/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/71052174-38dc-49ea-82db-9c735e2a6e36/71052174-38dc-49ea-82db-9c735e2a6e36.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/71052174-38dc-49ea-82db-9c735e2a6e36/71052174-38dc-49ea-82db-9c735e2a6e36.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/71052174-38dc-49ea-82db-9c735e2a6e36/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/71052174-38dc-49ea-82db-9c735e2a6e36/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/71052174-38dc-49ea-82db-9c735e2a6e36/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/71052174-38dc-49ea-82db-9c735e2a6e36/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/72df4cce-11c8-44fc-a439-7320842e70ea/72df4cce-11c8-44fc-a439-7320842e70ea.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/72df4cce-11c8-44fc-a439-7320842e70ea/72df4cce-11c8-44fc-a439-7320842e70ea.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/72df4cce-11c8-44fc-a439-7320842e70ea/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/72df4cce-11c8-44fc-a439-7320842e70ea/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/72df4cce-11c8-44fc-a439-7320842e70ea/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/72df4cce-11c8-44fc-a439-7320842e70ea/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7592fcc0-e764-49be-8e31-b41402f042af/7592fcc0-e764-49be-8e31-b41402f042af.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7592fcc0-e764-49be-8e31-b41402f042af/7592fcc0-e764-49be-8e31-b41402f042af.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7592fcc0-e764-49be-8e31-b41402f042af/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7592fcc0-e764-49be-8e31-b41402f042af/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7592fcc0-e764-49be-8e31-b41402f042af/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7592fcc0-e764-49be-8e31-b41402f042af/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7733458f-4594-49e5-a125-616a17119195/7733458f-4594-49e5-a125-616a17119195.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7733458f-4594-49e5-a125-616a17119195/7733458f-4594-49e5-a125-616a17119195.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7733458f-4594-49e5-a125-616a17119195/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7733458f-4594-49e5-a125-616a17119195/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7733458f-4594-49e5-a125-616a17119195/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7733458f-4594-49e5-a125-616a17119195/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/786f3e9d-bb1f-4d0a-a567-e139ec5e4569/786f3e9d-bb1f-4d0a-a567-e139ec5e4569.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/786f3e9d-bb1f-4d0a-a567-e139ec5e4569/786f3e9d-bb1f-4d0a-a567-e139ec5e4569.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/786f3e9d-bb1f-4d0a-a567-e139ec5e4569/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/786f3e9d-bb1f-4d0a-a567-e139ec5e4569/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/786f3e9d-bb1f-4d0a-a567-e139ec5e4569/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/786f3e9d-bb1f-4d0a-a567-e139ec5e4569/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7929ad29-7155-40c1-a5f9-209a08bf7432/7929ad29-7155-40c1-a5f9-209a08bf7432.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7929ad29-7155-40c1-a5f9-209a08bf7432/7929ad29-7155-40c1-a5f9-209a08bf7432.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7929ad29-7155-40c1-a5f9-209a08bf7432/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7929ad29-7155-40c1-a5f9-209a08bf7432/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7929ad29-7155-40c1-a5f9-209a08bf7432/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7929ad29-7155-40c1-a5f9-209a08bf7432/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7b6387eb-32b2-4ebc-89aa-4221526d6788/7b6387eb-32b2-4ebc-89aa-4221526d6788.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7b6387eb-32b2-4ebc-89aa-4221526d6788/7b6387eb-32b2-4ebc-89aa-4221526d6788.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7b6387eb-32b2-4ebc-89aa-4221526d6788/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7b6387eb-32b2-4ebc-89aa-4221526d6788/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7b6387eb-32b2-4ebc-89aa-4221526d6788/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7b6387eb-32b2-4ebc-89aa-4221526d6788/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7c98cd27-9df7-41f9-ac2c-cd7bb2255503/7c98cd27-9df7-41f9-ac2c-cd7bb2255503.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7c98cd27-9df7-41f9-ac2c-cd7bb2255503/7c98cd27-9df7-41f9-ac2c-cd7bb2255503.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7c98cd27-9df7-41f9-ac2c-cd7bb2255503/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7c98cd27-9df7-41f9-ac2c-cd7bb2255503/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7c98cd27-9df7-41f9-ac2c-cd7bb2255503/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7c98cd27-9df7-41f9-ac2c-cd7bb2255503/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7fea52fd-e66d-4532-af95-9d07bcab8409/7fea52fd-e66d-4532-af95-9d07bcab8409.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7fea52fd-e66d-4532-af95-9d07bcab8409/7fea52fd-e66d-4532-af95-9d07bcab8409.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7fea52fd-e66d-4532-af95-9d07bcab8409/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7fea52fd-e66d-4532-af95-9d07bcab8409/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7fea52fd-e66d-4532-af95-9d07bcab8409/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/7fea52fd-e66d-4532-af95-9d07bcab8409/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/815f7e64-f3f5-4c5b-9831-3f9e5cb471fb/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/83012399-fd6a-479a-ac67-6821392acb9e/83012399-fd6a-479a-ac67-6821392acb9e.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/83012399-fd6a-479a-ac67-6821392acb9e/83012399-fd6a-479a-ac67-6821392acb9e.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/83012399-fd6a-479a-ac67-6821392acb9e/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/83012399-fd6a-479a-ac67-6821392acb9e/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/83012399-fd6a-479a-ac67-6821392acb9e/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/83012399-fd6a-479a-ac67-6821392acb9e/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8421ea3e-0d5a-4352-95e0-c1356b397bdb/8421ea3e-0d5a-4352-95e0-c1356b397bdb.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8421ea3e-0d5a-4352-95e0-c1356b397bdb/8421ea3e-0d5a-4352-95e0-c1356b397bdb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8421ea3e-0d5a-4352-95e0-c1356b397bdb/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8421ea3e-0d5a-4352-95e0-c1356b397bdb/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8421ea3e-0d5a-4352-95e0-c1356b397bdb/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8421ea3e-0d5a-4352-95e0-c1356b397bdb/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/84774899-4ac8-494c-bee9-827d94208022/84774899-4ac8-494c-bee9-827d94208022.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/84774899-4ac8-494c-bee9-827d94208022/84774899-4ac8-494c-bee9-827d94208022.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/84774899-4ac8-494c-bee9-827d94208022/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/84774899-4ac8-494c-bee9-827d94208022/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/84774899-4ac8-494c-bee9-827d94208022/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/84774899-4ac8-494c-bee9-827d94208022/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8862f80f-3e2e-43c4-b58d-5e6620e347f6/8862f80f-3e2e-43c4-b58d-5e6620e347f6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8862f80f-3e2e-43c4-b58d-5e6620e347f6/8862f80f-3e2e-43c4-b58d-5e6620e347f6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8862f80f-3e2e-43c4-b58d-5e6620e347f6/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8862f80f-3e2e-43c4-b58d-5e6620e347f6/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8862f80f-3e2e-43c4-b58d-5e6620e347f6/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8862f80f-3e2e-43c4-b58d-5e6620e347f6/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/888616b0-5376-4d14-86b0-afb6a832c90f/888616b0-5376-4d14-86b0-afb6a832c90f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/888616b0-5376-4d14-86b0-afb6a832c90f/888616b0-5376-4d14-86b0-afb6a832c90f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/888616b0-5376-4d14-86b0-afb6a832c90f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/888616b0-5376-4d14-86b0-afb6a832c90f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/888616b0-5376-4d14-86b0-afb6a832c90f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/888616b0-5376-4d14-86b0-afb6a832c90f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/88cb0b24-ae9f-4cf4-a875-e41841b2fdb7/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/891406a5-4021-4660-80b2-ed92ade2118d/891406a5-4021-4660-80b2-ed92ade2118d.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/891406a5-4021-4660-80b2-ed92ade2118d/891406a5-4021-4660-80b2-ed92ade2118d.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/891406a5-4021-4660-80b2-ed92ade2118d/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/891406a5-4021-4660-80b2-ed92ade2118d/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/891406a5-4021-4660-80b2-ed92ade2118d/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/891406a5-4021-4660-80b2-ed92ade2118d/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/899b9c9c-67cb-40cc-9876-991cece7ab55/899b9c9c-67cb-40cc-9876-991cece7ab55.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/899b9c9c-67cb-40cc-9876-991cece7ab55/899b9c9c-67cb-40cc-9876-991cece7ab55.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/899b9c9c-67cb-40cc-9876-991cece7ab55/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/899b9c9c-67cb-40cc-9876-991cece7ab55/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/899b9c9c-67cb-40cc-9876-991cece7ab55/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/899b9c9c-67cb-40cc-9876-991cece7ab55/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8b939520-c2f1-4191-8ffe-0d131880e51f/8b939520-c2f1-4191-8ffe-0d131880e51f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8b939520-c2f1-4191-8ffe-0d131880e51f/8b939520-c2f1-4191-8ffe-0d131880e51f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8b939520-c2f1-4191-8ffe-0d131880e51f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8b939520-c2f1-4191-8ffe-0d131880e51f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8b939520-c2f1-4191-8ffe-0d131880e51f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8b939520-c2f1-4191-8ffe-0d131880e51f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/8fb0d4b8-4d84-4290-bf6a-6450733e9f3e/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/904bda5b-0c4c-4cdb-a4b1-fa9ec5241085/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9082732e-94dc-40fd-a9fd-2e01c371119d/9082732e-94dc-40fd-a9fd-2e01c371119d.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9082732e-94dc-40fd-a9fd-2e01c371119d/9082732e-94dc-40fd-a9fd-2e01c371119d.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9082732e-94dc-40fd-a9fd-2e01c371119d/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9082732e-94dc-40fd-a9fd-2e01c371119d/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9082732e-94dc-40fd-a9fd-2e01c371119d/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9082732e-94dc-40fd-a9fd-2e01c371119d/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/90dcdb1f-22bf-4856-8527-9d6155a1c803/90dcdb1f-22bf-4856-8527-9d6155a1c803.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/90dcdb1f-22bf-4856-8527-9d6155a1c803/90dcdb1f-22bf-4856-8527-9d6155a1c803.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/90dcdb1f-22bf-4856-8527-9d6155a1c803/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/90dcdb1f-22bf-4856-8527-9d6155a1c803/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/90dcdb1f-22bf-4856-8527-9d6155a1c803/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/90dcdb1f-22bf-4856-8527-9d6155a1c803/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/925c23f6-daad-49a8-9215-c92e36cf2d8e/925c23f6-daad-49a8-9215-c92e36cf2d8e.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/925c23f6-daad-49a8-9215-c92e36cf2d8e/925c23f6-daad-49a8-9215-c92e36cf2d8e.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/925c23f6-daad-49a8-9215-c92e36cf2d8e/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/925c23f6-daad-49a8-9215-c92e36cf2d8e/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/925c23f6-daad-49a8-9215-c92e36cf2d8e/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/925c23f6-daad-49a8-9215-c92e36cf2d8e/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9a6ff021-4254-4873-a452-0dc0be2a0d67/9a6ff021-4254-4873-a452-0dc0be2a0d67.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9a6ff021-4254-4873-a452-0dc0be2a0d67/9a6ff021-4254-4873-a452-0dc0be2a0d67.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9a6ff021-4254-4873-a452-0dc0be2a0d67/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9a6ff021-4254-4873-a452-0dc0be2a0d67/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9a6ff021-4254-4873-a452-0dc0be2a0d67/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9a6ff021-4254-4873-a452-0dc0be2a0d67/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c2ae011-6884-4dac-8ae9-0f0fc0ceda28/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c2ae011-6884-4dac-8ae9-0f0fc0ceda28/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c2ae011-6884-4dac-8ae9-0f0fc0ceda28/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c2ae011-6884-4dac-8ae9-0f0fc0ceda28/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9c6dcc6a-d9fe-4e4c-be7f-6979e6b516b6/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e01e35a-a735-40db-a5ce-1e6c9bdec91b/9e01e35a-a735-40db-a5ce-1e6c9bdec91b.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e01e35a-a735-40db-a5ce-1e6c9bdec91b/9e01e35a-a735-40db-a5ce-1e6c9bdec91b.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e01e35a-a735-40db-a5ce-1e6c9bdec91b/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e01e35a-a735-40db-a5ce-1e6c9bdec91b/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e01e35a-a735-40db-a5ce-1e6c9bdec91b/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e01e35a-a735-40db-a5ce-1e6c9bdec91b/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e635486-728e-445c-8bbb-6b836bc590c6/9e635486-728e-445c-8bbb-6b836bc590c6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e635486-728e-445c-8bbb-6b836bc590c6/9e635486-728e-445c-8bbb-6b836bc590c6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e635486-728e-445c-8bbb-6b836bc590c6/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e635486-728e-445c-8bbb-6b836bc590c6/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e635486-728e-445c-8bbb-6b836bc590c6/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9e635486-728e-445c-8bbb-6b836bc590c6/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9ef076b5-a6a6-4872-b063-7d283ae78c27/9ef076b5-a6a6-4872-b063-7d283ae78c27.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9ef076b5-a6a6-4872-b063-7d283ae78c27/9ef076b5-a6a6-4872-b063-7d283ae78c27.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9ef076b5-a6a6-4872-b063-7d283ae78c27/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9ef076b5-a6a6-4872-b063-7d283ae78c27/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9ef076b5-a6a6-4872-b063-7d283ae78c27/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9ef076b5-a6a6-4872-b063-7d283ae78c27/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9fb6a099-8efb-43fe-a8f9-31949de72a19/9fb6a099-8efb-43fe-a8f9-31949de72a19.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9fb6a099-8efb-43fe-a8f9-31949de72a19/9fb6a099-8efb-43fe-a8f9-31949de72a19.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9fb6a099-8efb-43fe-a8f9-31949de72a19/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9fb6a099-8efb-43fe-a8f9-31949de72a19/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9fb6a099-8efb-43fe-a8f9-31949de72a19/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/9fb6a099-8efb-43fe-a8f9-31949de72a19/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a0e82b30-ddc0-4fc2-8813-20bcc9e72892/a0e82b30-ddc0-4fc2-8813-20bcc9e72892.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a0e82b30-ddc0-4fc2-8813-20bcc9e72892/a0e82b30-ddc0-4fc2-8813-20bcc9e72892.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a0e82b30-ddc0-4fc2-8813-20bcc9e72892/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a0e82b30-ddc0-4fc2-8813-20bcc9e72892/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a0e82b30-ddc0-4fc2-8813-20bcc9e72892/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a0e82b30-ddc0-4fc2-8813-20bcc9e72892/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a118a491-290f-4b0f-88d4-2cfbc0ac2073/a118a491-290f-4b0f-88d4-2cfbc0ac2073.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a118a491-290f-4b0f-88d4-2cfbc0ac2073/a118a491-290f-4b0f-88d4-2cfbc0ac2073.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a118a491-290f-4b0f-88d4-2cfbc0ac2073/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a118a491-290f-4b0f-88d4-2cfbc0ac2073/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a118a491-290f-4b0f-88d4-2cfbc0ac2073/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a118a491-290f-4b0f-88d4-2cfbc0ac2073/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a1a3ed73-362f-4f11-b94e-7ad98d938994/a1a3ed73-362f-4f11-b94e-7ad98d938994.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a1a3ed73-362f-4f11-b94e-7ad98d938994/a1a3ed73-362f-4f11-b94e-7ad98d938994.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a1a3ed73-362f-4f11-b94e-7ad98d938994/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a1a3ed73-362f-4f11-b94e-7ad98d938994/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a1a3ed73-362f-4f11-b94e-7ad98d938994/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a1a3ed73-362f-4f11-b94e-7ad98d938994/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a218f8e5-932b-44ac-8c1e-e0304858a1fc/a218f8e5-932b-44ac-8c1e-e0304858a1fc.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a218f8e5-932b-44ac-8c1e-e0304858a1fc/a218f8e5-932b-44ac-8c1e-e0304858a1fc.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a218f8e5-932b-44ac-8c1e-e0304858a1fc/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a218f8e5-932b-44ac-8c1e-e0304858a1fc/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a218f8e5-932b-44ac-8c1e-e0304858a1fc/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a218f8e5-932b-44ac-8c1e-e0304858a1fc/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a4d0ea5d-753d-4eff-bbf1-c3ef44f05165/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a5b2edc1-ec55-48e1-abfa-16bab85d5829/a5b2edc1-ec55-48e1-abfa-16bab85d5829.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a5b2edc1-ec55-48e1-abfa-16bab85d5829/a5b2edc1-ec55-48e1-abfa-16bab85d5829.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a5b2edc1-ec55-48e1-abfa-16bab85d5829/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a5b2edc1-ec55-48e1-abfa-16bab85d5829/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a5b2edc1-ec55-48e1-abfa-16bab85d5829/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a5b2edc1-ec55-48e1-abfa-16bab85d5829/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a62e8c0a-cdb8-4b9a-806f-e96e2f4de72a/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a939910a-bc4d-435d-baf2-7993cce3ef63/a939910a-bc4d-435d-baf2-7993cce3ef63.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a939910a-bc4d-435d-baf2-7993cce3ef63/a939910a-bc4d-435d-baf2-7993cce3ef63.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a939910a-bc4d-435d-baf2-7993cce3ef63/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a939910a-bc4d-435d-baf2-7993cce3ef63/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a939910a-bc4d-435d-baf2-7993cce3ef63/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/a939910a-bc4d-435d-baf2-7993cce3ef63/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/aa070bcd-c437-4bdb-973b-57b118366220/aa070bcd-c437-4bdb-973b-57b118366220.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/aa070bcd-c437-4bdb-973b-57b118366220/aa070bcd-c437-4bdb-973b-57b118366220.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/aa070bcd-c437-4bdb-973b-57b118366220/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/aa070bcd-c437-4bdb-973b-57b118366220/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/aa070bcd-c437-4bdb-973b-57b118366220/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/aa070bcd-c437-4bdb-973b-57b118366220/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ae09faf9-2e8c-4c41-b7d6-ed4901b32e33/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b0dc1769-4d97-4f01-a9fe-73eb83088cea/b0dc1769-4d97-4f01-a9fe-73eb83088cea.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b0dc1769-4d97-4f01-a9fe-73eb83088cea/b0dc1769-4d97-4f01-a9fe-73eb83088cea.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b0dc1769-4d97-4f01-a9fe-73eb83088cea/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b0dc1769-4d97-4f01-a9fe-73eb83088cea/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b0dc1769-4d97-4f01-a9fe-73eb83088cea/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b0dc1769-4d97-4f01-a9fe-73eb83088cea/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b1ebaae9-51f1-4113-978b-28b5540d0793/b1ebaae9-51f1-4113-978b-28b5540d0793.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b1ebaae9-51f1-4113-978b-28b5540d0793/b1ebaae9-51f1-4113-978b-28b5540d0793.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b1ebaae9-51f1-4113-978b-28b5540d0793/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b1ebaae9-51f1-4113-978b-28b5540d0793/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b1ebaae9-51f1-4113-978b-28b5540d0793/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b1ebaae9-51f1-4113-978b-28b5540d0793/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3123996-66f2-4113-aed5-1764410361e8/b3123996-66f2-4113-aed5-1764410361e8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3123996-66f2-4113-aed5-1764410361e8/b3123996-66f2-4113-aed5-1764410361e8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3123996-66f2-4113-aed5-1764410361e8/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3123996-66f2-4113-aed5-1764410361e8/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3123996-66f2-4113-aed5-1764410361e8/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3123996-66f2-4113-aed5-1764410361e8/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b31a2351-8bd2-45ca-bad9-37e4f223ceb5/b31a2351-8bd2-45ca-bad9-37e4f223ceb5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b31a2351-8bd2-45ca-bad9-37e4f223ceb5/b31a2351-8bd2-45ca-bad9-37e4f223ceb5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b31a2351-8bd2-45ca-bad9-37e4f223ceb5/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b31a2351-8bd2-45ca-bad9-37e4f223ceb5/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b31a2351-8bd2-45ca-bad9-37e4f223ceb5/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b31a2351-8bd2-45ca-bad9-37e4f223ceb5/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b34dfe09-d6ce-4569-af2d-a445c8be491f/b34dfe09-d6ce-4569-af2d-a445c8be491f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b34dfe09-d6ce-4569-af2d-a445c8be491f/b34dfe09-d6ce-4569-af2d-a445c8be491f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b34dfe09-d6ce-4569-af2d-a445c8be491f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b34dfe09-d6ce-4569-af2d-a445c8be491f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b34dfe09-d6ce-4569-af2d-a445c8be491f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b34dfe09-d6ce-4569-af2d-a445c8be491f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3c41e65-1821-4e71-8594-92981592cb76/b3c41e65-1821-4e71-8594-92981592cb76.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3c41e65-1821-4e71-8594-92981592cb76/b3c41e65-1821-4e71-8594-92981592cb76.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3c41e65-1821-4e71-8594-92981592cb76/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3c41e65-1821-4e71-8594-92981592cb76/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3c41e65-1821-4e71-8594-92981592cb76/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b3c41e65-1821-4e71-8594-92981592cb76/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b5f03c4b-9ea6-45ee-9c8c-c45f20d55f50/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b6713db9-dd5a-4cbc-b3f4-4108414bb901/b6713db9-dd5a-4cbc-b3f4-4108414bb901.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b6713db9-dd5a-4cbc-b3f4-4108414bb901/b6713db9-dd5a-4cbc-b3f4-4108414bb901.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b6713db9-dd5a-4cbc-b3f4-4108414bb901/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b6713db9-dd5a-4cbc-b3f4-4108414bb901/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b6713db9-dd5a-4cbc-b3f4-4108414bb901/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b6713db9-dd5a-4cbc-b3f4-4108414bb901/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b7247910-a037-418c-998d-c701ceb6748d/b7247910-a037-418c-998d-c701ceb6748d.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b7247910-a037-418c-998d-c701ceb6748d/b7247910-a037-418c-998d-c701ceb6748d.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b7247910-a037-418c-998d-c701ceb6748d/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b7247910-a037-418c-998d-c701ceb6748d/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b7247910-a037-418c-998d-c701ceb6748d/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b7247910-a037-418c-998d-c701ceb6748d/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/b8bf8828-d2e4-45df-8a13-49a2b6f5ebea/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bb2aa767-12b9-4f53-ba19-5ee731254563/bb2aa767-12b9-4f53-ba19-5ee731254563.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bb2aa767-12b9-4f53-ba19-5ee731254563/bb2aa767-12b9-4f53-ba19-5ee731254563.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bb2aa767-12b9-4f53-ba19-5ee731254563/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bb2aa767-12b9-4f53-ba19-5ee731254563/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bb2aa767-12b9-4f53-ba19-5ee731254563/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bb2aa767-12b9-4f53-ba19-5ee731254563/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bd793788-9fd0-444e-b8e7-b78117881c36/bd793788-9fd0-444e-b8e7-b78117881c36.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bd793788-9fd0-444e-b8e7-b78117881c36/bd793788-9fd0-444e-b8e7-b78117881c36.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bd793788-9fd0-444e-b8e7-b78117881c36/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bd793788-9fd0-444e-b8e7-b78117881c36/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bd793788-9fd0-444e-b8e7-b78117881c36/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bd793788-9fd0-444e-b8e7-b78117881c36/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bdd26609-542c-4d3d-9db4-d047683094c7/bdd26609-542c-4d3d-9db4-d047683094c7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bdd26609-542c-4d3d-9db4-d047683094c7/bdd26609-542c-4d3d-9db4-d047683094c7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bdd26609-542c-4d3d-9db4-d047683094c7/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bdd26609-542c-4d3d-9db4-d047683094c7/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bdd26609-542c-4d3d-9db4-d047683094c7/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/bdd26609-542c-4d3d-9db4-d047683094c7/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/be587db2-4986-4f5f-afe6-393f0283f442/be587db2-4986-4f5f-afe6-393f0283f442.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/be587db2-4986-4f5f-afe6-393f0283f442/be587db2-4986-4f5f-afe6-393f0283f442.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/be587db2-4986-4f5f-afe6-393f0283f442/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/be587db2-4986-4f5f-afe6-393f0283f442/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/be587db2-4986-4f5f-afe6-393f0283f442/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/be587db2-4986-4f5f-afe6-393f0283f442/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c03c3b8f-0c44-43b3-b344-67d275fa661f/c03c3b8f-0c44-43b3-b344-67d275fa661f.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c03c3b8f-0c44-43b3-b344-67d275fa661f/c03c3b8f-0c44-43b3-b344-67d275fa661f.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c03c3b8f-0c44-43b3-b344-67d275fa661f/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c03c3b8f-0c44-43b3-b344-67d275fa661f/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c03c3b8f-0c44-43b3-b344-67d275fa661f/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c03c3b8f-0c44-43b3-b344-67d275fa661f/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c221cde8-36fc-4f02-950d-be46e23bd016/c221cde8-36fc-4f02-950d-be46e23bd016.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c221cde8-36fc-4f02-950d-be46e23bd016/c221cde8-36fc-4f02-950d-be46e23bd016.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c221cde8-36fc-4f02-950d-be46e23bd016/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c221cde8-36fc-4f02-950d-be46e23bd016/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c221cde8-36fc-4f02-950d-be46e23bd016/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c221cde8-36fc-4f02-950d-be46e23bd016/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c23d94be-081b-4776-a199-1375aba379fe/c23d94be-081b-4776-a199-1375aba379fe.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c23d94be-081b-4776-a199-1375aba379fe/c23d94be-081b-4776-a199-1375aba379fe.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c23d94be-081b-4776-a199-1375aba379fe/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c23d94be-081b-4776-a199-1375aba379fe/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c23d94be-081b-4776-a199-1375aba379fe/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c23d94be-081b-4776-a199-1375aba379fe/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c9bc3802-b163-4176-b85d-c1804a9cfb25/c9bc3802-b163-4176-b85d-c1804a9cfb25.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c9bc3802-b163-4176-b85d-c1804a9cfb25/c9bc3802-b163-4176-b85d-c1804a9cfb25.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c9bc3802-b163-4176-b85d-c1804a9cfb25/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c9bc3802-b163-4176-b85d-c1804a9cfb25/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c9bc3802-b163-4176-b85d-c1804a9cfb25/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/c9bc3802-b163-4176-b85d-c1804a9cfb25/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ce0010b6-5fb1-4a69-bcfa-6c9b049f1e41/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/cf393961-782f-4dc9-9d6e-142d05d284ef/cf393961-782f-4dc9-9d6e-142d05d284ef.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/cf393961-782f-4dc9-9d6e-142d05d284ef/cf393961-782f-4dc9-9d6e-142d05d284ef.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/cf393961-782f-4dc9-9d6e-142d05d284ef/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/cf393961-782f-4dc9-9d6e-142d05d284ef/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/cf393961-782f-4dc9-9d6e-142d05d284ef/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/cf393961-782f-4dc9-9d6e-142d05d284ef/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d1b97c89-d838-4186-a702-30265dab3a52/d1b97c89-d838-4186-a702-30265dab3a52.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d1b97c89-d838-4186-a702-30265dab3a52/d1b97c89-d838-4186-a702-30265dab3a52.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d1b97c89-d838-4186-a702-30265dab3a52/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d1b97c89-d838-4186-a702-30265dab3a52/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d1b97c89-d838-4186-a702-30265dab3a52/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d1b97c89-d838-4186-a702-30265dab3a52/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d42a5052-32c5-4af8-834a-08662f627cd2/d42a5052-32c5-4af8-834a-08662f627cd2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d42a5052-32c5-4af8-834a-08662f627cd2/d42a5052-32c5-4af8-834a-08662f627cd2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d42a5052-32c5-4af8-834a-08662f627cd2/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d42a5052-32c5-4af8-834a-08662f627cd2/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d42a5052-32c5-4af8-834a-08662f627cd2/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d42a5052-32c5-4af8-834a-08662f627cd2/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d63b5ffb-aeb1-4f4e-ae6e-8ac4c4ab3f30/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d72e4608-8cb1-42c9-8329-738b801ce865/d72e4608-8cb1-42c9-8329-738b801ce865.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d72e4608-8cb1-42c9-8329-738b801ce865/d72e4608-8cb1-42c9-8329-738b801ce865.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d72e4608-8cb1-42c9-8329-738b801ce865/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d72e4608-8cb1-42c9-8329-738b801ce865/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d72e4608-8cb1-42c9-8329-738b801ce865/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d72e4608-8cb1-42c9-8329-738b801ce865/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d88b76a9-37a7-433f-afcf-00f02cd47b81/d88b76a9-37a7-433f-afcf-00f02cd47b81.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d88b76a9-37a7-433f-afcf-00f02cd47b81/d88b76a9-37a7-433f-afcf-00f02cd47b81.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d88b76a9-37a7-433f-afcf-00f02cd47b81/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d88b76a9-37a7-433f-afcf-00f02cd47b81/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d88b76a9-37a7-433f-afcf-00f02cd47b81/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/d88b76a9-37a7-433f-afcf-00f02cd47b81/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/da549ac7-78d1-484d-a431-23d78ccd6638/da549ac7-78d1-484d-a431-23d78ccd6638.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/da549ac7-78d1-484d-a431-23d78ccd6638/da549ac7-78d1-484d-a431-23d78ccd6638.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/da549ac7-78d1-484d-a431-23d78ccd6638/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/da549ac7-78d1-484d-a431-23d78ccd6638/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/da549ac7-78d1-484d-a431-23d78ccd6638/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/da549ac7-78d1-484d-a431-23d78ccd6638/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/daa3ee9d-44d8-4f3a-bf5a-925369b8c8bd/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/dcce4631-719d-4001-9ae4-d5b6fe3d4077/dcce4631-719d-4001-9ae4-d5b6fe3d4077.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/dcce4631-719d-4001-9ae4-d5b6fe3d4077/dcce4631-719d-4001-9ae4-d5b6fe3d4077.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/dcce4631-719d-4001-9ae4-d5b6fe3d4077/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/dcce4631-719d-4001-9ae4-d5b6fe3d4077/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/dcce4631-719d-4001-9ae4-d5b6fe3d4077/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/dcce4631-719d-4001-9ae4-d5b6fe3d4077/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e1eb9b79-92f1-428b-b978-95257d66ef04/e1eb9b79-92f1-428b-b978-95257d66ef04.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e1eb9b79-92f1-428b-b978-95257d66ef04/e1eb9b79-92f1-428b-b978-95257d66ef04.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e1eb9b79-92f1-428b-b978-95257d66ef04/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e1eb9b79-92f1-428b-b978-95257d66ef04/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e1eb9b79-92f1-428b-b978-95257d66ef04/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e1eb9b79-92f1-428b-b978-95257d66ef04/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e24fd82d-9a60-4141-8041-3f94bceb8334/e24fd82d-9a60-4141-8041-3f94bceb8334.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e24fd82d-9a60-4141-8041-3f94bceb8334/e24fd82d-9a60-4141-8041-3f94bceb8334.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e24fd82d-9a60-4141-8041-3f94bceb8334/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e24fd82d-9a60-4141-8041-3f94bceb8334/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e24fd82d-9a60-4141-8041-3f94bceb8334/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e24fd82d-9a60-4141-8041-3f94bceb8334/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e7e433fd-485c-443c-91c7-f01be831ed91/e7e433fd-485c-443c-91c7-f01be831ed91.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e7e433fd-485c-443c-91c7-f01be831ed91/e7e433fd-485c-443c-91c7-f01be831ed91.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e7e433fd-485c-443c-91c7-f01be831ed91/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e7e433fd-485c-443c-91c7-f01be831ed91/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e7e433fd-485c-443c-91c7-f01be831ed91/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e7e433fd-485c-443c-91c7-f01be831ed91/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/e85e25aa-1b43-4a8e-90a3-18383dccd370.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/e85e25aa-1b43-4a8e-90a3-18383dccd370.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/enduse_timeseries.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/enduse_timeseries.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/e85e25aa-1b43-4a8e-90a3-18383dccd370/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea25d2c5-3358-4225-a277-8eb8c8677d35/ea25d2c5-3358-4225-a277-8eb8c8677d35.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea25d2c5-3358-4225-a277-8eb8c8677d35/ea25d2c5-3358-4225-a277-8eb8c8677d35.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea25d2c5-3358-4225-a277-8eb8c8677d35/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea25d2c5-3358-4225-a277-8eb8c8677d35/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea25d2c5-3358-4225-a277-8eb8c8677d35/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea25d2c5-3358-4225-a277-8eb8c8677d35/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea63c219-957f-4123-b5fb-f25c1c18e894/ea63c219-957f-4123-b5fb-f25c1c18e894.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea63c219-957f-4123-b5fb-f25c1c18e894/ea63c219-957f-4123-b5fb-f25c1c18e894.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea63c219-957f-4123-b5fb-f25c1c18e894/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea63c219-957f-4123-b5fb-f25c1c18e894/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea63c219-957f-4123-b5fb-f25c1c18e894/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ea63c219-957f-4123-b5fb-f25c1c18e894/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/eb4279d4-4bde-4426-9343-aa5d14e1e7a6/eb4279d4-4bde-4426-9343-aa5d14e1e7a6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/eb4279d4-4bde-4426-9343-aa5d14e1e7a6/eb4279d4-4bde-4426-9343-aa5d14e1e7a6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/eb4279d4-4bde-4426-9343-aa5d14e1e7a6/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/eb4279d4-4bde-4426-9343-aa5d14e1e7a6/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/eb4279d4-4bde-4426-9343-aa5d14e1e7a6/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/eb4279d4-4bde-4426-9343-aa5d14e1e7a6/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/ec2b0a4a-3d4d-4661-a7ed-d69d4c6b5c34/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62993c6-daff-4595-b9eb-81dd269b3f38/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62993c6-daff-4595-b9eb-81dd269b3f38/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62993c6-daff-4595-b9eb-81dd269b3f38/f62993c6-daff-4595-b9eb-81dd269b3f38.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62993c6-daff-4595-b9eb-81dd269b3f38/f62993c6-daff-4595-b9eb-81dd269b3f38.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62993c6-daff-4595-b9eb-81dd269b3f38/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62993c6-daff-4595-b9eb-81dd269b3f38/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62fc22e-f7ff-4315-a37e-731d786e6ec1/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62fc22e-f7ff-4315-a37e-731d786e6ec1/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62fc22e-f7ff-4315-a37e-731d786e6ec1/f62fc22e-f7ff-4315-a37e-731d786e6ec1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62fc22e-f7ff-4315-a37e-731d786e6ec1/f62fc22e-f7ff-4315-a37e-731d786e6ec1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62fc22e-f7ff-4315-a37e-731d786e6ec1/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f62fc22e-f7ff-4315-a37e-731d786e6ec1/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/f88aa4a8-7e21-418f-b763-1e2ba7a1d3e4/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/fbad8ca3-45bf-4fcc-aae5-a465bb2923db/eplustbl.html" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/fbad8ca3-45bf-4fcc-aae5-a465bb2923db/eplustbl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/fbad8ca3-45bf-4fcc-aae5-a465bb2923db/fbad8ca3-45bf-4fcc-aae5-a465bb2923db.log" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/fbad8ca3-45bf-4fcc-aae5-a465bb2923db/fbad8ca3-45bf-4fcc-aae5-a465bb2923db.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/fbad8ca3-45bf-4fcc-aae5-a465bb2923db/out.osw" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/fbad8ca3-45bf-4fcc-aae5-a465bb2923db/out.osw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/metadata.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/metadata.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/results_clean.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/400 Buildings - EB/Detroit/results_clean.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/load/load_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/load/load_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/TES_main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/TES_main_VarK.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/dashboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/get_COP_params.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/get_Opt_k_e.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/get_heat_pump_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/get_load_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/get_storage_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/TES_model_results.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1y0wK7nifkosMfk1UUGN327l6eB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\atpha\Documents\Postdocs\Projects\Thermal Storage\Model\TES Model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.dashboard">
+    <configuration name="TES_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thermal Storage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/TES_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TES_main_Simult" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thermal Storage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/TES_main_Simult.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TES_main_VarK" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thermal Storage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/TES_main_VarK.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TES_main_loop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thermal Storage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/TES_main_loop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thermal Storage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/dashboard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dashboard" />
+        <item itemvalue="Python.TES_main" />
+        <item itemvalue="Python.TES_main_VarK" />
+        <item itemvalue="Python.TES_main_Simult" />
+        <item itemvalue="Python.TES_main_loop" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="605f844f-2eaf-4d02-beae-1e4cec97be2b" name="Changes" comment="" />
+      <created>1631401746516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631401746516</updated>
+      <workItem from="1631401754303" duration="1848000" />
+      <workItem from="1631488751927" duration="3742000" />
+      <workItem from="1631505695095" duration="1346000" />
+      <workItem from="1631541094718" duration="4828000" />
+      <workItem from="1633111687233" duration="2978000" />
+      <workItem from="1633287763338" duration="799000" />
+      <workItem from="1633368317179" duration="2391000" />
+      <workItem from="1633979644815" duration="612000" />
+      <workItem from="1634019030704" duration="10000" />
+      <workItem from="1638042552034" duration="14418000" />
+      <workItem from="1638231282695" duration="9000" />
+      <workItem from="1638243609573" duration="413000" />
+      <workItem from="1638883395159" duration="6490000" />
+      <workItem from="1638992359223" duration="11000" />
+      <workItem from="1639547666105" duration="3424000" />
+      <workItem from="1639555000680" duration="1361000" />
+      <workItem from="1639582454186" duration="2223000" />
+      <workItem from="1639689582724" duration="60000" />
+      <workItem from="1641411779169" duration="14984000" />
+      <workItem from="1641491941050" duration="5442000" />
+      <workItem from="1641603978809" duration="17000" />
+      <workItem from="1641832063723" duration="4881000" />
+      <workItem from="1641916828598" duration="10000" />
+      <workItem from="1643075862603" duration="4436000" />
+      <workItem from="1643231433732" duration="2075000" />
+      <workItem from="1645545728784" duration="29906000" />
+      <workItem from="1645633861018" duration="14248000" />
+      <workItem from="1645736895262" duration="1589000" />
+      <workItem from="1645999840950" duration="26452000" />
+      <workItem from="1646152762969" duration="3547000" />
+      <workItem from="1647293360490" duration="2503000" />
+      <workItem from="1647309920985" duration="1026000" />
+      <workItem from="1647362519007" duration="4133000" />
+      <workItem from="1648132350012" duration="10112000" />
+      <workItem from="1648237996472" duration="119000" />
+      <workItem from="1648406818068" duration="603000" />
+      <workItem from="1648484301443" duration="2574000" />
+      <workItem from="1648579780654" duration="598000" />
+      <workItem from="1648673891253" duration="9506000" />
+      <workItem from="1648749764938" duration="111000" />
+      <workItem from="1648838248934" duration="1926000" />
+      <workItem from="1649024760004" duration="2000" />
+      <workItem from="1649121203155" duration="773000" />
+      <workItem from="1649183056658" duration="11000" />
+      <workItem from="1649257142856" duration="222000" />
+      <workItem from="1649450687379" duration="597000" />
+      <workItem from="1649860815201" duration="20557000" />
+      <workItem from="1649946932661" duration="3818000" />
+      <workItem from="1650550508550" duration="3849000" />
+      <workItem from="1651516316342" duration="2102000" />
+      <workItem from="1651853014970" duration="1834000" />
+      <workItem from="1652196083730" duration="5899000" />
+      <workItem from="1653094324672" duration="636000" />
+      <workItem from="1653430267899" duration="118000" />
+      <workItem from="1654007031608" duration="491000" />
+      <workItem from="1656534592106" duration="7497000" />
+      <workItem from="1656597822054" duration="8674000" />
+      <workItem from="1657025963482" duration="23061000" />
+      <workItem from="1657135219459" duration="12263000" />
+      <workItem from="1657204144794" duration="2601000" />
+      <workItem from="1657309194505" duration="1204000" />
+      <workItem from="1657479870112" duration="11119000" />
+      <workItem from="1657565427588" duration="9000" />
+      <workItem from="1657568313787" duration="18000" />
+      <workItem from="1658347814808" duration="2655000" />
+      <workItem from="1658414063905" duration="502000" />
+      <workItem from="1662753165357" duration="10164000" />
+      <workItem from="1662839135806" duration="6920000" />
+      <workItem from="1662848726614" duration="693000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model/TES Model/get_heat_pump_data.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model/TES Model/get_storage_data.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1641430822447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_loop.coverage" NAME="TES_main_loop Coverage Results" MODIFIED="1652200503228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1662844990118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main5.coverage" NAME="main5 Coverage Results" MODIFIED="1645639856378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_Simult.coverage" NAME="TES_main_Simult Coverage Results" MODIFIED="1656598025323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main3.coverage" NAME="TES_main3 Coverage Results" MODIFIED="1649879045925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main2.coverage" NAME="TES_main2 Coverage Results" MODIFIED="1649871061724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_VarK.coverage" NAME="TES_main_VarK Coverage Results" MODIFIED="1657075518342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main3.coverage" NAME="main3 Coverage Results" MODIFIED="1645562938854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main4.coverage" NAME="main4 Coverage Results" MODIFIED="1645585278302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main.coverage" NAME="main Coverage Results" MODIFIED="1645545769665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main.coverage" NAME="TES_main Coverage Results" MODIFIED="1657141538598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+  </component>
+</project>
