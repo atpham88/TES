@@ -32,6 +32,8 @@ def load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, buildi
     load_data_annual = load_data_annual.drop(['index'], axis=1)
     load_data_annual = load_data_annual.rename(columns={'electricity_heating_kwh':0})
 
+    peakLoad = float(load_data_annual.max())
+
     d_heating_temp = {(r, c): load_data_annual.at[r, c] for r in T for c in list(range(1))}
     d_heating = dict.fromkeys((range(hour)))
     for t in T:
@@ -40,4 +42,4 @@ def load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, buildi
     # Electricity price:
     p_W = 0.12                      # $/kWh
 
-    return d_heating, p_W
+    return d_heating, p_W, peakLoad

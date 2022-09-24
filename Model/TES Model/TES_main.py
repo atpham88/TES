@@ -14,6 +14,7 @@ import time
 import glob
 import os
 import xlsxwriter as xw
+import math
 
 from get_load_data import load_data
 from get_COP_params import est_COP
@@ -23,8 +24,8 @@ from datetime import date
 start_time = time.time()
 
 # %% Main parameters:
-def main_params(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp, used_cop, cop_type,
-                e_T, p_T, ef_T, f_d, k_T, k_H, ir, single_building, city_to_run, building_no, building_id):
+def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, super_comp, used_cop, cop_type,
+                p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC):
 
     if mon_to_run == 'Year':
         day = 365                                   # Equivalent days
@@ -38,22 +39,48 @@ def main_params(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp
 
     # TES parameters:
     f_c = ef_T/f_d                                  # Charging efficiency
-    return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, k_T, e_T, k_H, include_TES, starting_hour,
-            mon_to_run, cop_type, used_cop, single_building, city_to_run, building_no, building_id)
+
+    # Piecewise linear function of power rating vs SOC:
+    if not replace_TES_w_Battery:
+        if tes_material == 'MgSO4':
+            xData = [0, 0.79014685, 1]
+            yData = [49.4451045 / 1000, 2024.036116 / 1000, 1529.521786 / 1000]
+            c_salt = 0.489
+        elif tes_material == 'MgCl2':
+            xData = [0, 0.16214, 1]
+            yData = [0.093011908 / 1000, 2.801850159 / 1000, 2.561032364 / 1000]
+            c_salt = 0.56
+        elif tes_material == 'K2CO3':
+            xData = [0, 0.853556485, 1]
+            yData = [846.342129 / 1000, 2292.914345 / 1000, 1921.680594 / 1000]
+            c_salt = 0.56
+    elif replace_TES_w_Battery:
+        xData = [0, 0.637072888, 1]
+        yData = [0 / 1000, 627.021051 / 1000, 2803.504518 / 1000]
+        c_salt = 0
+
+    if not include_TES:
+        xData = []
+        yData = []
+        c_salt = 0
+
+    return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, include_TES, starting_hour,
+            mon_to_run, cop_type, used_cop, single_building, city_to_run,
+            xData, yData, building_no, building_id, zeroIntialSOC)
 
 
-def main_function(year, mon_to_run, include_TES, super_comp, used_cop, cop_type, e_T, p_T,
-                  ef_T, f_d, k_T, k_H, ir, single_building, city_to_run, building_no, building_id):
-    (super_comp, ir, p_T, ef_T, f_d, f_c, hour, k_T, e_T, k_H, include_TES, starting_hour,
-     mon_to_run, cop_type, used_cop, single_building,
-     city_to_run, building_no, building_id) = main_params(year, mon_to_run, include_TES, super_comp, used_cop,
-                                                          cop_type, e_T, p_T, ef_T, f_d, k_T, k_H, ir, single_building,
-                                                          city_to_run, building_no, building_id)
+def main_function(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp, used_cop, cop_type, p_T,
+                  ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroInitialSOC):
+    (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, include_TES, starting_hour,
+     mon_to_run, cop_type, used_cop, single_building,  city_to_run, xData, yData,
+     building_no, building_id) = main_params(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp, used_cop,
+                                             cop_type, p_T, ef_T, f_d, k_H, ir, single_building,
+                                             city_to_run, building_no, building_id)
     (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,
-                hour, T, k_T, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop,
-                single_building, city_to_run, building_no, building_id)
+                hour, c_salt, T, include_TES, starting_hour, mon_to_run, cop_type, used_cop, xData, yData,
+                single_building, city_to_run, building_no, building_id, zeroInitialSOC)
 
 # %% Set working directory:
 def working_directory(super_comp, single_building, city_to_run):
@@ -80,15 +107,20 @@ def main_sets(hour):
 
 # %% Solving HDV model:
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,
-                hour, T, k_T, e_T, include_TES, starting_hour, mon_to_run, cop_type, used_cop,
-                single_building, city_to_run, building_no, building_id):
+                hour, c_salt, T, include_TES, starting_hour, mon_to_run, cop_type, used_cop, xData, yData,
+                single_building, city_to_run, building_no, building_id, zeroInitialSOC):
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
+    d_heating, p_W, peakLoad = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
+
+    # Size of TES:
+    e_T = math.ceil(peakLoad)
+    v_salt = max(e_T / c_salt, peakLoad / max(yData))
+    k_T = math.ceil(max(yData)*v_salt)
 
     # %% Define variables and ordered set:
     model.T = Set(initialize=T, ordered=True)
@@ -130,9 +162,16 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
             return model.x_T[t] <= e_T
         model.ub_x_e_T = Constraint(T, rule=ub_x_e_TES)
 
-        def x_TES(model, t):
-            return model.x_T[t] == model.x_T[model.T.prevw(t)] + f_c * model.g_HT[t] - 1/f_d * model.g_T[t]
-        model.x_t = Constraint(model.T, rule=x_TES)
+        if not zeroInitialSOC:
+            def x_TES(model, t):
+                return model.x_T[t] == model.x_T[model.T.prevw(t)] + f_c * model.g_HT[t] - 1 / f_d * model.g_T[t]
+            model.x_t = Constraint(model.T, rule=x_TES)
+        else:
+            def x_TES(model, t):
+                if t == 0:
+                    return model.x_T[t] == 0
+                return model.x_T[t] == model.x_T[model.T[t - 1]] + f_c * model.g_HT[t] - 1 / f_d * model.g_T[t]
+            model.x_t = Constraint(T, rule=x_TES)
 
     # Heat pump's total load:
     def hp_load_tot(model, t):

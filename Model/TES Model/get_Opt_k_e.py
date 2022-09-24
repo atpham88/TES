@@ -24,7 +24,7 @@ start_time = time.time()
 
 # %% Main parameters:
 def main_params(year, mon_to_run, super_comp, used_cop, cop_type,
-                p_T, ef_T, f_d, e_T, k_T, ir, single_building, city_to_run, building_no, building_id):
+                p_T, ef_T, f_d, ir, single_building, city_to_run, building_no, building_id):
 
     if mon_to_run == 'Year':
         day = 365                                   # Equivalent days
@@ -39,22 +39,20 @@ def main_params(year, mon_to_run, super_comp, used_cop, cop_type,
     # TES parameters:
     f_c = ef_T/f_d                                  # Charging efficiency
     return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, starting_hour, mon_to_run, cop_type, used_cop,
-            single_building, e_T, k_T, city_to_run, building_no, building_id)
+            single_building, city_to_run, building_no, building_id)
 
 
-def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, p_T, ef_T, f_d, e_T, k_T, ir,
+def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, p_T, ef_T, f_d, ir,
                           single_building, city_to_run, building_no, building_id):
 
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, starting_hour,
-     mon_to_run, cop_type, used_cop, single_building, e_T, k_T,
+     mon_to_run, cop_type, used_cop, single_building,
      city_to_run, building_no, building_id) = main_params(year, mon_to_run, super_comp, used_cop, cop_type, p_T, ef_T, f_d,
-                                                          e_T, k_T, ir, single_building, city_to_run,
-                                                          building_no, building_id)
+                                                          ir, single_building, city_to_run, building_no, building_id)
     (model_dir, load_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
     k_H_star = model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, f_c, hour, T, starting_hour,
-                                   mon_to_run, cop_type, used_cop, single_building, e_T, k_T,
-                                   city_to_run, building_no, building_id)
+                                   mon_to_run, cop_type, used_cop, single_building, city_to_run, building_no, building_id)
     return k_H_star
 
 # %% Set working directory:
@@ -75,14 +73,14 @@ def main_sets(hour):
 # %% Solving HDV model:
 def model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, f_c,
                         hour, T, starting_hour, mon_to_run, cop_type, used_cop,
-                        single_building, e_T, k_T, city_to_run, building_no, building_id):
+                        single_building, city_to_run, building_no, building_id):
 
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
+    d_heating, p_W, peakLoad = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
 
     # %% Define variables and ordered set:
