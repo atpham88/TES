@@ -1,10 +1,12 @@
-resstock-2.2.5
-ElecLoadsHtgDecarb
-Proposal
-lit
-load
-Result No HP
-Result Single Speed HP
-Result Variable Speed HP
-Result Water Heater HP
-Summary Stats
+resstock-2.2.5/
+Model/ElecLoadsHtgDecarb/
+Proposal/
+lit/
+Data/load/
+Data/Result No HP/
+Data/Result Single Speed HP/
+Data/Result Variable Speed HP/
+Data/Result Water Heater HP/
+Data/Summary Stats/
+Results/
+Data/400 Buildings - EB/
