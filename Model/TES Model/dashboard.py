@@ -11,7 +11,7 @@ def main():
                                             # == False: run all buildings in that city
     building_no = 305                        # == ID of building to run (if running single building)
 
-    include_TES = False                      # Using coupled TES and heat pump, == False: Using heat pump only
+    include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
     replace_TES_w_Battery = False           # Replace a TES system with battery
 
     # If include_TES = True, these options can be chosen:
@@ -20,7 +20,7 @@ def main():
     used_cop = "TES"                        # == Resstock: use estimated resstock COP, == TES: use Modi paper calculated COPs
     cop_type = 'NEEP50'                     # Type of COP used if used_cop == TES: NEEP90, NEEP50, DOE
     tes_material = 'MgSO4'                  # Type of TES material, choosing from:
-                                            # MgSO4, K2CO3, MgCl2
+                                            # MgSO4, K2CO3, MgCl2, SrBr2
     zeroIntialSOC = True                    # If True, set first period SOC = 0, otherwise first period SOC depends on last
 
     if not include_TES:

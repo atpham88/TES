@@ -3,51 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="605f844f-2eaf-4d02-beae-1e4cec97be2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Ragone_Anlaysis_Select_Salt_Hydrate_6.30.22.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Ragone_Anlaysis_Select_Salt_Hydrate_6.30.22.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/buildstock_comparisons.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TES Model/TES_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/TES_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TES Model/TES_main_VarK.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/TES_main_VarK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TES Model/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_Opt_k_e.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_Opt_k_e.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_load_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_4.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_4.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_5.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_5.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_6.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_False_month_Year_NEEP50_Building_id_6.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_10.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_11.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_12.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_13.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_14.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_15.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_16.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_17.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_18.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_19.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_20.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_21.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_22.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_23.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_24.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_25.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_26.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_27.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_28.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_4.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_5.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_5.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_6.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_7.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_8.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/All/Results__includeTES_True_month_Year_NEEP50_Building_id_9.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_False__month_Year_NEEP50_Building_id_5.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_False__month_Year_NEEP50_Building_id_5.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_True_K2CO3_month_Year_NEEP50_Building_id_5.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_True_K2CO3_month_Year_NEEP50_Building_id_5.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_True_MgCl2_month_Year_NEEP50_Building_id_5.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_True_MgSO4_month_Year_NEEP50_Building_id_5.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Detroit/Single/Results__includeTES_True_MgSO4_month_Year_NEEP50_Building_id_5.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +258,10 @@
       <workItem from="1663191590873" duration="599000" />
       <workItem from="1663267587962" duration="2061000" />
       <workItem from="1663547207556" duration="994000" />
-      <workItem from="1663974274547" duration="7735000" />
+      <workItem from="1663974274547" duration="8560000" />
+      <workItem from="1664483715973" duration="3484000" />
+      <workItem from="1664562892945" duration="13000" />
+      <workItem from="1664573948852" duration="8027000" />
     </task>
     <servers />
   </component>
@@ -334,7 +295,7 @@
     <SUITE FILE_PATH="coverage/Thermal_Storage$main4.coverage" NAME="main4 Coverage Results" MODIFIED="1645585278302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$main.coverage" NAME="main Coverage Results" MODIFIED="1645545769665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main.coverage" NAME="TES_main Coverage Results" MODIFIED="1657141538598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/TES$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1663981319829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/TES$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1664580599178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main3.coverage" NAME="TES_main3 Coverage Results" MODIFIED="1649879045925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$main3.coverage" NAME="main3 Coverage Results" MODIFIED="1645562938854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
   </component>

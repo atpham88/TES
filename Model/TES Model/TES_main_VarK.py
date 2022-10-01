@@ -47,17 +47,21 @@ def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Batte
     # Piecewise linear function of power rating vs SOC:
     if not replace_TES_w_Battery:
         if tes_material == 'MgSO4':
-            xData = [0, 0.79014685, 1]
-            yData = [49.4451045/1000, 2024.036116/1000, 1529.521786/1000]
-            c_salt = 0.489
+            xData = [0, 0.152453, 1]
+            yData = [57.25852/1000, 127.132/1000, 281.2521/1000]
+            c_salt = 0.75
         elif tes_material == 'MgCl2':
-            xData = [0, 0.16214, 1]
-            yData = [0.093011908/1000, 2.801850159/1000, 2.561032364/1000]
-            c_salt = 0.56
+            xData = [0, 0.110406, 1]
+            yData = [14.82347/1000, 34.39765/1000, 84.89351/1000]
+            c_salt = 0.1933333333
         elif tes_material == 'K2CO3':
-            xData = [0, 0.853556485, 1]
-            yData = [846.342129/1000, 2292.914345/1000, 1921.680594/1000]
-            c_salt = 0.56
+            xData = [0, 0.0463205477241624, 1]
+            yData = [547.047924901186/1000, 814.766768168298/1000, 1636.06071295454/1000]
+            c_salt = 0.1847222222
+        elif tes_material == 'SrBr2':
+            xData = [0, 0.925, 1]
+            yData = [1.035853/1000, 16.64624/1000, 127.6629/1000]
+            c_salt = 0.3027777778
     elif replace_TES_w_Battery:
         xData = [0, 0.637072888, 1]
         yData = [0/1000, 627.021051/1000, 2803.504518/1000]
@@ -123,10 +127,16 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
 
     # Size of TES:
-    e_T = math.ceil(peakLoad)*1.5
+    e_T = math.ceil(peakLoad)
 
     if include_TES:
-        v_salt = max(e_T/c_salt, peakLoad/max(yData))
+        v_salt = max(e_T/c_salt, e_T/max(yData))
+        if tes_material == 'MgSO4' or tes_material == 'K2CO3':
+            v_salt = int(math.ceil(v_salt / 25.0)) * 25
+        elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
+            v_salt = int(math.ceil(v_salt / 100.0)) * 100
+
+        e_T = v_salt * c_salt
 
         for item in list((range(len(yData)))):
             yData[item] = v_salt * yData[item]
@@ -285,7 +295,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         g_HL_star[t] = value(model.g_HL[t])
         g_star[t] = value(model.g[t])
 
-    update_results_folder = results_folder  + '\\' #+ fixed_time_for_results
+    update_results_folder = results_folder   #+ fixed_time_for_results
     if not os.path.exists(update_results_folder):
         os.makedirs(update_results_folder)
 

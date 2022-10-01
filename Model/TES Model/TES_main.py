@@ -119,7 +119,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     # Size of TES:
     e_T = math.ceil(peakLoad)
-    v_salt = max(e_T / c_salt, peakLoad / max(yData))
+    v_salt = max(e_T / c_salt, e_T / max(yData))
     k_T = math.ceil(max(yData)*v_salt)
 
     # %% Define variables and ordered set:
