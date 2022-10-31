@@ -1,0 +1,12 @@
+Dependency=Geometry Building Type RECS	Dependency=Location Region	Option=Has Pool	Option=None	sample_count	sample_weight
+Single-Family Detached	CR02	0	1	688	4320619
+Single-Family Detached	CR03	0	1	535	3089118
+Single-Family Detached	CR04	0	1	666	10702742
+Single-Family Detached	CR05	0	1	303	2815783.75
+Single-Family Detached	CR06	0	1	226	2329728
+Single-Family Detached	CR07	0	1	654	7763908.5
+Single-Family Detached	CR08	0	1	1306	9230493
+Single-Family Detached	CR09	0	1	2178	21322996
+Single-Family Detached	CR10	0	1	243	2698771.5
+Single-Family Detached	CR11	0	1	944	7058214
+Created by: recs\2009\tsv_maker.py using U.S. EIA 2009 Residential Energy Consumption Survey (RECS) microdata					

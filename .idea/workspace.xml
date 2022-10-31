@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="605f844f-2eaf-4d02-beae-1e4cec97be2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Thermal Storage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Thermal Storage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TES Model/TES_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/TES_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TES Model/TES_main_VarK.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/TES_main_VarK.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/TES Model/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/dashboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_COP_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_COP_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_Opt_k_e.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_Opt_k_e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_load_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Process Results/TES_Results_Processing/.idea/TES_Results_Processing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Process Results/TES_Results_Processing/.idea/TES_Results_Processing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Process Results/TES_Results_Processing/CostSaving.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Process Results/TES_Results_Processing/CostSaving.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Process Results/TES_Results_Processing/IndBuildingAnalysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Process Results/TES_Results_Processing/IndBuildingAnalysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Process Results/TES_Results_Processing/PeakLoad2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Process Results/TES_Results_Processing/PeakLoad2.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +42,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
   </component>
@@ -42,13 +54,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/atpha/Documents/Postdocs/Projects/NETs",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\atpha\Documents\Postdocs\Projects\Thermal Storage\Model\TES Model" />
@@ -121,28 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TES_main_loop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Thermal Storage" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/TES_main_loop.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Thermal Storage" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,13 +155,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="get_load_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Thermal Storage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Model/TES Model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model/TES Model/get_load_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.dashboard" />
+        <item itemvalue="Python.get_load_data" />
         <item itemvalue="Python.TES_main" />
         <item itemvalue="Python.TES_main_VarK" />
         <item itemvalue="Python.TES_main_Simult" />
-        <item itemvalue="Python.TES_main_loop" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +273,28 @@
       <workItem from="1663974274547" duration="8560000" />
       <workItem from="1664483715973" duration="3484000" />
       <workItem from="1664562892945" duration="13000" />
-      <workItem from="1664573948852" duration="8027000" />
+      <workItem from="1664573948852" duration="9305000" />
+      <workItem from="1664652764011" duration="2923000" />
+      <workItem from="1664733043938" duration="3294000" />
+      <workItem from="1664742228622" duration="4573000" />
+      <workItem from="1664755004171" duration="2067000" />
+      <workItem from="1665084879933" duration="285000" />
+      <workItem from="1665085662215" duration="765000" />
+      <workItem from="1665105229434" duration="597000" />
+      <workItem from="1665418257352" duration="80000" />
+      <workItem from="1665512591312" duration="1192000" />
+      <workItem from="1665515496670" duration="29000" />
+      <workItem from="1665522680403" duration="200000" />
+      <workItem from="1666246111700" duration="2258000" />
+      <workItem from="1666303535214" duration="1870000" />
+      <workItem from="1666328906205" duration="6964000" />
+      <workItem from="1666385340596" duration="14041000" />
+      <workItem from="1666559497540" duration="2439000" />
+      <workItem from="1666624939212" duration="15556000" />
+      <workItem from="1666795616030" duration="3691000" />
+      <workItem from="1666972219112" duration="343000" />
+      <workItem from="1666981483098" duration="230000" />
+      <workItem from="1667076285839" duration="25000" />
     </task>
     <servers />
   </component>
@@ -281,22 +314,33 @@
           <line>6</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model/TES Model/get_Opt_k_e.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model/TES Model/get_load_data.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thermal_Storage$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1641430822447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_loop.coverage" NAME="TES_main_loop Coverage Results" MODIFIED="1652200503228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/Thermal_Storage$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1662844990118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/Thermal_Storage$main5.coverage" NAME="main5 Coverage Results" MODIFIED="1645639856378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_Simult.coverage" NAME="TES_main_Simult Coverage Results" MODIFIED="1656598025323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main.coverage" NAME="main Coverage Results" MODIFIED="1645545769665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/TES$get_load_data.coverage" NAME="get_load_data Coverage Results" MODIFIED="1666716480080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main2.coverage" NAME="TES_main2 Coverage Results" MODIFIED="1649871061724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_VarK.coverage" NAME="TES_main_VarK Coverage Results" MODIFIED="1657075518342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$main5.coverage" NAME="main5 Coverage Results" MODIFIED="1645639856378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/TES$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1666800430313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_Simult.coverage" NAME="TES_main_Simult Coverage Results" MODIFIED="1656598025323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$main4.coverage" NAME="main4 Coverage Results" MODIFIED="1645585278302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/Thermal_Storage$main.coverage" NAME="main Coverage Results" MODIFIED="1645545769665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main.coverage" NAME="TES_main Coverage Results" MODIFIED="1657141538598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/TES$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1664580599178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
-    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main3.coverage" NAME="TES_main3 Coverage Results" MODIFIED="1649879045925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
     <SUITE FILE_PATH="coverage/Thermal_Storage$main3.coverage" NAME="main3 Coverage Results" MODIFIED="1645562938854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main3.coverage" NAME="TES_main3 Coverage Results" MODIFIED="1649879045925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1662844990118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
+    <SUITE FILE_PATH="coverage/Thermal_Storage$TES_main_loop.coverage" NAME="TES_main_loop Coverage Results" MODIFIED="1652200503228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model/TES Model" />
   </component>
 </project>
