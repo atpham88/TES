@@ -93,7 +93,7 @@ def working_directory(super_comp, single_building, city_to_run):
             results_folder = '/home/anph/projects/TES/Results/' + city_to_run + '/All/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'
-        load_folder = '400 Buildings - EB\\' + city_to_run + '\\'
+        load_folder = '400_Buildings_EB\\' + city_to_run + '\\'
         if single_building:
             results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city_to_run + '\\Single\\'
         else:

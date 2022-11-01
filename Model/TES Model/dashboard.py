@@ -9,8 +9,9 @@ def main():
     city_to_run = 'Detroit'                 # Name of city to running building/s located in
     single_building = True                  # == True: run only one single building in a city
                                             # == False: run all buildings in that city
-    building_no = 305                        # == ID of building to run (if running single building)
+    building_no = 5                         # == ID of building to run (if running single building)
 
+    pricing = 'ToD'                         # == Fixed, ToD = Time of day, DP = Dynamic peak
     include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
     replace_TES_w_Battery = False           # Replace a TES system with battery
 
@@ -21,6 +22,7 @@ def main():
     cop_type = 'NEEP50'                     # Type of COP used if used_cop == TES: NEEP90, NEEP50, DOE
     tes_material = 'MgSO4'                  # Type of TES material, choosing from:
                                             # MgSO4, K2CO3, MgCl2, SrBr2
+    curb_H = True                           # Curb heat pump output when with TES to reduce peak load
     zeroIntialSOC = True                    # If True, set first period SOC = 0, otherwise first period SOC depends on last
 
     if not include_TES:
@@ -49,7 +51,7 @@ def main():
         if single_building:
             building_id = building_no-1
 
-        k_H_star = main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type,
+        k_H_star = main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, curb_H, pricing,
                                          p_T, ef_T, f_d, ir, single_building, city_to_run, building_no, building_id)
 
         # Heat pump parameters:
@@ -57,7 +59,7 @@ def main():
 
         if include_pw_func:
             main_function_VarK(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, include_bigM, super_comp, used_cop, cop_type,
-                               p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC)
+                               p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H)
         else:
             main_function(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, super_comp, used_cop, cop_type,
                           p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC)

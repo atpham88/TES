@@ -76,18 +76,29 @@ def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Batte
             xData, yData, single_building, city_to_run, building_no, building_id)
 
 def main_function_VarK(year, mon_to_run, include_TES, tes_material,  replace_TES_w_Battery, include_bigM, super_comp, used_cop,
-                       cop_type, p_T, ef_T, f_d, k_H , ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC):
+                       cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
      xData, yData, single_building, city_to_run,
      building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, include_bigM,
-                                             super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H , ir,
+                                             super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
                                              single_building, city_to_run, building_no, building_id)
 
     (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
-    model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T,
-                c_salt, include_TES, tes_material, starting_hour, mon_to_run, cop_type, used_cop,
+
+    # Read total system cost under no TES:
+    if include_TES:
+        if super_comp == 1:
+            totcost_noTES = pd.read_excel('/home/anph/projects/TES/Results/Detroit/Compiled/total cost all building - no TES.xlsx')
+        elif super_comp == 0:
+            totcost_noTES = pd.read_excel(r"C:\Users\atpha\Documents\Postdocs\Projects\TES\Results\Detroit\Compiled\total cost all building - no TES 2.xlsx")
+        totcost_noTES = float(totcost_noTES.loc[totcost_noTES['Unnamed: 0'] == building_no, 'total cost ($)'])
+    else:
+        totcost_noTES = 0
+
+    model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
+                c_salt, include_TES, tes_material, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id, zeroIntialSOC)
 
 
@@ -95,14 +106,14 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material,  replace_TES
 def working_directory(super_comp, single_building, city_to_run):
     if super_comp == 1:
         model_dir = '/home/anph/projects/TES/Data/'
-        load_folder ='400_Buildings_EB/' + city_to_run + '/'
+        load_folder = '400_Buildings_EB/' + city_to_run + '/'
         if single_building:
             results_folder = '/home/anph/projects/TES/Results/' + city_to_run + '/Single/'
         else:
             results_folder = '/home/anph/projects/TES/Results/' + city_to_run + '/All/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'
-        load_folder = '400 Buildings - EB\\' + city_to_run + '\\'
+        load_folder = '400_Buildings_EB\\' + city_to_run + '\\'
         if single_building:
             results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city_to_run + '\\Single\\'
         else:
@@ -115,22 +126,22 @@ def main_sets(hour):
     return T
 
 # %% Solving HDV model:
-def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,  hour, T,
-                c_salt, include_TES, tes_material, starting_hour, mon_to_run, cop_type, used_cop,
+def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
+                c_salt, include_TES, tes_material, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id, zeroInitialSOC):
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W, peakLoad = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
+    d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id, pricing, curb_H)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
 
     # Size of TES:
-    e_T = math.ceil(peakLoad)
+    e_T_temp = math.ceil(peakLoad)
 
     if include_TES:
-        v_salt = max(e_T/c_salt, e_T/max(yData))
+        v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData))
         if tes_material == 'MgSO4' or tes_material == 'K2CO3':
             v_salt = int(math.ceil(v_salt / 25.0)) * 25
         elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
@@ -159,6 +170,8 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         model.x_T = Var(T, within=NonNegativeReals)                 # TES state of charge
         model.xpt_T = Var(T, bounds=(0, 1))                         # SOC in percentage
         model.v = Var(T, within=Binary)                             # binary variable: == 1 when TES charges
+        if curb_H:
+            model.hp_cap_red = Var(bounds=(0, 1))                    # Percentage of peak load reduction
 
     # %% Formulate constraints and  objective functions:
     # Constraints:
@@ -195,6 +208,15 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         def x_pt(model, t):
             return model.xpt_T[t] == model.x_T[t]/e_T
         model.x_pt_t = Constraint(T, rule=x_pt)
+
+        if curb_H:
+            def hp_max(model, t):
+                return model.g[t] <= e_T_temp*model.hp_cap_red
+            model.hp_max_const = Constraint(T, rule=hp_max)
+
+            def obj_func_buffer(model):
+                return sum(p_T * model.g_T[t] for t in T) + sum(p_W[t] * model.d_T[t] for t in T) <= totcost_noTES
+            model.obj_func_buffer_const = Constraint(rule=obj_func_buffer)
 
     # Heat pump's total load:
     def hp_load_tot(model, t):
@@ -251,22 +273,26 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # Objective function:
     if include_TES:
         def obj_function(model):
-            return sum(p_T * model.g_T[t] for t in T) + sum(p_W * model.d_T[t]  for t in T)
+            if curb_H:
+                # return sum(p_T * model.g_T[t] for t in T) + sum(p_W[t] * model.d_T[t] for t in T)
+                return model.hp_cap_red
+            else:
+                return sum(p_T * model.g_T[t] for t in T) + sum(p_W[t] * model.d_T[t] for t in T)
         model.obj_func = Objective(rule=obj_function)
     else:
         def obj_function(model):
-            return sum(p_W * model.d_T[t] for t in T)
+            return sum(p_W[t] * model.d_T[t] for t in T)
         model.obj_func = Objective(rule=obj_function)
 
     # Solve TES model:
     # model.dual = Suffix(direction=Suffix.IMPORT_EXPORT)
     solver = SolverFactory('cplex')
-    #solver.options['mipgap'] = 0.005
+    # solver.options['mipgap'] = 0.005
     solver.options['mipgap'] = 0.027
     results = solver.solve(model, tee=True)
     # model.pprint()
-    #model.display()
-    #model.k_B.display()
+    # model.display()
+    # model.k_B.display()
     if (results.solver.status == SolverStatus.ok) and (results.solver.termination_condition == TerminationCondition.optimal):
         print('Solution is feasible')
     elif results.solver.termination_condition == TerminationCondition.infeasible:
@@ -276,8 +302,8 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         print('Solver Status: ', results.solver.status)
 
     # Print variable outputs:
-    total_cost = value(model.obj_func)
-    print('Total Cost:', total_cost)
+    fval = value(model.obj_func)
+    print('Objective function:', fval)
 
     g_T_star = np.zeros(hour)
     g_star = np.zeros(hour)
@@ -285,6 +311,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     g_HL_star = np.zeros(hour)
     x_T_star = np.zeros(hour)
     d_T_star = np.zeros(hour)
+    cost_T = np.zeros(hour)
 
     for t in T:
         if include_TES:
@@ -294,19 +321,28 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         d_T_star[t] = value(model.d_T[t])
         g_HL_star[t] = value(model.g_HL[t])
         g_star[t] = value(model.g[t])
+        cost_T[t] = d_T_star[t]*p_W[t]
 
-    update_results_folder = results_folder   #+ fixed_time_for_results
+    total_cost = cost_T.sum()
+
+    update_results_folder = results_folder   # + fixed_time_for_results
     if not os.path.exists(update_results_folder):
         os.makedirs(update_results_folder)
 
-    results_book = xw.Workbook(update_results_folder + 'Results_' + '_includeTES_' + str(include_TES) + '_' + tes_material
-                               + '_month_' + str(mon_to_run) + '_' + cop_type + '_Building_id_' + str(building_id+1) + '.xlsx')
+    if not curb_H:
+        results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_' + tes_material
+                                   + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_' + str(building_id+1) + '.xlsx')
+    elif curb_H:
+        results_book = xw.Workbook(update_results_folder + 'Results_' + 'curbH_includeTES_' + str(include_TES) + '_' + tes_material
+                                   + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_' + str(building_id + 1) + '.xlsx')
 
     result_sheet_ob = results_book.add_worksheet('total cost')
     result_sheet_d = results_book.add_worksheet('load')
     result_sheet_wg = results_book.add_worksheet('purchased electricity')
     result_sheet_bi = results_book.add_worksheet('HP output')
     result_sheet_bg = results_book.add_worksheet('TES')
+    if curb_H:
+        result_sheet_rl = results_book.add_worksheet('reduced peak load')
 
     hour_number = [''] * hour
 
@@ -316,6 +352,11 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # Write total cost result:
     result_sheet_ob.write("A1", "total cost ($)")
     result_sheet_ob.write("A2", total_cost)
+
+    # Reduced peak load:
+    if curb_H:
+        result_sheet_rl.write("A1", "Reduced peak load (fraction)")
+        result_sheet_rl.write("A2", fval)
 
     # write TES discharge results:
     if include_TES:

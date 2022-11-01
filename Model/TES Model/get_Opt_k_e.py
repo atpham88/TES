@@ -42,7 +42,7 @@ def main_params(year, mon_to_run, super_comp, used_cop, cop_type,
             single_building, city_to_run, building_no, building_id)
 
 
-def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, p_T, ef_T, f_d, ir,
+def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, curb_H, pricing, p_T, ef_T, f_d, ir,
                           single_building, city_to_run, building_no, building_id):
 
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, starting_hour,
@@ -52,7 +52,7 @@ def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, p_T,
     (model_dir, load_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
     k_H_star = model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, f_c, hour, T, starting_hour,
-                                   mon_to_run, cop_type, used_cop, single_building, city_to_run, building_no, building_id)
+                                   mon_to_run, cop_type, used_cop, pricing, single_building, city_to_run, building_no, building_id, curb_H)
     return k_H_star
 
 # %% Set working directory:
@@ -62,7 +62,7 @@ def working_directory(super_comp, single_building, city_to_run):
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'
-        load_folder = '400 Buildings - EB\\' + city_to_run + '\\'
+        load_folder = '400_Buildings_EB\\' + city_to_run + '\\'
     return model_dir, load_folder
 
 # %% Define set:
@@ -72,15 +72,15 @@ def main_sets(hour):
 
 # %% Solving HDV model:
 def model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, f_c,
-                        hour, T, starting_hour, mon_to_run, cop_type, used_cop,
-                        single_building, city_to_run, building_no, building_id):
+                        hour, T, starting_hour, mon_to_run, cop_type, used_cop, pricing,
+                        single_building, city_to_run, building_no, building_id, curb_H):
 
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W, peakLoad = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
+    d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id, pricing, curb_H)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
 
     # %% Define variables and ordered set:
@@ -108,7 +108,7 @@ def model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, 
 
     # Objective function:
     def obj_function(model):
-        return sum(p_W * model.d_T[t] for t in T) + model.k_H*999
+        return sum(p_W[t] * model.d_T[t] for t in T) + model.k_H*999
     model.obj_func = Objective(rule=obj_function)
 
     # Solve TES model:
