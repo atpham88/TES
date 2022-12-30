@@ -43,17 +43,21 @@ def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Batte
     # Piecewise linear function of power rating vs SOC:
     if not replace_TES_w_Battery:
         if tes_material == 'MgSO4':
-            xData = [0, 0.79014685, 1]
-            yData = [49.4451045 / 1000, 2024.036116 / 1000, 1529.521786 / 1000]
-            c_salt = 0.489
+            xData = [0, 0.268018305, 1]
+            yData = [0 / 1000, 83.20127263 / 1000, 281.2673055 / 1000]
+            c_salt = 0.75
         elif tes_material == 'MgCl2':
-            xData = [0, 0.16214, 1]
-            yData = [0.093011908 / 1000, 2.801850159 / 1000, 2.561032364 / 1000]
-            c_salt = 0.56
+            xData = [0, 0.213856511, 1]
+            yData = [0 / 1000, 20.35515839 / 1000, 84.76789215 / 1000]
+            c_salt = 0.193056
         elif tes_material == 'K2CO3':
-            xData = [0, 0.853556485, 1]
-            yData = [846.342129 / 1000, 2292.914345 / 1000, 1921.680594 / 1000]
-            c_salt = 0.56
+            xData = [0, 0.129554216, 1]
+            yData = [81.60749345 / 1000, 444.7337936 / 1000, 1646.738256 / 1000]
+            c_salt = 0.186111
+        elif tes_material == 'SrBr2':
+            xData = [0, 0.449284033, 1]
+            yData = [0 / 1000, 402.2793362 / 1000, 811.2535806 / 1000]
+            c_salt = 0.3556
     elif replace_TES_w_Battery:
         xData = [0, 0.637072888, 1]
         yData = [0 / 1000, 627.021051 / 1000, 2803.504518 / 1000]
