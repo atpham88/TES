@@ -48,19 +48,19 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
     if not replace_TES_w_Battery:
         if tes_material == 'MgSO4':
             xData = [0, 0.268018305, 1]
-            yData = [0/1000, 83.20127263/1000, 281.2673055/1000]
+            yData = [2.816408928/1000, 83.20127263/1000, 281.2673055/1000]
             c_salt = 0.75
         elif tes_material == 'MgCl2':
             xData = [0, 0.213856511, 1]
-            yData = [0/1000, 20.35515839/1000, 84.76789215/1000]
+            yData = [0.930935172/1000, 20.35515839/1000, 84.76789215/1000]
             c_salt = 0.193056
         elif tes_material == 'K2CO3':
             xData = [0, 0.129554216, 1]
             yData = [81.60749345/1000, 444.7337936/1000, 1646.738256/1000]
-            c_salt = 0.186111
+            c_salt = 0.18611
         elif tes_material == 'SrBr2':
             xData = [0, 0.449284033, 1]
-            yData = [0/1000, 402.2793362/1000, 811.2535806/1000]
+            yData = [9.844630229/1000, 402.2793362/1000, 811.2535806/1000]
             c_salt = 0.3556
     elif replace_TES_w_Battery:
         xData = [0, 0.637072888, 1]
@@ -76,7 +76,7 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
 
 def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp, used_cop,
                        cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H):
-    (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material,
+    (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
      xData, yData, single_building, city_to_run,
      building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery,
@@ -333,10 +333,12 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     if not curb_H:
         results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_' + tes_material
-                                   + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_' + str(building_id+1) + '.xlsx')
+                                   + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_'
+                                   + 'Size_' + tes_sizing + '_' + str(building_id+1) + '.xlsx')
     elif curb_H:
         results_book = xw.Workbook(update_results_folder + 'Results_' + 'curbH_includeTES_' + str(include_TES) + '_' + tes_material
-                                   + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_' + str(building_id + 1) + '.xlsx')
+                                   + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_'
+                                   + 'Size_' + tes_sizing + '_' + str(building_id + 1) + '.xlsx')
 
     result_sheet_ob = results_book.add_worksheet('total cost')
     result_sheet_d = results_book.add_worksheet('load')

@@ -24,13 +24,13 @@ def main():
     include_bigM = False                    # Include bigM constraints for TES
     used_cop = "TES"                        # =Resstock: use estimated resstock COP, =TES: use Modi paper calculated COPs
     cop_type = 'NEEP50'                     # Type of COP used if used_cop =TES: NEEP90, NEEP50, DOE
-    tes_material = 'MgSO4'                  # Type of TES material, choosing from:
+    tes_material = 'K2CO3'                  # Type of TES material, choosing from:
                                             # MgSO4, K2CO3, MgCl2, SrBr2
-    tes_sizing = 'Varied'                   # TES sizing methods:
+    tes_sizing = 'Fixed'                    # TES sizing methods:
                                             # =Varied: Varying based on peak load, =Fixed: fixed size
 
     # Instead of minimizing cost, maximizing total peak load reduction:
-    curb_H = True                           # Curb heat pump output when with TES to reduce peak load
+    curb_H = False                           # Curb heat pump output when with TES to reduce peak load
     zeroIntialSOC = True                    # If True, set first period SOC = 0, otherwise first period SOC depends on last
 
     if not include_TES:
