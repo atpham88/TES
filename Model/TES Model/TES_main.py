@@ -24,7 +24,7 @@ from datetime import date
 start_time = time.time()
 
 # %% Main parameters:
-def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, super_comp, used_cop, cop_type,
+def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, super_comp, used_cop, cop_type,
                 p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC):
 
     if mon_to_run == 'Year':

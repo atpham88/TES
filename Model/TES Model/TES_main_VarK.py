@@ -26,8 +26,8 @@ from datetime import date
 start_time = time.time()
 
 # %% Main parameters:
-def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, include_bigM, super_comp, used_cop, cop_type,
-                p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id):
+def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp,
+                used_cop, cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id):
 
     if mon_to_run == 'Year':
         day = 365                                   # Equivalent days
@@ -71,17 +71,16 @@ def main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Batte
         xData = []
         yData = []
         c_salt = 0
-    return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material,
-            include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
-            xData, yData, single_building, city_to_run, building_no, building_id)
+    return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing, include_TES, starting_hour,
+            mon_to_run, cop_type, used_cop, bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id)
 
-def main_function_VarK(year, mon_to_run, include_TES, tes_material,  replace_TES_w_Battery, include_bigM, super_comp, used_cop,
+def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp, used_cop,
                        cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
      xData, yData, single_building, city_to_run,
-     building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, replace_TES_w_Battery, include_bigM,
-                                             super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
+     building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery,
+                                             include_bigM, super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
                                              single_building, city_to_run, building_no, building_id)
 
     (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run)
@@ -98,7 +97,7 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material,  replace_TES
         totcost_noTES = 0
 
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
-                c_salt, include_TES, tes_material, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
+                c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id, zeroIntialSOC)
 
 
@@ -127,7 +126,7 @@ def main_sets(hour):
 
 # %% Solving HDV model:
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
-                c_salt, include_TES, tes_material, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
+                c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id, zeroInitialSOC):
 
     # %% Set model type - Concrete Model:
@@ -141,11 +140,14 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     e_T_temp = math.ceil(peakLoad)
 
     if include_TES:
-        v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData))
-        if tes_material == 'MgSO4' or tes_material == 'K2CO3':
-            v_salt = int(math.ceil(v_salt / 25.0)) * 25
-        elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
-            v_salt = int(math.ceil(v_salt / 100.0)) * 100
+        if tes_sizing == 'Varied':
+            v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData))
+            if tes_material == 'MgSO4' or tes_material == 'K2CO3':
+                v_salt = int(math.ceil(v_salt / 100.0)) * 100
+            elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
+                v_salt = int(math.ceil(v_salt / 100.0)) * 100
+        elif tes_sizing == 'Fixed':
+            v_salt = 150
 
         e_T = v_salt * c_salt
 
