@@ -1,0 +1,1851 @@
+{
+  "completed_at": "20221129T193311Z",
+  "completed_status": "Success",
+  "created_at": "2022-11-29 19:31:33 +0000",
+  "current_step": 6,
+  "description": "",
+  "eplusout_err": "Program Version,EnergyPlus, Version 9.2.0-921312fa1d, YMD=2022.11.29 19:32,\n   ** Warning ** GetSurfaceData: Entered Zone Floor Areas differ from calculated Zone Floor Area(s).\n   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.\n   ************* Note that the following warning(s) may/will occur if you have not enclosed your zone completely.\n   ** Warning ** Entered Zone Volumes differ from calculated zone volume(s).\n   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.\n   ** Severe  ** For zone: UNFINISHED ATTIC ZONE it is not possible to calculate the volume from the surrounding surfaces so either provide the volume value or define all the surfaces to fully enclose the zone.\n   ** Warning ** Indicated Zone Volume <= 0.0 for Zone=UNFINISHED ATTIC ZONE\n   **   ~~~   ** The calculated Zone Volume was=0.00\n   **   ~~~   ** The simulation will continue with the Zone Volume set to 10.0 m3. \n   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.\n   ** Warning ** CalculateZoneVolume: 1 zone is not fully enclosed. For more details use:  Output:Diagnostics,DisplayExtrawarnings; \n   ** Warning ** CheckUsedConstructions: There are 1 nominally unused constructions in input.\n   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;\n   ** Warning ** DetermineShadowingCombinations: There are 1 surfaces which are receiving surfaces and are non-convex.\n   **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details\n   **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual warnings for each surface.\n   ** Severe  ** DetermineShadowingCombinations: There are 1 surfaces which are casting surfaces and are non-convex.\n   **   ~~~   ** ...Shadowing values may be inaccurate. Check .shd report file for more surface shading details\n   **   ~~~   ** ...Add Output:Diagnostics,DisplayExtraWarnings; to see individual severes for each surface.\n   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = RES AC COOLING COIL but not at the AHRI test condition due to curve out of bound.\n   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.\n   ** Warning ** Check input. Pump nominal power or motor efficiency is set to 0, for pump=PUMP VARIABLE SPEED 1\n   ** Warning ** Meter:Custom=\"UNIT 1:ELECTRICITYCOOLING\", invalid Output Variable or Meter Name=\"UNITARY SYSTEM COOLING ANCILLARY ELECTRIC ENERGY\".\n   **   ~~~   ** ...will not be shown with the Meter results.\n   ** Warning ** Output:Meter: invalid Key Name=\"GAS:FACILITY\" - not found.\n   ** Warning ** Output:Meter: invalid Key Name=\"DISTRICTCOOLING:FACILITY\" - not found.\n   ** Warning ** Output:Meter: invalid Key Name=\"DISTRICTHEATING:FACILITY\" - not found.\n   ** Warning ** Output:Meter:MeterFileOnly: invalid Key Name=\"GAS:FACILITY\" - not found.\n   ** Warning ** Output:Meter:MeterFileOnly requested for \"Electricity:Facility\" (TimeStep), already on \"Output:Meter\". Will report to both eplusout.eso and eplusout.mtr\n   ************* Testing Individual Branch Integrity\n   ************* All Branches passed integrity testing\n   ************* Testing Individual Supply Air Path Integrity\n   ************* All Supply Air Paths passed integrity testing\n   ************* Testing Individual Return Air Path Integrity\n   ************* All Return Air Paths passed integrity testing\n   ************* No node connection errors were found.\n   ************* Beginning Simulation\n   ** Warning ** Processing Monthly Tabular Reports: Variable names not valid for this simulation\n   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual variables.\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/11 19:40 - 19:50\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on each max iteration exceeded.\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 01/11 19:40 - 19:45\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 02/18 17:35 - 17:40\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 02/23 05:30 - 05:40\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 03/14 02:10 - 02:20\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 03/27 18:55 - 18:57\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 04/21 03:30 - 03:40\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 05/20 03:40 - 03:50\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 05/23 00:50 - 01:00\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 10/28 23:10 - 23:20\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 11/08 23:00 - 23:10\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 11/20 00:00 - 00:10\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 11/24 01:00 - 01:10\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** SimHVAC: Maximum iterations (20) exceeded for all HVAC loops, at RUN PERIOD 1, 11/25 03:40 - 03:50\n   **   ~~~   ** The solution for one or more of the Air Loop HVAC systems did not appear to converge\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-ELECTRICITY\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-DISTILLATE OIL\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-RESIDUAL OIL\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-NATURAL GAS\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ** Warning ** The resource referenced by LifeCycleCost:UsePriceEscalation= \"U.S. AVG  COMMERCIAL-COAL\" has no energy cost. \n   **   ~~~   ** ... It is likely that the wrong resource is used. The resource should match the meter used in Utility:Tariff.\n   ************* Simulation Error Summary *************\n   ************* There are 2 unused schedules in input.\n   ************* There are 44 unused week schedules in input.\n   ************* There are 26 unused day schedules in input.\n   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.\n   *************\n   ************* ===== Recurring Surface Error Summary =====\n   ************* The following surface error messages occurred.\n   *************\n   ************* Base Surface does not surround subsurface errors occuring...\n   ************* Check that the GlobalGeometryRules object is expressing the proper starting corner and direction [CounterClockwise/Clockwise]\n   *************\n   ** Warning ** Base surface does not surround subsurface (CHKSBS), Overlap Status=No-Overlap\n   **   ~~~   **   The base surround errors occurred 1 times.\n   **   ~~~   ** Surface \"SURFACE 36\" misses SubSurface \"UNIT 1 - SURFACE 13 - DOOR\"\n   *************\n   **   ~~~   **   The base surround errors occurred 1 times (total).\n   *************\n   *************\n   ************* ===== Recurring Error Summary =====\n   ************* The following recurring error messages occurred.\n   *************\n   *************  ** Warning ** SimHVAC: Exceeding Maximum iterations for all HVAC loops, during RUN PERIOD 1 continues\n   *************  **   ~~~   **   This error occurred 7 total times;\n   *************  **   ~~~   **   during Warmup 0 times;\n   *************  **   ~~~   **   during Sizing 0 times.\n   *************\n   *************\n   ************* ===== Final Error Summary =====\n   ************* The following error categories occurred.  Consider correcting or noting.\n   ************* Nominally Unused Constructions\n   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause\n   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm\n   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).\n   *************\n   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.\n   ************* EnergyPlus Completed Successfully-- 42 Warning; 2 Severe Errors; Elapsed Time=00hr 00min 58.65sec\n",
+  "file_format_version": "0.0.1",
+  "file_paths": [
+    "/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/data_point_3ed4b925-cead-4c40-be45-eca8095a5740/generated_files",
+    "../weather",
+    "../seeds",
+    "../seed",
+    "./files",
+    "./weather",
+    "../../files",
+    "../../weather",
+    "./"
+  ],
+  "hash": "3B1D50F0",
+  "measure_paths": [
+    "../measures"
+  ],
+  "name": "diag Autogenerated 77",
+  "osa_id": "a1cae546-8025-4e7b-b96b-e00fc26c039a",
+  "osd_id": "3ed4b925-cead-4c40-be45-eca8095a5740",
+  "run_directory": "./run",
+  "seed_file": "EmptySeedModel.osm",
+  "started_at": "20221129T193137Z",
+  "steps": [
+    {
+      "arguments": {
+        "begin_day_of_month": 1,
+        "begin_month": 1,
+        "calendar_year": 2018,
+        "end_day_of_month": 31,
+        "end_month": 12,
+        "timesteps_per_hr": 6
+      },
+      "description": "Set the simulation timesteps per hour, the run period begin month/day and end month/day, and the calendar year (for start day of week).",
+      "measure_dir_name": "ResidentialSimulationControls",
+      "name": "residential_simulation_controls",
+      "result": {
+        "completed_at": "20221129T193137Z",
+        "measure_class_name": "ResidentialSimulationControls",
+        "measure_display_name": "Set Residential Simulation Controls",
+        "measure_name": "residential_simulation_controls",
+        "measure_taxonomy": "Whole Building.Space Types",
+        "measure_type": "ModelMeasure",
+        "measure_uid": "874f921e-8f3c-458a-a82f-01b7d51a547e",
+        "measure_version_id": "50490d3c-8385-4b7e-a525-df4147819d03",
+        "measure_version_modified": "20200121T164352Z",
+        "measure_xml_checksum": "2C38F48B",
+        "started_at": "20221129T193137Z",
+        "stderr": "",
+        "stdout": "",
+        "step_errors": [],
+        "step_files": [],
+        "step_info": [
+          "Set the simulation timesteps per hour to 6.",
+          "Set the run period begin and end month/day to 1/1 and 12/31, respectively.",
+          "Set the calendar year to 2018 and the start day of week to Monday; if you are running with AMY, this will be overridden by the AMY year."
+        ],
+        "step_result": "Success",
+        "step_values": [
+          {
+            "name": "timesteps_per_hr",
+            "value": 6
+          },
+          {
+            "name": "begin_month",
+            "value": 1
+          },
+          {
+            "name": "begin_day_of_month",
+            "value": 1
+          },
+          {
+            "name": "end_month",
+            "value": 12
+          },
+          {
+            "name": "end_day_of_month",
+            "value": 31
+          },
+          {
+            "name": "calendar_year",
+            "value": 2018
+          }
+        ],
+        "step_warnings": []
+      }
+    },
+    {
+      "arguments": {
+        "building_id": 77,
+        "number_of_buildings_represented": 2800,
+        "sample_weight": 0,
+        "workflow_json": "measure-info.json"
+      },
+      "description": "Builds the OpenStudio Model for an existing building.",
+      "measure_dir_name": "BuildExistingModel",
+      "name": "build_existing_model",
+      "result": {
+        "completed_at": "20221129T193155Z",
+        "measure_class_name": "BuildExistingModel",
+        "measure_display_name": "Build Existing Model",
+        "measure_name": "build_existing_model",
+        "measure_taxonomy": "Whole Building.Space Types",
+        "measure_type": "ModelMeasure",
+        "measure_uid": "dedf59bb-3b88-4f16-8755-2c1ff5519cbf",
+        "measure_version_id": "ddb1178a-cb38-492a-84d7-534fd5d25142",
+        "measure_version_modified": "20200118T171809Z",
+        "measure_xml_checksum": "2C38F48B",
+        "started_at": "20221129T193137Z",
+        "stderr": "",
+        "stdout": "[OpenStudio.Measure] <0> OSArgumentVector is deprecated, use OpenStudio::Measure::OSArgumentVector instead.\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 20 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 20 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.Surface] <-1> Intersection of 'Surface 2' with 'Surface 12' results in (Surface 2), (Surface 12), [Surface 28], []\n[openstudio.model.Surface] <-1> Intersection of 'Surface 3' with 'Surface 11' results in (Surface 3), (Surface 11), [], []\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.Surface] <-1> Intersection of 'Surface 6' with 'Surface 15' results in (Surface 6), (Surface 15), [], [Surface 29]\n[openstudio.model.Surface] <-1> Intersection of 'Surface 14' with 'Surface 29' results in (Surface 14), (Surface 29), [], []\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.Surface] <-1> Intersection of 'Surface 23' with 'Surface 22' results in (Surface 23), (Surface 22), [], [Surface 30]\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 20 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.Surface] <-1> Intersection of 'Surface 33' with 'Surface 24' results in (Surface 33), (Surface 24), [], [Surface 35]\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 20 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 20 fields.  Size of vertices is 3.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 1' to 'Schedule Day 4' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 2' to 'Schedule Day 4' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 29 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 29 fields.  Size of vertices is 6.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 6 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 18 fields.  Size of vertices is 4.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Surface' and named 'Surface 13' to 'Surface 36' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:SubSurface' and named 'unit 1 - Surface 13 - Door' to 'unit 1 - Surface 13 - Door 1' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Surface' and named 'Surface 13' to 'Surface 37' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 23 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 11' to 'Schedule Day 14' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 12' to 'Schedule Day 14' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 11' to 'Schedule Day 15' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 12' to 'Schedule Day 15' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 2' to 'Schedule Day 13' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 11' to 'Schedule Day 13' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 2' to 'Schedule Day 14' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 11' to 'Schedule Day 14' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 14' to 'Schedule Day 17' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 15' to 'Schedule Day 17' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 20' to 'Schedule Day 23' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 21' to 'Schedule Day 23' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 23' to 'Schedule Day 26' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 24' to 'Schedule Day 26' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 26' to 'Schedule Day 29' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 27' to 'Schedule Day 29' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 29' to 'Schedule Day 32' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 30' to 'Schedule Day 32' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 32' to 'Schedule Day 35' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 33' to 'Schedule Day 35' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[openstudio.model.PlanarSurface] <-2> Before setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After clearExtensibleGroups in setVertices have 11 fields.\n[openstudio.model.PlanarSurface] <-2> After setVertices have 23 fields.  Size of vertices is 4.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 37' to 'Schedule Day 40' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 38' to 'Schedule Day 40' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 37' to 'Schedule Day 41' to avoid a name conflict upon WorkspaceObject addition.\n[utilities.idf.Workspace] <-1> Renamed Object of type 'OS:Schedule:Day' and named 'Schedule Day 38' to 'Schedule Day 41' to avoid a name conflict upon WorkspaceObject addition.\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.measure.OSRunner] <1> Cannot find current Workflow Step\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::initialCondition is deprecated, use stepInitialCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::finalCondition is deprecated, use stepFinalCondition instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::warnings is deprecated, use stepWarnings instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::info is deprecated, use stepInfo instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::errors is deprecated, use stepErrors instead\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n[openstudio.WorkflowStepResult] <0> WorkflowStepResult value called with undefined stepResult, returning 'Success'\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n",
+        "step_errors": [],
+        "step_files": [],
+        "step_final_condition": "HVAC objects updated as appropriate.",
+        "step_info": [
+          "Assigning option 'CR09' for parameter 'Location Region'.",
+          "Assigning option 'FL_Orlando.Intl.AP.722050' for parameter 'Location'.",
+          "Assigning option 'USA_FL_Orlando.Intl.AP.722050_TMY3.epw' for parameter 'Location Weather Filename'.",
+          "Assigning option 'TMY3' for parameter 'Location Weather Year'.",
+          "Assigning option '2000s' for parameter 'Vintage'.",
+          "Assigning option 'Electricity' for parameter 'Heating Fuel'.",
+          "Assigning option 'Medium' for parameter 'Usage Level'.",
+          "Assigning option 'Unfinished Attic' for parameter 'Geometry Attic Type'.",
+          "Assigning option 'Single-Family Detached' for parameter 'Geometry Building Type RECS'.",
+          "Assigning option '1' for parameter 'Geometry Number Units'.",
+          "Assigning option 'Slab' for parameter 'Geometry Foundation Type'.",
+          "Assigning option 'WoodStud' for parameter 'Geometry Wall Type'.",
+          "Assigning option '2+' for parameter 'Geometry Stories'.",
+          "Assigning option '1 Car' for parameter 'Geometry Garage'.",
+          "Assigning option '1500-2499' for parameter 'Geometry House Size'.",
+          "Assigning option '3' for parameter 'Bedrooms'.",
+          "Assigning option 'None' for parameter 'Corridor'.",
+          "Assigning option '2' for parameter 'Occupants'.",
+          "Assigning option 'South' for parameter 'Orientation'.",
+          "Assigning option '2 ft' for parameter 'Eaves'.",
+          "Assigning option '20 ft^2' for parameter 'Door Area'.",
+          "Assigning option 'F15 B15 L15 R15' for parameter 'Window Areas'.",
+          "Assigning option 'None' for parameter 'Overhangs'.",
+          "Assigning option 'Left/Right at 15ft' for parameter 'Neighbors'.",
+          "Assigning option 'Ceiling R-38, Vented' for parameter 'Insulation Unfinished Attic'.",
+          "Assigning option 'None' for parameter 'Insulation Finished Roof'.",
+          "Assigning option 'None' for parameter 'Radiant Barrier Unfinished Attic'.",
+          "Assigning option 'Asphalt Shingles, Medium' for parameter 'Roof Material'.",
+          "Assigning option 'Uninsulated' for parameter 'Insulation Slab'.",
+          "Assigning option 'None' for parameter 'Insulation Crawlspace'.",
+          "Assigning option 'None' for parameter 'Insulation Unfinished Basement'.",
+          "Assigning option 'None' for parameter 'Insulation Finished Basement'.",
+          "Assigning option 'None' for parameter 'Insulation Pier Beam'.",
+          "Assigning option 'R-13' for parameter 'Insulation Interzonal Floor'.",
+          "Assigning option 'Wood Stud, R-11' for parameter 'Insulation Wall'.",
+          "Assigning option 'Summer = 0.7, Winter = 0.7' for parameter 'Interior Shading'.",
+          "Assigning option 'Low-E, Double, Non-metal, Air, L-Gain' for parameter 'Windows'.",
+          "Assigning option 'Fiberglass' for parameter 'Doors'.",
+          "Assigning option 'Electric Standard' for parameter 'Water Heater'.",
+          "Assigning option '100% Usage' for parameter 'Hot Water Fixtures'.",
+          "Assigning option 'Uninsulated, HomeRun, PEX' for parameter 'Hot Water Distribution'.",
+          "Assigning option 'None' for parameter 'Solar Hot Water'.",
+          "Assigning option 'No' for parameter 'HVAC System Is Heat Pump'.",
+          "Assigning option 'None' for parameter 'HVAC System Heat Pump'.",
+          "Assigning option 'Electric Baseboard' for parameter 'HVAC System Heating Electricity'.",
+          "Assigning option 'None' for parameter 'HVAC System Heating Natural Gas'.",
+          "Assigning option 'None' for parameter 'HVAC System Heating Propane'.",
+          "Assigning option 'None' for parameter 'HVAC System Heating Fuel Oil'.",
+          "Assigning option 'None' for parameter 'HVAC System Heating Other Fuel'.",
+          "Assigning option 'None' for parameter 'HVAC System Heating None'.",
+          "Assigning option 'AC, SEER 13' for parameter 'HVAC System Cooling'.",
+          "Assigning option 'Central' for parameter 'HVAC System Cooling Type'.",
+          "Assigning option '70F' for parameter 'Heating Setpoint'.",
+          "Assigning option '75F' for parameter 'Cooling Setpoint'.",
+          "Assigning option 'No' for parameter 'Heating Setpoint Has Offset'.",
+          "Assigning option 'No' for parameter 'Cooling Setpoint Has Offset'.",
+          "Assigning option '0F' for parameter 'Heating Setpoint Offset Magnitude'.",
+          "Assigning option '0F' for parameter 'Cooling Setpoint Offset Magnitude'.",
+          "Assigning option 'None' for parameter 'Cooling Setpoint Offset Period'.",
+          "Assigning option 'None' for parameter 'Heating Setpoint Offset Period'.",
+          "Assigning option 'National Average' for parameter 'Ceiling Fan'.",
+          "Assigning option 'None' for parameter 'Dehumidifier'.",
+          "Assigning option 'EF 15.9' for parameter 'Refrigerator'.",
+          "Assigning option 'National Average' for parameter 'Refrigeration Schedule'.",
+          "Assigning option 'Electric, 100% Usage' for parameter 'Cooking Range'.",
+          "Assigning option 'National Average' for parameter 'Cooking Range Schedule'.",
+          "Assigning option '290 Rated kWh, 100% Usage' for parameter 'Dishwasher'.",
+          "Assigning option 'Yes' for parameter 'Clothes Washer Presence'.",
+          "Assigning option 'EnergyStar, 100% Usage' for parameter 'Clothes Washer'.",
+          "Assigning option 'Electric, 100% Usage' for parameter 'Clothes Dryer'.",
+          "Assigning option '60% CFL' for parameter 'Lighting'.",
+          "Assigning option '100% Usage' for parameter 'Lighting Interior Use'.",
+          "Assigning option '100% Usage' for parameter 'Lighting Other Use'.",
+          "Assigning option 'No Exterior Use' for parameter 'Holiday Lighting'.",
+          "Assigning option '100%' for parameter 'Plug Loads'.",
+          "Assigning option 'National Average' for parameter 'Plug Loads Schedule'.",
+          "Assigning option 'None' for parameter 'Electric Vehicle'.",
+          "Assigning option 'None' for parameter 'Misc Extra Refrigerator'.",
+          "Assigning option 'None' for parameter 'Misc Freezer'.",
+          "Assigning option 'None' for parameter 'Misc Gas Fireplace'.",
+          "Assigning option 'None' for parameter 'Misc Gas Grill'.",
+          "Assigning option 'None' for parameter 'Misc Gas Lighting'.",
+          "Assigning option 'None' for parameter 'Misc Hot Tub Spa'.",
+          "Assigning option 'None' for parameter 'Misc Pool'.",
+          "Assigning option 'None' for parameter 'Misc Pool Heater'.",
+          "Assigning option 'None' for parameter 'Misc Pool Pump'.",
+          "Assigning option 'National Average' for parameter 'Misc Pool Schedule'.",
+          "Assigning option 'None' for parameter 'Misc Well Pump'.",
+          "Assigning option '20% Leakage, R-8' for parameter 'Ducts'.",
+          "Assigning option '8 ACH50' for parameter 'Infiltration'.",
+          "Assigning option 'Year-Round, 3 days/wk' for parameter 'Natural Ventilation'.",
+          "Assigning option 'None' for parameter 'Mechanical Ventilation'.",
+          "Assigning option 'Hour21' for parameter 'Bathroom Spot Vent Hour'.",
+          "Assigning option 'Hour17' for parameter 'Range Spot Vent Hour'.",
+          "Assigning option 'None' for parameter 'PV'.",
+          "Assigning option 'Day251' for parameter 'Days Shifted'.",
+          "Calling ResidentialLocation measure with arguments:\nweather_directory -> ../../../../weather \nweather_file_name -> USA_FL_Orlando.Intl.AP.722050_TMY3.epw \ndst_start_date -> April 7 \ndst_end_date -> October 26",
+          "Setting weather file.",
+          "Setting site data.",
+          "Setting Building America climate zone to Hot-Humid.",
+          "Setting mains water temperature profile.",
+          "Set daylight saving time from 2018-Apr-07 to 2018-Oct-26.",
+          "Calling ResidentialGeometryCreateSingleFamilyDetached measure with arguments:\nfoundation_type -> slab \nfoundation_height -> 0 \nnum_floors -> 2 \ngarage_width -> 12 \ngarage_depth -> 24 \ngarage_protrusion -> 0.5 \ngarage_position -> Right \ntotal_ffa -> 2000 \nwall_height -> 8 \naspect_ratio -> 1.8 \nattic_type -> unfinished attic \nroof_type -> gable \nroof_pitch -> 6:12 \nnum_bathrooms -> 2 \nnum_bedrooms -> 3 \nnum_occupants -> 2 \noccupants_weekday_sch -> 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00 \noccupants_weekend_sch -> 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 0.88, 0.41, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.24, 0.29, 0.55, 0.90, 0.90, 0.90, 1.00, 1.00, 1.00 \noccupants_monthly_sch -> 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 \norientation -> 0 \nroof_structure -> truss, cantilever \neaves_depth -> 2 \nneighbor_left_offset -> 15 \nneighbor_right_offset -> 15 \nneighbor_back_offset -> 0 \nneighbor_front_offset -> 0",
+          "Set garage space.",
+          "Set living space.",
+          "Set living space|story 2.",
+          "Set unfinished attic space.",
+          "Set garage attic space.",
+          "The building has been assigned 3 bedroom(s) and 2.0 bathroom(s) across 1 unit(s).",
+          "unit 1 has been assigned 1.14 occupant(s) for space 'living space|story 2'.",
+          "unit 1 has been assigned 0.86 occupant(s) for space 'living space'.",
+          "The building has been assigned 2.0 occupant(s) across 1 unit(s).",
+          "Added 10 res eaves.",
+          "Added 2 res neighbors shading surfaces.",
+          "The building's final orientation was 0.0 azimuth.",
+          "Calling ResidentialGeometryDoorArea measure with arguments:\ndoor_area -> 20",
+          "For unit 1 added 20.0 ft^2 door.",
+          "Calling ResidentialGeometryWindowSkylightArea measure with arguments:\nfront_wwr -> 0.15 \nback_wwr -> 0.15 \nleft_wwr -> 0.15 \nright_wwr -> 0.15 \nfront_window_area -> 0 \nback_window_area -> 0 \nleft_window_area -> 0 \nright_window_area -> 0 \nwindow_aspect_ratio -> 1.333 \nfront_skylight_area -> 0 \nback_skylight_area -> 0 \nleft_skylight_area -> 0 \nright_skylight_area -> 0 \noverhang_depth -> 0 \noverhang_offset -> 0 \noverhang_front_facade -> false \noverhang_back_facade -> false \noverhang_left_facade -> false \noverhang_right_facade -> false",
+          "Added 3 window(s), totaling 32.6 ft^2, to Surface 13.",
+          "Added 2 window(s), totaling 14.5 ft^2, to Surface 19.",
+          "Added 4 window(s), totaling 36.7 ft^2, to Surface 21.",
+          "Added 5 window(s), totaling 50.9 ft^2, to Surface 9.",
+          "Added 5 window(s), totaling 50.9 ft^2, to Surface 17.",
+          "Added 3 window(s), totaling 28.3 ft^2, to Surface 8.",
+          "Added 2 window(s), totaling 14.4 ft^2, to Surface 20.",
+          "Added 3 window(s), totaling 28.3 ft^2, to Surface 16.",
+          "Added 2 window(s), totaling 13.9 ft^2, to Surface 10.",
+          "Added 4 window(s), totaling 42.7 ft^2, to Surface 18.",
+          "No res overhangs to be added.",
+          "Calling ResidentialConstructionsUnfinishedAttic measure with arguments:\nceiling_r -> 38 \nceiling_install_grade -> 1 \nceiling_ins_thick_in -> 14.01 \nceiling_framing_factor -> 0.07 \nceiling_joist_height_in -> 3.5 \nceiling_drywall_thick_in -> 0.5 \nroof_cavity_r -> 0 \nroof_install_grade -> 1 \nroof_cavity_ins_thick_in -> 0 \nroof_framing_factor -> 0.07 \nroof_framing_thick_in -> 7.25 \nroof_osb_thick_in -> 0.75 \nroof_rigid_r -> 0 \nhas_radiant_barrier -> false \nroofing_material -> Asphalt Shingles, Medium",
+          "Material 'FloorUAAdditionalCeilingIns' was created.",
+          "Material 'FloorUATrussandIns' was created.",
+          "Material 'Drywall 0.5 in.' was created.",
+          "Construction 'FloorFinInsUnfinAttic' was created with 3 materials (FloorUAAdditionalCeilingIns | FloorUATrussandIns | Drywall 0.5 in.).",
+          "Surface 'Surface 30 Reversed' has been assigned construction 'FloorFinInsUnfinAttic'.",
+          "Construction 'FloorFinInsUnfinAttic Reversed' was created with 3 materials (Drywall 0.5 in. | FloorUATrussandIns | FloorUAAdditionalCeilingIns).",
+          "Surface 'Surface 30' has been assigned construction 'FloorFinInsUnfinAttic Reversed'.",
+          "Surface 'Surface 23' has been assigned construction 'FloorFinInsUnfinAttic'.",
+          "Surface 'Surface 22' has been assigned construction 'FloorFinInsUnfinAttic Reversed'.",
+          "Material 'Asphalt Shingles, Medium' was created.",
+          "Material 'RoofSheathing' was created.",
+          "Material 'RoofUARoofIns' was created.",
+          "Construction 'RoofUnfinInsExt' was created with 3 materials (Asphalt Shingles, Medium | RoofSheathing | RoofUARoofIns).",
+          "Surface 'Surface 25' has been assigned construction 'RoofUnfinInsExt'.",
+          "Surface 'Surface 35' has been assigned construction 'RoofUnfinInsExt'.",
+          "Surface 'Surface 32' has been assigned construction 'RoofUnfinInsExt'.",
+          "Surface 'Surface 31' has been assigned construction 'RoofUnfinInsExt'.",
+          "Calling ResidentialConstructionsWallsWoodStud measure with arguments:\ncavity_r -> 11 \ninstall_grade -> 1 \ncavity_depth_in -> 3.5 \ncavity_filled -> true \nframing_factor -> 0.25 \ndrywall_thick_in -> 0.5 \nosb_thick_in -> 0.5 \nrigid_r -> 0.0 \nexterior_finish -> Vinyl, Light",
+          "Material 'Vinyl, Light' was created.",
+          "Material 'WallSheathing' was created.",
+          "Material 'WallStudAndCavity' was created.",
+          "Construction 'WallExtInsFin' was created with 4 materials (Vinyl, Light | WallSheathing | WallStudAndCavity | Drywall 0.5 in.).",
+          "Surface 'Surface 8' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 9' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 13' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 37' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 36' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 10' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 18' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 19' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 17' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 20' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 16' has been assigned construction 'WallExtInsFin'.",
+          "Surface 'Surface 21' has been assigned construction 'WallExtInsFin'.",
+          "Material 'WallStudAndCavity 1' was created.",
+          "Construction 'WallIntFinInsUnfin' was created with 2 materials (WallSheathing | WallStudAndCavity 1).",
+          "Surface 'Surface 11' has been assigned construction 'WallIntFinInsUnfin'.",
+          "Construction 'WallIntFinInsUnfin Reversed' was created with 2 materials (WallStudAndCavity 1 | WallSheathing).",
+          "Surface 'Surface 3' has been assigned construction 'WallIntFinInsUnfin Reversed'.",
+          "Surface 'Surface 12' has been assigned construction 'WallIntFinInsUnfin'.",
+          "Surface 'Surface 2' has been assigned construction 'WallIntFinInsUnfin Reversed'.",
+          "Material 'WallStudAndCavity 2' was created.",
+          "Construction 'WallExtUninsUnfin' was created with 3 materials (Vinyl, Light | WallSheathing | WallStudAndCavity 2).",
+          "Surface 'Surface 5' has been assigned construction 'WallExtUninsUnfin'.",
+          "Surface 'Surface 28' has been assigned construction 'WallExtUninsUnfin'.",
+          "Surface 'Surface 4' has been assigned construction 'WallExtUninsUnfin'.",
+          "Surface 'Surface 34' has been assigned construction 'WallExtUninsUnfin'.",
+          "Surface 'Surface 27' has been assigned construction 'WallExtUninsUnfin'.",
+          "Surface 'Surface 26' has been assigned construction 'WallExtUninsUnfin'.",
+          "Added internal mass object 'living space Partition' to space 'living space'",
+          "Added internal mass object 'living space|story 2 Partition' to space 'living space|story 2'",
+          "Material 'WallStudAndCavity 3' was created.",
+          "Construction 'WallIntFinUninsFin' was created with 2 materials (WallStudAndCavity 3 | Drywall 0.5 in.).",
+          "InternalMassDefinition 'living space Partition' has been assigned construction 'WallIntFinUninsFin'.",
+          "InternalMassDefinition 'living space|story 2 Partition' has been assigned construction 'WallIntFinUninsFin'.",
+          "Material 'res furniture material garage space' was created.",
+          "Construction 'res furniture construction garage space' was created with 1 material (res furniture material garage space).",
+          "InternalMassDefinition 'res furniture mass garage space' has been assigned construction 'res furniture construction garage space'.",
+          "Assigned internal mass object 'res furniture mass garage space' to space 'garage space'.",
+          "Construction 'res furniture construction living space' was created with 1 material (res furniture material garage space).",
+          "InternalMassDefinition 'res furniture mass living space' has been assigned construction 'res furniture construction living space'.",
+          "Assigned internal mass object 'res furniture mass living space' to space 'living space'.",
+          "Construction 'res furniture construction living space|story 2' was created with 1 material (res furniture material garage space).",
+          "InternalMassDefinition 'res furniture mass living space|story 2' has been assigned construction 'res furniture construction living space|story 2'.",
+          "Assigned internal mass object 'res furniture mass living space|story 2' to space 'living space|story 2'.",
+          "Calling ResidentialConstructionsSlab measure with arguments:\nperimeter_r -> 0 \nperimeter_width -> 0 \nwhole_r -> 0 \ngap_r -> 0 \nexterior_r -> 0 \nexterior_depth -> 0",
+          "Material 'Concrete 4.0 in.' was created.",
+          "Material 'Floor Covering' was created.",
+          "Construction 'FloorFndGrndFinSlab' was created with 2 materials (Concrete 4.0 in. | Floor Covering).",
+          "Surface 'Surface 7' has been assigned construction 'FloorFndGrndFinSlab'.",
+          "Construction 'FloorFndGrndUnfinSlab' was created with 1 material (Concrete 4.0 in.).",
+          "Surface 'Surface 1' has been assigned construction 'FloorFndGrndUnfinSlab'.",
+          "Calling ResidentialConstructionsFloors measure with arguments:\ncavity_r -> 13 \ninstall_grade -> 1 \nframing_factor -> 0.13 \njoist_height_in -> 5.5",
+          "Material 'FloorIns' was created.",
+          "Material 'Wood Floor' was created.",
+          "Construction 'FloorFinInsUnfin' was created with 4 materials (FloorIns | RoofSheathing | Wood Floor | Floor Covering).",
+          "Surface 'Surface 15' has been assigned construction 'FloorFinInsUnfin'.",
+          "Construction 'FloorFinInsUnfin Reversed' was created with 4 materials (Floor Covering | Wood Floor | RoofSheathing | FloorIns).",
+          "Surface 'Surface 6' has been assigned construction 'FloorFinInsUnfin Reversed'.",
+          "Material 'FloorFinStudAndAirFloor' was created.",
+          "Construction 'FloorFinUninsFin' was created with 5 materials (Drywall 0.5 in. | FloorFinStudAndAirFloor | RoofSheathing | Wood Floor | Floor Covering).",
+          "Surface 'Surface 29' has been assigned construction 'FloorFinUninsFin'.",
+          "Construction 'FloorFinUninsFin Reversed' was created with 5 materials (Floor Covering | Wood Floor | RoofSheathing | FloorFinStudAndAirFloor | Drywall 0.5 in.).",
+          "Surface 'Surface 14' has been assigned construction 'FloorFinUninsFin Reversed'.",
+          "Calling ResidentialConstructionsWindowsSkylights measure with arguments:\nwindow_heat_shade_mult -> 0.7 \nwindow_cool_shade_mult -> 0.7 \nskylight_heat_shade_mult -> 0.7 \nskylight_cool_shade_mult -> 0.7 \nwindow_ufactor -> 0.37 \nwindow_shgc -> 0.3 \nskylight_ufactor -> 0.37 \nskylight_shgc -> 0.3",
+          "Material 'WindowMaterial' was created.",
+          "Construction 'WindowConstruction' was created with 1 material (WindowMaterial).",
+          "SubSurface 'Surface 18 - Window 4' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 18 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 10 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 10 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 16 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 16 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 20 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 13 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 21 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 9 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 19 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 20 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 21 - Window 4' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 13 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 21 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 16 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 21 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 9 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 9 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 9 - Window 5' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 17 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 8 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 17 - Window 4' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 18 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 19 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 17 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 17 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 8 - Window 2' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 18 - Window 3' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 13 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 9 - Window 4' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 17 - Window 5' has been assigned construction 'WindowConstruction'.",
+          "SubSurface 'Surface 8 - Window 1' has been assigned construction 'WindowConstruction'.",
+          "Construction and interior shades added to 33 window(s).",
+          "Calling ResidentialConstructionsDoors measure with arguments:\nufactor -> 0.2",
+          "Material 'DoorMaterial' was created.",
+          "Construction 'Door' was created with 1 material (DoorMaterial).",
+          "SubSurface 'unit 1 - Surface 13 - Door' has been assigned construction 'Door'.",
+          "Calling ResidentialHotWaterHeaterTank measure with arguments:\nfuel_type -> electric \ntank_volume -> auto \nsetpoint_temp -> 125 \nlocation -> auto \ncapacity -> 4.5 \nenergy_factor -> 0.92 \nrecovery_efficiency -> 0.98 \noffcyc_power -> 0 \noncyc_power -> 0 \nhas_water_heater_flue -> false",
+          "A new plant loop for DHW will be added to the model",
+          "Calling ResidentialHotWaterFixtures measure with arguments:\nshower_mult -> 1.0 \nsink_mult -> 1.0 \nbath_mult -> 1.0 \nplant_loop -> auto \nschedule_day_shift -> 251",
+          "Calling ResidentialHotWaterDistribution measure with arguments:\npipe_mat -> pex \ndist_layout -> home run \nspace -> interior \nrecirc_type -> none \ndist_ins -> 0",
+          "Calling ResidentialHVACCentralAirConditionerSingleSpeed measure with arguments:\nseer -> 13.0 \neer -> 11.1 \nshr -> 0.73 \nfan_power_rated -> 0.365 \nfan_power_installed -> 0.5 \ncrankcase_capacity -> 0.0 \ncrankcase_temp -> 55 \neer_capacity_derate_1ton -> 1.0 \neer_capacity_derate_2ton -> 1.0 \neer_capacity_derate_3ton -> 1.0 \neer_capacity_derate_4ton -> 1.0 \neer_capacity_derate_5ton -> 1.0 \ncapacity -> autosize \ndse -> NA",
+          "Added 'res ac clg supply fan' to 'res ac unitary system' of 'res ac asys'",
+          "Added 'res ac cooling coil' to 'res ac unitary system' of 'res ac asys'",
+          "Added 'res ac asys' to 'living zone' of unit 1",
+          "Calling ResidentialHVACElectricBaseboard measure with arguments:\nefficiency -> 1.0 \ncapacity -> autosize",
+          "Added 'res bb living zone convective electric' to 'living zone' of unit 1",
+          "Calling ResidentialHVACHeatingSetpoints measure with arguments:\nweekday_setpoint -> 70 \nweekend_setpoint -> 70 \nuse_auto_season -> false \nseason_start_month -> Jan \nseason_end_month -> Dec \nweekday_offset_magnitude -> 0 \nweekend_offset_magnitude -> 0 \nweekday_offset_schedule -> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 \nweekend_offset_schedule -> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+          "Created new thermostat living zone temperature setpoint for living zone.",
+          "Set a dummy cooling setpoint schedule for living zone temperature setpoint.",
+          "Set the heating setpoint schedule for living zone temperature setpoint.",
+          "Calling ResidentialHVACCoolingSetpoints measure with arguments:\nweekday_setpoint -> 75 \nweekend_setpoint -> 75 \nuse_auto_season -> false \nseason_start_month -> Jan \nseason_end_month -> Dec \nweekday_offset_magnitude -> 0 \nweekend_offset_magnitude -> 0 \nweekday_offset_schedule -> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 \nweekend_offset_schedule -> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+          "Found existing thermostat living zone temperature setpoint for living zone.",
+          "Set the cooling setpoint schedule for living zone temperature setpoint.",
+          "Calling ResidentialHVACCeilingFan measure with arguments:\ncoverage -> NA \nspecified_num -> 1 \npower -> 45 \ncontrol -> typical \nuse_benchmark_energy -> true \ncooling_setpoint_offset -> 0 \nmult -> 1 \nweekday_sch -> 0.04, 0.037, 0.037, 0.036, 0.033, 0.036, 0.043, 0.047, 0.034, 0.023, 0.024, 0.025, 0.024, 0.028, 0.031, 0.032, 0.039, 0.053, 0.063, 0.067, 0.071, 0.069, 0.059, 0.05 \nweekend_sch -> 0.04, 0.037, 0.037, 0.036, 0.033, 0.036, 0.043, 0.047, 0.034, 0.023, 0.024, 0.025, 0.024, 0.028, 0.031, 0.032, 0.039, 0.053, 0.063, 0.067, 0.071, 0.069, 0.059, 0.05 \nmonthly_sch -> 1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248",
+          "Calling ResidentialApplianceRefrigerator measure with arguments:\nrated_annual_energy -> 480.0 \nmult -> 1.0 \nlocation -> auto \nweekday_sch -> 0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041 \nweekend_sch -> 0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041 \nmonthly_sch -> 0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837",
+          "Calling ResidentialApplianceClothesWasher measure with arguments:\nimef -> 2.07 \nrated_annual_energy -> 123.0 \nannual_cost -> 9.0 \ntest_date -> 2007 \ndrum_volume -> 3.68 \ncold_cycle -> false \nthermostatic_control -> true \ninternal_heater -> false \nfill_sensor -> false \nmult_e -> 1.0 \nmult_hw -> 1.0 \nlocation -> auto \nplant_loop -> auto \nschedule_day_shift -> 251",
+          "Calling ResidentialApplianceClothesDryer measure with arguments:\nfuel_type -> electric \ncef -> 2.70 \nfuel_split -> 1.0 \nmult -> 1.0 \nlocation -> auto",
+          "Calling ResidentialApplianceDishwasher measure with arguments:\nnum_settings -> 12 \nrated_annual_energy -> 290.0 \nhas_internal_heater -> true \ncold_inlet -> false \ncold_use -> 0.0 \ntest_date -> 2007 \nannual_gas_cost -> 23.0 \nmult_e -> 1.0 \nmult_hw -> 1.0 \nlocation -> auto \nplant_loop -> auto \nschedule_day_shift -> 251",
+          "Calling ResidentialApplianceCookingRange measure with arguments:\nfuel_type -> electric \ncooktop_ef -> 0.74 \noven_ef -> 0.11 \nhas_elec_ignition -> true \nmult -> 1.0 \nlocation -> auto \nweekday_sch -> 0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011 \nweekend_sch -> 0.007, 0.007, 0.004, 0.004, 0.007, 0.011, 0.025, 0.042, 0.046, 0.048, 0.042, 0.050, 0.057, 0.046, 0.057, 0.044, 0.092, 0.150, 0.117, 0.060, 0.035, 0.025, 0.016, 0.011 \nmonthly_sch -> 1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097",
+          "Calling ResidentialLightingInterior measure with arguments:\nhw_cfl -> 0.6 \nhw_led -> 0 \nhw_lfl -> 0 \npg_cfl -> 0.6 \npg_led -> 0 \npg_lfl -> 0 \nin_eff -> 15 \ncfl_eff -> 55 \nled_eff -> 80 \nlfl_eff -> 88 \noption_type -> Lamp Fractions \nenergy_use_interior -> 900 \nsch_option_type -> Calculated Lighting Schedule \nmonthly_sch -> 1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248 \nmult -> 1",
+          "Calling ResidentialLightingOther measure with arguments:\nhw_cfl -> 0.6 \nhw_led -> 0 \nhw_lfl -> 0 \npg_cfl -> 0.6 \npg_led -> 0 \npg_lfl -> 0 \nin_eff -> 15 \ncfl_eff -> 55 \nled_eff -> 80 \nlfl_eff -> 88 \noption_type -> Lamp Fractions \nenergy_use_garage -> 100 \nenergy_use_exterior -> 300 \nsch_option_type -> Calculated Lighting Schedule \nweekday_sch -> 0.04, 0.037, 0.037, 0.036, 0.033, 0.036, 0.043, 0.047, 0.034, 0.023, 0.024, 0.025, 0.024, 0.028, 0.031, 0.032, 0.039, 0.053, 0.063, 0.067, 0.071, 0.069, 0.059, 0.05 \nweekend_sch -> 0.04, 0.037, 0.037, 0.036, 0.033, 0.036, 0.043, 0.047, 0.034, 0.023, 0.024, 0.025, 0.024, 0.028, 0.031, 0.032, 0.039, 0.053, 0.063, 0.067, 0.071, 0.069, 0.059, 0.05 \nmonthly_sch -> 1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248 \nmult -> 1 \nholiday_daily_energy_use_exterior -> 0 \nholiday_start_date -> November 27 \nholiday_end_date -> January 6 \nholiday_sch -> 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.008168, 0.098016, 0.168028, 0.193699, 0.283547, 0.192532, 0.03734, 0.01867",
+          "Lighting with 27 kWhs annual energy consumption has been assigned to the garage(s).",
+          "Lighting with 248 kWhs annual energy consumption has been assigned to the exterior.",
+          "Calling ResidentialMiscPlugLoads measure with arguments:\nmult -> 1.0 \noption_type -> Multiplier \nenergy_use -> 2000 \nsens_frac -> 0.93 \nlat_frac -> 0.021 \nweekday_sch -> 0.04, 0.037, 0.037, 0.036, 0.033, 0.036, 0.043, 0.047, 0.034, 0.023, 0.024, 0.025, 0.024, 0.028, 0.031, 0.032, 0.039, 0.053, 0.063, 0.067, 0.071, 0.069, 0.059, 0.05 \nweekend_sch -> 0.04, 0.037, 0.037, 0.036, 0.033, 0.036, 0.043, 0.047, 0.034, 0.023, 0.024, 0.025, 0.024, 0.028, 0.031, 0.032, 0.039, 0.053, 0.063, 0.067, 0.071, 0.069, 0.059, 0.05 \nmonthly_sch -> 1.248, 1.257, 0.993, 0.989, 0.993, 0.827, 0.821, 0.821, 0.827, 0.99, 0.987, 1.248",
+          "Calling ResidentialMiscLargeUncommonLoads measure with arguments:\nhas_electric_vehicle -> false \nev_annual_energy -> 1852 \nev_charger_mult -> 1 \nev_charger_weekday_sch -> 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042 \nev_charger_weekend_sch -> 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042, 0.042 \nev_charger_monthly_sch -> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 \nhas_fridge -> false \nfridge_rated_annual_energy -> 1102 \nfridge_mult -> 1 \nfridge_weekday_sch -> 0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041 \nfridge_weekend_sch -> 0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041 \nfridge_monthly_sch -> 0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837 \nfridge_location -> auto \nhas_freezer -> false \nfreezer_rated_annual_energy -> 935 \nfreezer_mult -> 1 \nfreezer_weekday_sch -> 0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041 \nfreezer_weekend_sch -> 0.040, 0.039, 0.038, 0.037, 0.036, 0.036, 0.038, 0.040, 0.041, 0.041, 0.040, 0.040, 0.042, 0.042, 0.042, 0.041, 0.044, 0.048, 0.050, 0.048, 0.047, 0.046, 0.044, 0.041 \nfreezer_monthly_sch -> 0.837, 0.835, 1.084, 1.084, 1.084, 1.096, 1.096, 1.096, 1.096, 0.931, 0.925, 0.837 \nfreezer_location -> auto \nhas_gas_fireplace -> false \ngas_fireplace_annual_energy -> 60 \ngas_fireplace_mult -> 1.0 \ngas_fireplace_scale_energy -> true \ngas_fireplace_weekday_sch -> 0.044, 0.023, 0.019, 0.015, 0.016, 0.018, 0.026, 0.033, 0.033, 0.032, 0.033, 0.033, 0.032, 0.032, 0.032, 0.033, 0.045, 0.057, 0.066, 0.076, 0.081, 0.086, 0.075, 0.065 \ngas_fireplace_weekend_sch -> 0.044, 0.023, 0.019, 0.015, 0.016, 0.018, 0.026, 0.033, 0.033, 0.032, 0.033, 0.033, 0.032, 0.032, 0.032, 0.033, 0.045, 0.057, 0.066, 0.076, 0.081, 0.086, 0.075, 0.065 \ngas_fireplace_monthly_sch -> 1.154, 1.161, 1.013, 1.010, 1.013, 0.888, 0.883, 0.883, 0.888, 0.978, 0.974, 1.154 \ngas_fireplace_location -> auto \nhas_fireplace_chimney -> false \nhas_gas_grill -> false \ngas_grill_annual_energy -> 30 \ngas_grill_mult -> 1.0 \ngas_grill_scale_energy -> true \ngas_grill_weekday_sch -> 0.004, 0.001, 0.001, 0.002, 0.007, 0.012, 0.029, 0.046, 0.044, 0.041, 0.044, 0.046, 0.042, 0.038, 0.049, 0.059, 0.110, 0.161, 0.115, 0.070, 0.044, 0.019, 0.013, 0.007 \ngas_grill_weekend_sch -> 0.004, 0.001, 0.001, 0.002, 0.007, 0.012, 0.029, 0.046, 0.044, 0.041, 0.044, 0.046, 0.042, 0.038, 0.049, 0.059, 0.110, 0.161, 0.115, 0.070, 0.044, 0.019, 0.013, 0.007 \ngas_grill_monthly_sch -> 1.097, 1.097, 0.991, 0.987, 0.991, 0.890, 0.896, 0.896, 0.890, 1.085, 1.085, 1.097 \nhas_gas_lighting -> false \ngas_lighting_annual_energy -> 19 \ngas_lighting_mult -> 1.0 \ngas_lighting_scale_energy -> true \ngas_lighting_weekday_sch -> 0.044, 0.023, 0.019, 0.015, 0.016, 0.018, 0.026, 0.033, 0.033, 0.032, 0.033, 0.033, 0.032, 0.032, 0.032, 0.033, 0.045, 0.057, 0.066, 0.076, 0.081, 0.086, 0.075, 0.065 \ngas_lighting_weekend_sch -> 0.044, 0.023, 0.019, 0.015, 0.016, 0.018, 0.026, 0.033, 0.033, 0.032, 0.033, 0.033, 0.032, 0.032, 0.032, 0.033, 0.045, 0.057, 0.066, 0.076, 0.081, 0.086, 0.075, 0.065 \ngas_lighting_monthly_sch -> 1.154, 1.161, 1.013, 1.010, 1.013, 0.888, 0.883, 0.883, 0.888, 0.978, 0.974, 1.154 \nhas_hot_tub_heater_elec -> false \nhas_hot_tub_heater_gas -> false \nhas_hot_tub_pump -> false \nhot_tub_heater_elec_annual_energy -> 0 \nhot_tub_heater_elec_mult -> 0 \nhot_tub_heater_gas_annual_energy -> 0 \nhot_tub_heater_gas_mult -> 0 \nhot_tub_pump_annual_energy -> 0 \nhot_tub_pump_mult -> 0 \nhot_tub_scale_energy -> false \nhot_tub_weekday_sch -> 0.024, 0.029, 0.024, 0.029, 0.047, 0.067, 0.057, 0.024, 0.024, 0.019, 0.015, 0.014, 0.014, 0.014, 0.024, 0.058, 0.126, 0.122, 0.068, 0.061, 0.051, 0.043, 0.024, 0.024 \nhot_tub_weekend_sch -> 0.024, 0.029, 0.024, 0.029, 0.047, 0.067, 0.057, 0.024, 0.024, 0.019, 0.015, 0.014, 0.014, 0.014, 0.024, 0.058, 0.126, 0.122, 0.068, 0.061, 0.051, 0.043, 0.024, 0.024 \nhot_tub_monthly_sch -> 0.921, 0.928, 0.921, 0.915, 0.921, 1.160, 1.158, 1.158, 1.160, 0.921, 0.915, 0.921 \npool_scale_energy -> false \nhas_pool_heater_elec -> false \nhas_pool_heater_gas -> false \npool_heater_elec_annual_energy -> 0 \npool_heater_elec_mult -> 0 \npool_heater_gas_annual_energy -> 0 \npool_heater_gas_mult -> 0 \nhas_pool_pump -> false \npool_pump_annual_energy -> 0 \npool_pump_mult -> 0 \npool_weekday_sch -> 0.003, 0.003, 0.003, 0.004, 0.008, 0.015, 0.026, 0.044, 0.084, 0.121, 0.127, 0.121, 0.120, 0.090, 0.075, 0.061, 0.037, 0.023, 0.013, 0.008, 0.004, 0.003, 0.003, 0.003 \npool_weekend_sch -> 0.003, 0.003, 0.003, 0.004, 0.008, 0.015, 0.026, 0.044, 0.084, 0.121, 0.127, 0.121, 0.120, 0.090, 0.075, 0.061, 0.037, 0.023, 0.013, 0.008, 0.004, 0.003, 0.003, 0.003 \npool_monthly_sch -> 1.154, 1.161, 1.013, 1.010, 1.013, 0.888, 0.883, 0.883, 0.888, 0.978, 0.974, 1.154 \nhas_well_pump -> false \nwell_pump_annual_energy -> 400 \nwell_pump_mult -> 0.127 \nwell_pump_scale_energy -> true \nwell_pump_weekday_sch -> 0.044, 0.023, 0.019, 0.015, 0.016, 0.018, 0.026, 0.033, 0.033, 0.032, 0.033, 0.033, 0.032, 0.032, 0.032, 0.033, 0.045, 0.057, 0.066, 0.076, 0.081, 0.086, 0.075, 0.065 \nwell_pump_weekend_sch -> 0.044, 0.023, 0.019, 0.015, 0.016, 0.018, 0.026, 0.033, 0.033, 0.032, 0.033, 0.033, 0.032, 0.032, 0.032, 0.033, 0.045, 0.057, 0.066, 0.076, 0.081, 0.086, 0.075, 0.065 \nwell_pump_monthly_sch -> 1.154, 1.161, 1.013, 1.010, 1.013, 0.888, 0.883, 0.883, 0.888, 0.978, 0.974, 1.154",
+          "Calling ResidentialAirflow measure with arguments:\nunfinished_attic_sla -> 0.00333 \ncrawl_ach -> 0 \nclothes_dryer_exhaust -> 100 \nduct_location -> auto \nduct_total_leakage -> 0.2 \nduct_supply_frac -> 0.6 \nduct_return_frac -> 0.067 \nduct_ah_supply_frac -> 0.067 \nduct_ah_return_frac -> 0.267 \nduct_location_frac -> auto \nduct_num_returns -> auto \nduct_supply_area_mult -> 1 \nduct_return_area_mult -> 1 \nduct_r -> 8 \nliving_ach50 -> 8 \ngarage_ach50 -> 8 \nfinished_basement_ach -> 0 \nunfinished_basement_ach -> 0.1 \npier_beam_ach -> 100 \nshelter_coef -> auto \nterrain -> suburban \nnat_vent_htg_offset -> 1 \nnat_vent_clg_offset -> 1 \nnat_vent_ovlp_offset -> 1 \nnat_vent_htg_season -> true \nnat_vent_clg_season -> true \nnat_vent_ovlp_season -> true \nnat_vent_num_weekdays -> 3 \nnat_vent_num_weekends -> 0 \nnat_vent_frac_windows_open -> 0.33 \nnat_vent_frac_window_area_openable -> 0.2 \nnat_vent_max_oa_hr -> 0.0115 \nnat_vent_max_oa_rh -> 0.7 \nis_existing_home -> true \nmech_vent_type -> none \nmech_vent_infil_credit -> false \nmech_vent_total_efficiency -> 0 \nmech_vent_sensible_efficiency -> 0 \nmech_vent_fan_power -> 0 \nmech_vent_frac_62_2 -> 0 \nmech_vent_ashrae_std -> 2010 \nmech_vent_cfis_open_time -> 20.0 \nmech_vent_cfis_airflow_frac -> 1.0 \nbathroom_exhaust_hour -> 21 \nrange_exhaust_hour -> 17",
+          "Created ducts for res ac asys.",
+          "Calling ResidentialHVACSizing measure with no arguments.",
+          "Found central air conditioner in living zone.",
+          "Found electric baseboard in living zone."
+        ],
+        "step_initial_condition": "No water heater model currently exists",
+        "step_result": "Success",
+        "step_values": [
+          {
+            "name": "building_id",
+            "value": 77
+          },
+          {
+            "name": "workflow_json",
+            "value": "measure-info.json"
+          },
+          {
+            "name": "number_of_buildings_represented",
+            "value": 2800
+          },
+          {
+            "name": "sample_weight",
+            "value": 0
+          },
+          {
+            "name": "location_region",
+            "value": "CR09"
+          },
+          {
+            "name": "location",
+            "value": "FL_Orlando.Intl.AP.722050"
+          },
+          {
+            "name": "location_weather_filename",
+            "value": "USA_FL_Orlando.Intl.AP.722050_TMY3.epw"
+          },
+          {
+            "name": "location_weather_year",
+            "value": "TMY3"
+          },
+          {
+            "name": "vintage",
+            "value": "2000s"
+          },
+          {
+            "name": "heating_fuel",
+            "value": "Electricity"
+          },
+          {
+            "name": "usage_level",
+            "value": "Medium"
+          },
+          {
+            "name": "geometry_attic_type",
+            "value": "Unfinished Attic"
+          },
+          {
+            "name": "geometry_building_type_recs",
+            "value": "Single-Family Detached"
+          },
+          {
+            "name": "geometry_number_units",
+            "value": "1"
+          },
+          {
+            "name": "geometry_foundation_type",
+            "value": "Slab"
+          },
+          {
+            "name": "geometry_wall_type",
+            "value": "WoodStud"
+          },
+          {
+            "name": "geometry_stories",
+            "value": "2+"
+          },
+          {
+            "name": "geometry_garage",
+            "value": "1 Car"
+          },
+          {
+            "name": "geometry_house_size",
+            "value": "1500-2499"
+          },
+          {
+            "name": "bedrooms",
+            "value": "3"
+          },
+          {
+            "name": "corridor",
+            "value": "None"
+          },
+          {
+            "name": "occupants",
+            "value": "2"
+          },
+          {
+            "name": "orientation",
+            "value": "South"
+          },
+          {
+            "name": "eaves",
+            "value": "2 ft"
+          },
+          {
+            "name": "door_area",
+            "value": "20 ft^2"
+          },
+          {
+            "name": "window_areas",
+            "value": "F15 B15 L15 R15"
+          },
+          {
+            "name": "overhangs",
+            "value": "None"
+          },
+          {
+            "name": "neighbors",
+            "value": "Left/Right at 15ft"
+          },
+          {
+            "name": "insulation_unfinished_attic",
+            "value": "Ceiling R-38, Vented"
+          },
+          {
+            "name": "insulation_finished_roof",
+            "value": "None"
+          },
+          {
+            "name": "radiant_barrier_unfinished_attic",
+            "value": "None"
+          },
+          {
+            "name": "roof_material",
+            "value": "Asphalt Shingles, Medium"
+          },
+          {
+            "name": "insulation_slab",
+            "value": "Uninsulated"
+          },
+          {
+            "name": "insulation_crawlspace",
+            "value": "None"
+          },
+          {
+            "name": "insulation_unfinished_basement",
+            "value": "None"
+          },
+          {
+            "name": "insulation_finished_basement",
+            "value": "None"
+          },
+          {
+            "name": "insulation_pier_beam",
+            "value": "None"
+          },
+          {
+            "name": "insulation_interzonal_floor",
+            "value": "R-13"
+          },
+          {
+            "name": "insulation_wall",
+            "value": "Wood Stud, R-11"
+          },
+          {
+            "name": "interior_shading",
+            "value": "Summer = 0.7, Winter = 0.7"
+          },
+          {
+            "name": "windows",
+            "value": "Low-E, Double, Non-metal, Air, L-Gain"
+          },
+          {
+            "name": "doors",
+            "value": "Fiberglass"
+          },
+          {
+            "name": "water_heater",
+            "value": "Electric Standard"
+          },
+          {
+            "name": "hot_water_fixtures",
+            "value": "100% Usage"
+          },
+          {
+            "name": "hot_water_distribution",
+            "value": "Uninsulated, HomeRun, PEX"
+          },
+          {
+            "name": "solar_hot_water",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_is_heat_pump",
+            "value": "No"
+          },
+          {
+            "name": "hvac_system_heat_pump",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_electricity",
+            "value": "Electric Baseboard"
+          },
+          {
+            "name": "hvac_system_heating_natural_gas",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_propane",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_fuel_oil",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_other_fuel",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_none",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_cooling",
+            "value": "AC, SEER 13"
+          },
+          {
+            "name": "hvac_system_cooling_type",
+            "value": "Central"
+          },
+          {
+            "name": "heating_setpoint",
+            "value": "70F"
+          },
+          {
+            "name": "cooling_setpoint",
+            "value": "75F"
+          },
+          {
+            "name": "heating_setpoint_has_offset",
+            "value": "No"
+          },
+          {
+            "name": "cooling_setpoint_has_offset",
+            "value": "No"
+          },
+          {
+            "name": "heating_setpoint_offset_magnitude",
+            "value": "0F"
+          },
+          {
+            "name": "cooling_setpoint_offset_magnitude",
+            "value": "0F"
+          },
+          {
+            "name": "cooling_setpoint_offset_period",
+            "value": "None"
+          },
+          {
+            "name": "heating_setpoint_offset_period",
+            "value": "None"
+          },
+          {
+            "name": "ceiling_fan",
+            "value": "National Average"
+          },
+          {
+            "name": "dehumidifier",
+            "value": "None"
+          },
+          {
+            "name": "refrigerator",
+            "value": "EF 15.9"
+          },
+          {
+            "name": "refrigeration_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "cooking_range",
+            "value": "Electric, 100% Usage"
+          },
+          {
+            "name": "cooking_range_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "dishwasher",
+            "value": "290 Rated kWh, 100% Usage"
+          },
+          {
+            "name": "clothes_washer_presence",
+            "value": "Yes"
+          },
+          {
+            "name": "clothes_washer",
+            "value": "EnergyStar, 100% Usage"
+          },
+          {
+            "name": "clothes_dryer",
+            "value": "Electric, 100% Usage"
+          },
+          {
+            "name": "lighting",
+            "value": "60% CFL"
+          },
+          {
+            "name": "lighting_interior_use",
+            "value": "100% Usage"
+          },
+          {
+            "name": "lighting_other_use",
+            "value": "100% Usage"
+          },
+          {
+            "name": "holiday_lighting",
+            "value": "No Exterior Use"
+          },
+          {
+            "name": "plug_loads",
+            "value": "100%"
+          },
+          {
+            "name": "plug_loads_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "electric_vehicle",
+            "value": "None"
+          },
+          {
+            "name": "misc_extra_refrigerator",
+            "value": "None"
+          },
+          {
+            "name": "misc_freezer",
+            "value": "None"
+          },
+          {
+            "name": "misc_gas_fireplace",
+            "value": "None"
+          },
+          {
+            "name": "misc_gas_grill",
+            "value": "None"
+          },
+          {
+            "name": "misc_gas_lighting",
+            "value": "None"
+          },
+          {
+            "name": "misc_hot_tub_spa",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool_heater",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool_pump",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "misc_well_pump",
+            "value": "None"
+          },
+          {
+            "name": "ducts",
+            "value": "20% Leakage, R-8"
+          },
+          {
+            "name": "infiltration",
+            "value": "8 ACH50"
+          },
+          {
+            "name": "natural_ventilation",
+            "value": "Year-Round, 3 days/wk"
+          },
+          {
+            "name": "mechanical_ventilation",
+            "value": "None"
+          },
+          {
+            "name": "bathroom_spot_vent_hour",
+            "value": "Hour21"
+          },
+          {
+            "name": "range_spot_vent_hour",
+            "value": "Hour17"
+          },
+          {
+            "name": "pv",
+            "value": "None"
+          },
+          {
+            "name": "days_shifted",
+            "value": "Day251"
+          },
+          {
+            "name": "location_city",
+            "value": "Orlando Intl Arpt"
+          },
+          {
+            "name": "location_state",
+            "value": "FL"
+          },
+          {
+            "name": "location_latitude",
+            "value": "28.43"
+          },
+          {
+            "name": "location_longitude",
+            "value": "-81.33"
+          },
+          {
+            "name": "climate_zone_ba",
+            "value": "Hot-Humid"
+          },
+          {
+            "name": "climate_zone_iecc",
+            "value": "2A"
+          },
+          {
+            "name": "units_represented",
+            "value": "1"
+          },
+          {
+            "name": "units_modeled",
+            "value": "1"
+          },
+          {
+            "name": "weight",
+            "value": "0.0"
+          }
+        ],
+        "step_warnings": []
+      }
+    },
+    {
+      "arguments": {},
+      "description": "Reports building characteristics for each simulation.",
+      "measure_dir_name": "BuildingCharacteristicsReport",
+      "name": "building_characteristics_report",
+      "result": {
+        "completed_at": "20221129T193300Z",
+        "measure_class_name": "BuildingCharacteristicsReport",
+        "measure_display_name": "Building Characteristics Report",
+        "measure_name": "building_characteristics_report",
+        "measure_taxonomy": "Whole Building.Space Types",
+        "measure_type": "ReportingMeasure",
+        "measure_uid": "90eecbe2-d8e2-47db-9079-5d9029fb3e67",
+        "measure_version_id": "af495585-41b3-4cc1-a54c-cd0a705f4e69",
+        "measure_version_modified": "20200129T203956Z",
+        "measure_xml_checksum": "2EA103AF",
+        "started_at": "20221129T193300Z",
+        "stderr": "",
+        "stdout": "[OpenStudio.Measure] <0> OSArgumentVector is deprecated, use OpenStudio::Measure::OSArgumentVector instead.\n",
+        "step_errors": [],
+        "step_files": [],
+        "step_final_condition": "Report generated successfully.",
+        "step_info": [
+          "Skipping building_id.",
+          "Skipping number_of_buildings_represented.",
+          "Skipping sample_weight.",
+          "Registering measure-info.json for workflow_json.",
+          "Registering CR09 for location_region.",
+          "Registering FL_Orlando.Intl.AP.722050 for location.",
+          "Registering USA_FL_Orlando.Intl.AP.722050_TMY3.epw for location_weather_filename.",
+          "Registering TMY3 for location_weather_year.",
+          "Registering 2000s for vintage.",
+          "Registering Electricity for heating_fuel.",
+          "Registering Medium for usage_level.",
+          "Registering Unfinished Attic for geometry_attic_type.",
+          "Registering Single-Family Detached for geometry_building_type_recs.",
+          "Registering 1 for geometry_number_units.",
+          "Registering Slab for geometry_foundation_type.",
+          "Registering WoodStud for geometry_wall_type.",
+          "Registering 2+ for geometry_stories.",
+          "Registering 1 Car for geometry_garage.",
+          "Registering 1500-2499 for geometry_house_size.",
+          "Registering 3 for bedrooms.",
+          "Registering None for corridor.",
+          "Registering 2 for occupants.",
+          "Registering South for orientation.",
+          "Registering 2 ft for eaves.",
+          "Registering 20 ft^2 for door_area.",
+          "Registering F15 B15 L15 R15 for window_areas.",
+          "Registering None for overhangs.",
+          "Registering Left/Right at 15ft for neighbors.",
+          "Registering Ceiling R-38, Vented for insulation_unfinished_attic.",
+          "Registering None for insulation_finished_roof.",
+          "Registering None for radiant_barrier_unfinished_attic.",
+          "Registering Asphalt Shingles, Medium for roof_material.",
+          "Registering Uninsulated for insulation_slab.",
+          "Registering None for insulation_crawlspace.",
+          "Registering None for insulation_unfinished_basement.",
+          "Registering None for insulation_finished_basement.",
+          "Registering None for insulation_pier_beam.",
+          "Registering R-13 for insulation_interzonal_floor.",
+          "Registering Wood Stud, R-11 for insulation_wall.",
+          "Registering Summer = 0.7, Winter = 0.7 for interior_shading.",
+          "Registering Low-E, Double, Non-metal, Air, L-Gain for windows.",
+          "Registering Fiberglass for doors.",
+          "Registering Electric Standard for water_heater.",
+          "Registering 100% Usage for hot_water_fixtures.",
+          "Registering Uninsulated, HomeRun, PEX for hot_water_distribution.",
+          "Registering None for solar_hot_water.",
+          "Registering No for hvac_system_is_heat_pump.",
+          "Registering None for hvac_system_heat_pump.",
+          "Registering Electric Baseboard for hvac_system_heating_electricity.",
+          "Registering None for hvac_system_heating_natural_gas.",
+          "Registering None for hvac_system_heating_propane.",
+          "Registering None for hvac_system_heating_fuel_oil.",
+          "Registering None for hvac_system_heating_other_fuel.",
+          "Registering None for hvac_system_heating_none.",
+          "Registering AC, SEER 13 for hvac_system_cooling.",
+          "Registering Central for hvac_system_cooling_type.",
+          "Registering 70F for heating_setpoint.",
+          "Registering 75F for cooling_setpoint.",
+          "Registering No for heating_setpoint_has_offset.",
+          "Registering No for cooling_setpoint_has_offset.",
+          "Registering 0F for heating_setpoint_offset_magnitude.",
+          "Registering 0F for cooling_setpoint_offset_magnitude.",
+          "Registering None for cooling_setpoint_offset_period.",
+          "Registering None for heating_setpoint_offset_period.",
+          "Registering National Average for ceiling_fan.",
+          "Registering None for dehumidifier.",
+          "Registering EF 15.9 for refrigerator.",
+          "Registering National Average for refrigeration_schedule.",
+          "Registering Electric, 100% Usage for cooking_range.",
+          "Registering National Average for cooking_range_schedule.",
+          "Registering 290 Rated kWh, 100% Usage for dishwasher.",
+          "Registering Yes for clothes_washer_presence.",
+          "Registering EnergyStar, 100% Usage for clothes_washer.",
+          "Registering Electric, 100% Usage for clothes_dryer.",
+          "Registering 60% CFL for lighting.",
+          "Registering 100% Usage for lighting_interior_use.",
+          "Registering 100% Usage for lighting_other_use.",
+          "Registering No Exterior Use for holiday_lighting.",
+          "Registering 100% for plug_loads.",
+          "Registering National Average for plug_loads_schedule.",
+          "Registering None for electric_vehicle.",
+          "Registering None for misc_extra_refrigerator.",
+          "Registering None for misc_freezer.",
+          "Registering None for misc_gas_fireplace.",
+          "Registering None for misc_gas_grill.",
+          "Registering None for misc_gas_lighting.",
+          "Registering None for misc_hot_tub_spa.",
+          "Registering None for misc_pool.",
+          "Registering None for misc_pool_heater.",
+          "Registering None for misc_pool_pump.",
+          "Registering National Average for misc_pool_schedule.",
+          "Registering None for misc_well_pump.",
+          "Registering 20% Leakage, R-8 for ducts.",
+          "Registering 8 ACH50 for infiltration.",
+          "Registering Year-Round, 3 days/wk for natural_ventilation.",
+          "Registering None for mechanical_ventilation.",
+          "Registering Hour21 for bathroom_spot_vent_hour.",
+          "Registering Hour17 for range_spot_vent_hour.",
+          "Registering None for pv.",
+          "Registering Day251 for days_shifted.",
+          "Registering Orlando Intl Arpt for location_city.",
+          "Registering FL for location_state.",
+          "Registering 28.43 for location_latitude.",
+          "Registering -81.33 for location_longitude.",
+          "Registering Hot-Humid for climate_zone_ba.",
+          "Registering 2A for climate_zone_iecc.",
+          "Registering 1 for units_represented.",
+          "Registering 1 for units_modeled.",
+          "Registering 0.0 for weight."
+        ],
+        "step_result": "Success",
+        "step_values": [
+          {
+            "name": "workflow_json",
+            "value": "measure-info.json"
+          },
+          {
+            "name": "location_region",
+            "value": "CR09"
+          },
+          {
+            "name": "location",
+            "value": "FL_Orlando.Intl.AP.722050"
+          },
+          {
+            "name": "location_weather_filename",
+            "value": "USA_FL_Orlando.Intl.AP.722050_TMY3.epw"
+          },
+          {
+            "name": "location_weather_year",
+            "value": "TMY3"
+          },
+          {
+            "name": "vintage",
+            "value": "2000s"
+          },
+          {
+            "name": "heating_fuel",
+            "value": "Electricity"
+          },
+          {
+            "name": "usage_level",
+            "value": "Medium"
+          },
+          {
+            "name": "geometry_attic_type",
+            "value": "Unfinished Attic"
+          },
+          {
+            "name": "geometry_building_type_recs",
+            "value": "Single-Family Detached"
+          },
+          {
+            "name": "geometry_number_units",
+            "value": "1"
+          },
+          {
+            "name": "geometry_foundation_type",
+            "value": "Slab"
+          },
+          {
+            "name": "geometry_wall_type",
+            "value": "WoodStud"
+          },
+          {
+            "name": "geometry_stories",
+            "value": "2+"
+          },
+          {
+            "name": "geometry_garage",
+            "value": "1 Car"
+          },
+          {
+            "name": "geometry_house_size",
+            "value": "1500-2499"
+          },
+          {
+            "name": "bedrooms",
+            "value": "3"
+          },
+          {
+            "name": "corridor",
+            "value": "None"
+          },
+          {
+            "name": "occupants",
+            "value": "2"
+          },
+          {
+            "name": "orientation",
+            "value": "South"
+          },
+          {
+            "name": "eaves",
+            "value": "2 ft"
+          },
+          {
+            "name": "door_area",
+            "value": "20 ft^2"
+          },
+          {
+            "name": "window_areas",
+            "value": "F15 B15 L15 R15"
+          },
+          {
+            "name": "overhangs",
+            "value": "None"
+          },
+          {
+            "name": "neighbors",
+            "value": "Left/Right at 15ft"
+          },
+          {
+            "name": "insulation_unfinished_attic",
+            "value": "Ceiling R-38, Vented"
+          },
+          {
+            "name": "insulation_finished_roof",
+            "value": "None"
+          },
+          {
+            "name": "radiant_barrier_unfinished_attic",
+            "value": "None"
+          },
+          {
+            "name": "roof_material",
+            "value": "Asphalt Shingles, Medium"
+          },
+          {
+            "name": "insulation_slab",
+            "value": "Uninsulated"
+          },
+          {
+            "name": "insulation_crawlspace",
+            "value": "None"
+          },
+          {
+            "name": "insulation_unfinished_basement",
+            "value": "None"
+          },
+          {
+            "name": "insulation_finished_basement",
+            "value": "None"
+          },
+          {
+            "name": "insulation_pier_beam",
+            "value": "None"
+          },
+          {
+            "name": "insulation_interzonal_floor",
+            "value": "R-13"
+          },
+          {
+            "name": "insulation_wall",
+            "value": "Wood Stud, R-11"
+          },
+          {
+            "name": "interior_shading",
+            "value": "Summer = 0.7, Winter = 0.7"
+          },
+          {
+            "name": "windows",
+            "value": "Low-E, Double, Non-metal, Air, L-Gain"
+          },
+          {
+            "name": "doors",
+            "value": "Fiberglass"
+          },
+          {
+            "name": "water_heater",
+            "value": "Electric Standard"
+          },
+          {
+            "name": "hot_water_fixtures",
+            "value": "100% Usage"
+          },
+          {
+            "name": "hot_water_distribution",
+            "value": "Uninsulated, HomeRun, PEX"
+          },
+          {
+            "name": "solar_hot_water",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_is_heat_pump",
+            "value": "No"
+          },
+          {
+            "name": "hvac_system_heat_pump",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_electricity",
+            "value": "Electric Baseboard"
+          },
+          {
+            "name": "hvac_system_heating_natural_gas",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_propane",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_fuel_oil",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_other_fuel",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_heating_none",
+            "value": "None"
+          },
+          {
+            "name": "hvac_system_cooling",
+            "value": "AC, SEER 13"
+          },
+          {
+            "name": "hvac_system_cooling_type",
+            "value": "Central"
+          },
+          {
+            "name": "heating_setpoint",
+            "value": "70F"
+          },
+          {
+            "name": "cooling_setpoint",
+            "value": "75F"
+          },
+          {
+            "name": "heating_setpoint_has_offset",
+            "value": "No"
+          },
+          {
+            "name": "cooling_setpoint_has_offset",
+            "value": "No"
+          },
+          {
+            "name": "heating_setpoint_offset_magnitude",
+            "value": "0F"
+          },
+          {
+            "name": "cooling_setpoint_offset_magnitude",
+            "value": "0F"
+          },
+          {
+            "name": "cooling_setpoint_offset_period",
+            "value": "None"
+          },
+          {
+            "name": "heating_setpoint_offset_period",
+            "value": "None"
+          },
+          {
+            "name": "ceiling_fan",
+            "value": "National Average"
+          },
+          {
+            "name": "dehumidifier",
+            "value": "None"
+          },
+          {
+            "name": "refrigerator",
+            "value": "EF 15.9"
+          },
+          {
+            "name": "refrigeration_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "cooking_range",
+            "value": "Electric, 100% Usage"
+          },
+          {
+            "name": "cooking_range_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "dishwasher",
+            "value": "290 Rated kWh, 100% Usage"
+          },
+          {
+            "name": "clothes_washer_presence",
+            "value": "Yes"
+          },
+          {
+            "name": "clothes_washer",
+            "value": "EnergyStar, 100% Usage"
+          },
+          {
+            "name": "clothes_dryer",
+            "value": "Electric, 100% Usage"
+          },
+          {
+            "name": "lighting",
+            "value": "60% CFL"
+          },
+          {
+            "name": "lighting_interior_use",
+            "value": "100% Usage"
+          },
+          {
+            "name": "lighting_other_use",
+            "value": "100% Usage"
+          },
+          {
+            "name": "holiday_lighting",
+            "value": "No Exterior Use"
+          },
+          {
+            "name": "plug_loads",
+            "value": "100%"
+          },
+          {
+            "name": "plug_loads_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "electric_vehicle",
+            "value": "None"
+          },
+          {
+            "name": "misc_extra_refrigerator",
+            "value": "None"
+          },
+          {
+            "name": "misc_freezer",
+            "value": "None"
+          },
+          {
+            "name": "misc_gas_fireplace",
+            "value": "None"
+          },
+          {
+            "name": "misc_gas_grill",
+            "value": "None"
+          },
+          {
+            "name": "misc_gas_lighting",
+            "value": "None"
+          },
+          {
+            "name": "misc_hot_tub_spa",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool_heater",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool_pump",
+            "value": "None"
+          },
+          {
+            "name": "misc_pool_schedule",
+            "value": "National Average"
+          },
+          {
+            "name": "misc_well_pump",
+            "value": "None"
+          },
+          {
+            "name": "ducts",
+            "value": "20% Leakage, R-8"
+          },
+          {
+            "name": "infiltration",
+            "value": "8 ACH50"
+          },
+          {
+            "name": "natural_ventilation",
+            "value": "Year-Round, 3 days/wk"
+          },
+          {
+            "name": "mechanical_ventilation",
+            "value": "None"
+          },
+          {
+            "name": "bathroom_spot_vent_hour",
+            "value": "Hour21"
+          },
+          {
+            "name": "range_spot_vent_hour",
+            "value": "Hour17"
+          },
+          {
+            "name": "pv",
+            "value": "None"
+          },
+          {
+            "name": "days_shifted",
+            "value": "Day251"
+          },
+          {
+            "name": "location_city",
+            "value": "Orlando Intl Arpt"
+          },
+          {
+            "name": "location_state",
+            "value": "FL"
+          },
+          {
+            "name": "location_latitude",
+            "value": "28.43"
+          },
+          {
+            "name": "location_longitude",
+            "value": "-81.33"
+          },
+          {
+            "name": "climate_zone_ba",
+            "value": "Hot-Humid"
+          },
+          {
+            "name": "climate_zone_iecc",
+            "value": "2A"
+          },
+          {
+            "name": "units_represented",
+            "value": "1"
+          },
+          {
+            "name": "units_modeled",
+            "value": "1"
+          },
+          {
+            "name": "weight",
+            "value": "0.0"
+          }
+        ],
+        "step_warnings": []
+      }
+    },
+    {
+      "arguments": {
+        "include_enduse_subcategories": false
+      },
+      "description": "Reports simulation outputs of interest.",
+      "measure_dir_name": "SimulationOutputReport",
+      "name": "simulation_output_report",
+      "result": {
+        "completed_at": "20221129T193305Z",
+        "measure_class_name": "SimulationOutputReport",
+        "measure_display_name": "Simulation Output Report",
+        "measure_name": "simulation_output_report",
+        "measure_taxonomy": "Reporting.QAQC",
+        "measure_type": "ReportingMeasure",
+        "measure_uid": "fc337100-8634-404e-8966-01243d292a79",
+        "measure_version_id": "995d7b67-e7c1-4510-91fd-4dff8357ca00",
+        "measure_version_modified": "20200129T202940Z",
+        "measure_xml_checksum": "2C8A3EEF",
+        "started_at": "20221129T193300Z",
+        "stderr": "",
+        "stdout": "[OpenStudio.Measure] <0> OSArgumentVector is deprecated, use OpenStudio::Measure::OSArgumentVector instead.\n[openstudio.energyplus.SqlFile] <-2> Dictionary Built\n[openstudio.WorkflowStepResult] <-2> WorkflowStepResult::value is deprecated, use stepResult instead\n",
+        "step_errors": [],
+        "step_files": [],
+        "step_info": [
+          "Registering 11814.45 for total_site_electricity_kwh.",
+          "Registering 11814.45 for net_site_electricity_kwh.",
+          "Registering 661.85 for electricity_heating_kwh.",
+          "Registering 0.0 for electricity_central_system_heating_kwh.",
+          "Registering 2597.82 for electricity_cooling_kwh.",
+          "Registering 0.0 for electricity_central_system_cooling_kwh.",
+          "Registering 1212.0 for electricity_interior_lighting_kwh.",
+          "Registering 247.87 for electricity_exterior_lighting_kwh.",
+          "Registering 0.0 for electricity_exterior_holiday_lighting_kwh.",
+          "Registering 26.53 for electricity_garage_lighting_kwh.",
+          "Registering 4458.91 for electricity_interior_equipment_kwh.",
+          "Registering 0.0 for electricity_fans_heating_kwh.",
+          "Registering 703.83 for electricity_fans_cooling_kwh.",
+          "Registering 0.0 for electricity_pumps_heating_kwh.",
+          "Registering 0.0 for electricity_central_system_pumps_heating_kwh.",
+          "Registering 0.0 for electricity_pumps_cooling_kwh.",
+          "Registering 0.0 for electricity_central_system_pumps_cooling_kwh.",
+          "Registering 1905.64 for electricity_water_systems_kwh.",
+          "Registering 0.0 for electricity_pv_kwh.",
+          "Registering 0.0 for total_site_natural_gas_therm.",
+          "Registering 0.0 for natural_gas_heating_therm.",
+          "Registering 0.0 for natural_gas_central_system_heating_therm.",
+          "Registering 0.0 for natural_gas_interior_equipment_therm.",
+          "Registering 0.0 for natural_gas_water_systems_therm.",
+          "Registering 0.0 for total_site_fuel_oil_mbtu.",
+          "Registering 0.0 for fuel_oil_heating_mbtu.",
+          "Registering 0.0 for fuel_oil_central_system_heating_mbtu.",
+          "Registering 0.0 for fuel_oil_water_systems_mbtu.",
+          "Registering 0.0 for total_site_propane_mbtu.",
+          "Registering 0.0 for propane_heating_mbtu.",
+          "Registering 0.0 for propane_central_system_heating_mbtu.",
+          "Registering 0.0 for propane_interior_equipment_mbtu.",
+          "Registering 0.0 for propane_water_systems_mbtu.",
+          "Registering 0.0 for total_site_wood_mbtu.",
+          "Registering 0.0 for wood_heating_mbtu.",
+          "Registering 40.31 for total_site_energy_mbtu.",
+          "Registering 40.31 for net_site_energy_mbtu.",
+          "Registering 0.0 for hours_heating_setpoint_not_met.",
+          "Registering 0.0 for hours_cooling_setpoint_not_met.",
+          "Registering 10129.98 for hvac_cooling_capacity_w.",
+          "Registering 4214.63 for hvac_heating_capacity_w.",
+          "Registering 0.0 for hvac_heating_supp_capacity_w.",
+          "Registering 0.0 for weight.",
+          "Registering (blank) for upgrade_name.",
+          "Registering (blank) for upgrade_cost_usd."
+        ],
+        "step_result": "Success",
+        "step_values": [
+          {
+            "name": "include_enduse_subcategories",
+            "value": false
+          },
+          {
+            "name": "total_site_electricity_kwh",
+            "value": 11814.451343966479
+          },
+          {
+            "name": "net_site_electricity_kwh",
+            "value": 11814.451343966479
+          },
+          {
+            "name": "electricity_heating_kwh",
+            "value": 661.8520296156084
+          },
+          {
+            "name": "electricity_central_system_heating_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_cooling_kwh",
+            "value": 2597.816035719903
+          },
+          {
+            "name": "electricity_central_system_cooling_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_interior_lighting_kwh",
+            "value": 1212.0011137760666
+          },
+          {
+            "name": "electricity_exterior_lighting_kwh",
+            "value": 247.8704675564303
+          },
+          {
+            "name": "electricity_exterior_holiday_lighting_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_garage_lighting_kwh",
+            "value": 26.530687286039022
+          },
+          {
+            "name": "electricity_interior_equipment_kwh",
+            "value": 4458.909979887095
+          },
+          {
+            "name": "electricity_fans_heating_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_fans_cooling_kwh",
+            "value": 703.8263182788667
+          },
+          {
+            "name": "electricity_pumps_heating_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_central_system_pumps_heating_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_pumps_cooling_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_central_system_pumps_cooling_kwh",
+            "value": 0
+          },
+          {
+            "name": "electricity_water_systems_kwh",
+            "value": 1905.6447118464685
+          },
+          {
+            "name": "electricity_pv_kwh",
+            "value": 0
+          },
+          {
+            "name": "total_site_natural_gas_therm",
+            "value": 0
+          },
+          {
+            "name": "natural_gas_heating_therm",
+            "value": 0
+          },
+          {
+            "name": "natural_gas_central_system_heating_therm",
+            "value": 0
+          },
+          {
+            "name": "natural_gas_interior_equipment_therm",
+            "value": 0
+          },
+          {
+            "name": "natural_gas_water_systems_therm",
+            "value": 0
+          },
+          {
+            "name": "total_site_fuel_oil_mbtu",
+            "value": 0
+          },
+          {
+            "name": "fuel_oil_heating_mbtu",
+            "value": 0
+          },
+          {
+            "name": "fuel_oil_central_system_heating_mbtu",
+            "value": 0
+          },
+          {
+            "name": "fuel_oil_water_systems_mbtu",
+            "value": 0
+          },
+          {
+            "name": "total_site_propane_mbtu",
+            "value": 0
+          },
+          {
+            "name": "propane_heating_mbtu",
+            "value": 0
+          },
+          {
+            "name": "propane_central_system_heating_mbtu",
+            "value": 0
+          },
+          {
+            "name": "propane_interior_equipment_mbtu",
+            "value": 0
+          },
+          {
+            "name": "propane_water_systems_mbtu",
+            "value": 0
+          },
+          {
+            "name": "total_site_wood_mbtu",
+            "value": 0
+          },
+          {
+            "name": "wood_heating_mbtu",
+            "value": 0
+          },
+          {
+            "name": "total_site_energy_mbtu",
+            "value": 40.312549053273145
+          },
+          {
+            "name": "net_site_energy_mbtu",
+            "value": 40.312549053273145
+          },
+          {
+            "name": "hours_heating_setpoint_not_met",
+            "value": 0
+          },
+          {
+            "name": "hours_cooling_setpoint_not_met",
+            "value": 0
+          },
+          {
+            "name": "hvac_cooling_capacity_w",
+            "value": 10129.9827080481
+          },
+          {
+            "name": "hvac_heating_capacity_w",
+            "value": 4214.63323971793
+          },
+          {
+            "name": "hvac_heating_supp_capacity_w",
+            "value": 0
+          },
+          {
+            "name": "weight",
+            "value": 0
+          },
+          {
+            "name": "wall_area_above_grade_conditioned_ft_2",
+            "value": 2303.89
+          },
+          {
+            "name": "wall_area_above_grade_exterior_ft_2",
+            "value": 2652.78
+          },
+          {
+            "name": "wall_area_below_grade_ft_2",
+            "value": 0
+          },
+          {
+            "name": "floor_area_conditioned_ft_2",
+            "value": 2000
+          },
+          {
+            "name": "floor_area_attic_ft_2",
+            "value": 1144
+          },
+          {
+            "name": "floor_area_lighting_ft_2",
+            "value": 2288
+          },
+          {
+            "name": "roof_area_ft_2",
+            "value": 1279.03
+          },
+          {
+            "name": "window_area_ft_2",
+            "value": 313.16
+          },
+          {
+            "name": "door_area_ft_2",
+            "value": 20
+          },
+          {
+            "name": "duct_surface_area_ft_2",
+            "value": 640
+          },
+          {
+            "name": "size_heating_system_kbtu_h",
+            "value": 14.38
+          },
+          {
+            "name": "size_cooling_system_kbtu_h",
+            "value": 34.56
+          },
+          {
+            "name": "size_water_heater_gal",
+            "value": 50
+          },
+          {
+            "name": "upgrade_name",
+            "value": ""
+          },
+          {
+            "name": "upgrade_cost_usd",
+            "value": ""
+          }
+        ],
+        "step_warnings": []
+      }
+    },
+    {
+      "arguments": {
+        "include_enduse_subcategories": false,
+        "reporting_frequency": "Hourly"
+      },
+      "description": "Exports timeseries output data to csv.",
+      "measure_dir_name": "TimeseriesCSVExport",
+      "name": "timeseries_csv_export",
+      "result": {
+        "completed_at": "20221129T193311Z",
+        "measure_class_name": "TimeseriesCSVExport",
+        "measure_display_name": "Timeseries CSV Export",
+        "measure_name": "timeseries_csv_export",
+        "measure_taxonomy": "Reporting.QAQC",
+        "measure_type": "ReportingMeasure",
+        "measure_uid": "2a3442c1-944d-4e91-9e11-11e0cf368c64",
+        "measure_version_id": "4e80cb7a-a47b-4bbe-b35b-c09f4e38e642",
+        "measure_version_modified": "20200130T154415Z",
+        "measure_xml_checksum": "15BF4E57",
+        "started_at": "20221129T193305Z",
+        "stderr": "",
+        "stdout": "[openstudio.energyplus.SqlFile] <-2> Dictionary Built\n[openstudio.energyplus.SqlFile] <-2> Making time series for envPeriod = 'RUN PERIOD 1', reportingFrequency = 'Hourly', timeSeriesName = 'Electricity:Facility', keyValue = ''\n[openstudio.energyplus.SqlFile] <-2> RUN PERIOD 1\n[openstudio.energyplus.SqlFile] <-2> Electricity:Facility\n[openstudio.energyplus.SqlFile] <-2> SQL Query:\nSELECT dt.VariableValue, Time.Year, Time.Month, Time.Day, Time.Interval FROM ReportMeterData dt INNER JOIN Time ON Time.timeIndex = dt.TimeIndex WHERE  dt.ReportMeterDataDictionaryIndex=14 AND Time.EnvironmentPeriodIndex = 1Return Code:\n100\n[openstudio.energyplus.SqlFile] <-2> Time series found\n[openstudio.EpwFile] <0> Successive data points (1995-Jan-31 to 1991-Feb-01, ending on line 753) are greater than 1 day apart in EPW file '/mnt/openstudio/analysis_a1cae546-8025-4e7b-b96b-e00fc26c039a/weather/USA_FL_Orlando.Intl.AP.722050_TMY3.epw'. Data will be treated as typical (TMY)\n",
+        "step_errors": [],
+        "step_files": [],
+        "step_info": [
+          "Exporting total_site_electricity_kwh.",
+          "Exporting net_site_electricity_kwh.",
+          "Exporting electricity_heating_kwh.",
+          "Exporting electricity_central_system_heating_kwh.",
+          "Exporting electricity_cooling_kwh.",
+          "Exporting electricity_central_system_cooling_kwh.",
+          "Exporting electricity_interior_lighting_kwh.",
+          "Exporting electricity_exterior_lighting_kwh.",
+          "Exporting electricity_exterior_holiday_lighting_kwh.",
+          "Exporting electricity_garage_lighting_kwh.",
+          "Exporting electricity_interior_equipment_kwh.",
+          "Exporting electricity_fans_heating_kwh.",
+          "Exporting electricity_fans_cooling_kwh.",
+          "Exporting electricity_pumps_heating_kwh.",
+          "Exporting electricity_central_system_pumps_heating_kwh.",
+          "Exporting electricity_pumps_cooling_kwh.",
+          "Exporting electricity_central_system_pumps_cooling_kwh.",
+          "Exporting electricity_water_systems_kwh.",
+          "Exporting electricity_pv_kwh.",
+          "Exporting total_site_natural_gas_therm.",
+          "Exporting natural_gas_heating_therm.",
+          "Exporting natural_gas_central_system_heating_therm.",
+          "Exporting natural_gas_interior_equipment_therm.",
+          "Exporting natural_gas_water_systems_therm.",
+          "Exporting total_site_fuel_oil_mbtu.",
+          "Exporting fuel_oil_heating_mbtu.",
+          "Exporting fuel_oil_central_system_heating_mbtu.",
+          "Exporting fuel_oil_interior_equipment_mbtu.",
+          "Exporting fuel_oil_water_systems_mbtu.",
+          "Exporting total_site_propane_mbtu.",
+          "Exporting propane_heating_mbtu.",
+          "Exporting propane_central_system_heating_mbtu.",
+          "Exporting propane_interior_equipment_mbtu.",
+          "Exporting propane_water_systems_mbtu.",
+          "Exporting total_site_wood_mbtu.",
+          "Exporting wood_heating_mbtu.",
+          "Exporting total_site_energy_mbtu.",
+          "Exporting net_site_energy_mbtu."
+        ],
+        "step_result": "Success",
+        "step_values": [
+          {
+            "name": "reporting_frequency",
+            "value": "Hourly"
+          },
+          {
+            "name": "include_enduse_subcategories",
+            "value": false
+          }
+        ],
+        "step_warnings": []
+      }
+    },
+    {
+      "arguments": {},
+      "description": "Removes a significant portion of the saved results from each run, helping to alleviate memory problems.",
+      "measure_dir_name": "ServerDirectoryCleanup",
+      "name": "server_directory_cleanup",
+      "result": {
+        "completed_at": "20221129T193311Z",
+        "measure_class_name": "ServerDirectoryCleanup",
+        "measure_display_name": "Server Directory Cleanup",
+        "measure_name": "server_directory_cleanup",
+        "measure_taxonomy": "Calibration",
+        "measure_type": "ReportingMeasure",
+        "measure_uid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+        "measure_version_id": "c9dc043c-2ea2-4960-b281-37b9cb49c491",
+        "measure_version_modified": "20190409T200600Z",
+        "measure_xml_checksum": "5F1EDF75",
+        "started_at": "20221129T193311Z",
+        "stderr": "",
+        "stdout": "[OpenStudio.Measure] <0> OSArgumentVector is deprecated, use OpenStudio::Measure::OSArgumentVector instead.\n",
+        "step_errors": [],
+        "step_files": [],
+        "step_final_condition": "The following files were in the local run directory following the execution of this measure: eplusout.end, eplusout.err, ., enduse_timeseries.csv, .., 000_ResidentialSimulationControls, 002_BuildingCharacteristicsReport, started.job, 001_BuildExistingModel, 003_SimulationOutputReport, eplusout.mtr, 002_SimulationOutputReport, stdout-expandobject, sqlite.err, eplusout.mtd, in.epw, 004_TimeseriesCSVExport, stdout-energyplus, eplustbl.htm, 002_TimeseriesCSVExport, measures.osw, run.log, measure_attributes.json, in.idf, 002_ServerDirectoryCleanup, eplusout.rdd, 005_ServerDirectoryCleanup.",
+        "step_info": [
+          "Deleted ./../eplusout.sql from the run directory.",
+          "Deleted ./../eplusout.audit from the run directory.",
+          "Deleted ./../in.osm from the run directory.",
+          "Deleted ./../../in.osm from the run directory.",
+          "Deleted ./../eplusout.bnd from the run directory.",
+          "Deleted ./../eplusout.eio from the run directory.",
+          "Deleted ./../eplusout.shd from the run directory.",
+          "Deleted ./../eplusout.mdd from the run directory.",
+          "Deleted ./../eplusout.eso from the run directory.",
+          "Deleted ./../pre-preprocess.idf from the run directory."
+        ],
+        "step_initial_condition": "The following files were in the local run directory prior to the execution of this measure: eplusout.end, eplusout.err, ., enduse_timeseries.csv, .., 000_ResidentialSimulationControls, eplusout.shd, 002_BuildingCharacteristicsReport, started.job, 001_BuildExistingModel, 003_SimulationOutputReport, in.osm, eplusout.mtr, 002_SimulationOutputReport, stdout-expandobject, sqlite.err, eplusout.mtd, in.epw, eplusout.audit, 004_TimeseriesCSVExport, stdout-energyplus, eplustbl.htm, eplusout.sql, 002_TimeseriesCSVExport, measures.osw, run.log, eplusout.mdd, pre-preprocess.idf, measure_attributes.json, eplusout.eio, in.idf, eplusout.eso, 002_ServerDirectoryCleanup, eplusout.rdd, eplusout.bnd, 005_ServerDirectoryCleanup.",
+        "step_result": "Success",
+        "step_values": [],
+        "step_warnings": []
+      }
+    }
+  ],
+  "updated_at": "20221129T193311Z",
+  "weather_file": "Placeholder.epw"
+}

@@ -6,7 +6,7 @@ from get_Opt_k_e import *
 def main():
     # Define Switches:
     super_comp = 0                          # =1: run on super computer, =0: run on local laptop
-    city_to_run = 'Detroit'                 # Name of city to running building/s located in
+    city = 'LA'                        # Name of city to running building/s located in
     single_building = True                  # =True: run only one single building in a city
                                             # =False: run all buildings in that city
     # If running single building (single_building = True), pick building ID to run (from 1 to 400):
@@ -35,6 +35,11 @@ def main():
 
     if not include_TES:
         tes_material = ''
+
+    if city == 'Detroit':
+        city_to_run = 'Detroit'
+    elif city == 'LA' or city == 'NYC' or city == 'Orlando' or city == 'Seattle' or city == 'Atlanta' or city == 'Minneapolis' or city == 'Phoenix':
+        city_to_run = 'LA_NYC_ORL_SEA_ATL_MIN_PHX'
 
     p_T = 0                                 # TES operating cost ($/kW)
     ef_T = 0.98                             # Round trip efficiency
