@@ -44,19 +44,19 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
     if not replace_TES_w_Battery:
         if tes_material == 'MgSO4':
             xData = [0, 0.268018305, 1]
-            yData = [0 / 1000, 83.20127263 / 1000, 281.2673055 / 1000]
+            yData = [2.816408928 / 1000, 83.20127263 / 1000, 281.2673055 / 1000]
             c_salt = 0.75
         elif tes_material == 'MgCl2':
             xData = [0, 0.213856511, 1]
-            yData = [0 / 1000, 20.35515839 / 1000, 84.76789215 / 1000]
+            yData = [0.930935172 / 1000, 20.35515839 / 1000, 84.76789215 / 1000]
             c_salt = 0.193056
         elif tes_material == 'K2CO3':
             xData = [0, 0.129554216, 1]
             yData = [81.60749345 / 1000, 444.7337936 / 1000, 1646.738256 / 1000]
-            c_salt = 0.186111
+            c_salt = 0.18611
         elif tes_material == 'SrBr2':
             xData = [0, 0.449284033, 1]
-            yData = [0 / 1000, 402.2793362 / 1000, 811.2535806 / 1000]
+            yData = [9.844630229 / 1000, 402.2793362 / 1000, 811.2535806 / 1000]
             c_salt = 0.3556
     elif replace_TES_w_Battery:
         xData = [0, 0.637072888, 1]
@@ -74,7 +74,7 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
 
 
 def main_function(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp, used_cop, cop_type, p_T,
-                  ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroInitialSOC):
+                  ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroInitialSOC, city):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, include_TES, starting_hour,
      mon_to_run, cop_type, used_cop, single_building,  city_to_run, xData, yData,
      building_no, building_id) = main_params(year, mon_to_run, include_TES, replace_TES_w_Battery, super_comp, used_cop,
@@ -84,7 +84,7 @@ def main_function(year, mon_to_run, include_TES, replace_TES_w_Battery, super_co
     T = main_sets(hour)
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,
                 hour, c_salt, T, include_TES, starting_hour, mon_to_run, cop_type, used_cop, xData, yData,
-                single_building, city_to_run, building_no, building_id, zeroInitialSOC)
+                single_building, city_to_run, building_no, building_id, zeroInitialSOC, city)
 
 # %% Set working directory:
 def working_directory(super_comp, single_building, city_to_run):
@@ -112,14 +112,14 @@ def main_sets(hour):
 # %% Solving HDV model:
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c,
                 hour, c_salt, T, include_TES, starting_hour, mon_to_run, cop_type, used_cop, xData, yData,
-                single_building, city_to_run, building_no, building_id, zeroInitialSOC):
+                single_building, city_to_run, building_no, building_id, zeroInitialSOC, city):
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W, peakLoad = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id)
-    cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
+    d_heating, p_W, peakLoad = load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id)
+    cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city)
 
     # Size of TES:
     e_T = math.ceil(peakLoad)

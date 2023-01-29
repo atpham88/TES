@@ -2,21 +2,21 @@
 import pandas as pd
 import numpy as np
 
-def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop):
+def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city):
     if used_cop == "TES":
         load_cop50_raw = pd.read_excel(model_dir  + 'cop_temp.xlsx', sheet_name='cop NEEP50')
         load_cop90_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop NEEP90')
         load_copDOE_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop DOE')
 
-        ext_temp = pd.read_excel(model_dir + 'ext_temp.xlsx')
+        ext_temp = pd.read_excel(model_dir + 'weather\\' + 'ext_temp_' + city + '.xlsx')
         ext_temp['COP NEEP 50'] = 0.0000
         ext_temp['COP NEEP 90'] = 0.0000
         ext_temp['COP DOE'] = 0.0000
 
         for i in list(range(len(ext_temp))):
-            load_cop50_raw['temp_diff'] = abs(ext_temp['MI C'][i] - load_cop50_raw['temp C'])
-            load_cop90_raw['temp_diff'] = abs(ext_temp['MI C'][i] - load_cop90_raw['temp C'])
-            load_copDOE_raw['temp_diff'] = abs(ext_temp['MI C'][i] - load_copDOE_raw['temp C'])
+            load_cop50_raw['temp_diff'] = abs(ext_temp['temp'][i] - load_cop50_raw['temp C'])
+            load_cop90_raw['temp_diff'] = abs(ext_temp['temp'][i] - load_cop90_raw['temp C'])
+            load_copDOE_raw['temp_diff'] = abs(ext_temp['temp'][i] - load_copDOE_raw['temp C'])
 
             min_id50 = load_cop50_raw['temp_diff'].idxmin(axis=0)
             min_id90 = load_cop90_raw['temp_diff'].idxmin(axis=0)

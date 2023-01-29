@@ -6,14 +6,14 @@ from get_Opt_k_e import *
 def main():
     # Define Switches:
     super_comp = 0                          # =1: run on super computer, =0: run on local laptop
-    city = 'LA'                        # Name of city to running building/s located in
+    city = 'Detroit'                        # Name of city to running building/s located in
     single_building = True                  # =True: run only one single building in a city
                                             # =False: run all buildings in that city
     # If running single building (single_building = True), pick building ID to run (from 1 to 400):
     building_no = 5                         # =ID of building to run (if running single building)
 
     # Utility rate options:
-    pricing = 'ToD'                         # =Fixed, ToD=Time of day, DP=Dynamic peak
+    pricing = 'Fixed'                         # =Fixed, ToD=Time of day, DP=Dynamic peak
 
     # Coupled TES with heat pump to shift load or not:
     include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
@@ -26,7 +26,7 @@ def main():
     cop_type = 'NEEP50'                     # Type of COP used if used_cop =TES: NEEP90, NEEP50, DOE
     tes_material = 'K2CO3'                  # Type of TES material, choosing from:
                                             # MgSO4, K2CO3, MgCl2, SrBr2
-    tes_sizing = 'Fixed'                    # TES sizing methods:
+    tes_sizing = 'Varied'                    # TES sizing methods:
                                             # =Varied: Varying based on peak load, =Fixed: fixed size
 
     # Instead of minimizing cost, maximizing total peak load reduction:
@@ -38,7 +38,8 @@ def main():
 
     if city == 'Detroit':
         city_to_run = 'Detroit'
-    elif city == 'LA' or city == 'NYC' or city == 'Orlando' or city == 'Seattle' or city == 'Atlanta' or city == 'Minneapolis' or city == 'Phoenix':
+    elif city == 'Los Angeles' or city == 'New York' or city == 'Orlando' or city == 'Seattle' \
+            or city == 'Atlanta' or city == 'Minneapolis' or city == 'Phoenix':
         city_to_run = 'LA_NYC_ORL_SEA_ATL_MIN_PHX'
 
     p_T = 0                                 # TES operating cost ($/kW)
@@ -65,16 +66,16 @@ def main():
             building_id = building_no-1
 
         k_H_star = main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, curb_H, pricing,
-                                         p_T, ef_T, f_d, ir, single_building, city_to_run, building_no, building_id)
+                                         p_T, ef_T, f_d, ir, single_building, city_to_run, building_no, building_id, city)
 
         # Heat pump parameters:
         k_H = k_H_star                           # Heat pump capacity (kWh)
 
         if include_pw_func:
             main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp, used_cop, cop_type,
-                               p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H)
+                               p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H, city)
         else:
             main_function(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, super_comp, used_cop, cop_type,
-                          p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC)
+                          p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, city)
 
 main()

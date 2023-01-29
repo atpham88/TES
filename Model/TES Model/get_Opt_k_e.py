@@ -43,7 +43,7 @@ def main_params(year, mon_to_run, super_comp, used_cop, cop_type,
 
 
 def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, curb_H, pricing, p_T, ef_T, f_d, ir,
-                          single_building, city_to_run, building_no, building_id):
+                          single_building, city_to_run, building_no, building_id, city):
 
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, starting_hour,
      mon_to_run, cop_type, used_cop, single_building,
@@ -52,7 +52,7 @@ def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, curb
     (model_dir, load_folder) = working_directory(super_comp, single_building, city_to_run)
     T = main_sets(hour)
     k_H_star = model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, f_c, hour, T, starting_hour,
-                                   mon_to_run, cop_type, used_cop, pricing, single_building, city_to_run, building_no, building_id, curb_H)
+                                   mon_to_run, cop_type, used_cop, pricing, single_building, city_to_run, building_no, building_id, curb_H, city)
     return k_H_star
 
 # %% Set working directory:
@@ -73,15 +73,15 @@ def main_sets(hour):
 # %% Solving HDV model:
 def model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, f_c,
                         hour, T, starting_hour, mon_to_run, cop_type, used_cop, pricing,
-                        single_building, city_to_run, building_no, building_id, curb_H):
+                        single_building, city_to_run, building_no, building_id, curb_H, city):
 
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id, pricing, curb_H)
-    cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
+    d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id, pricing, curb_H)
+    cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city)
 
     # %% Define variables and ordered set:
     model.T = Set(initialize=T, ordered=True)

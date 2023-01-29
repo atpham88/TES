@@ -6,10 +6,17 @@ from datetime import datetime
 
 #parquetfile = pd.read_parquet("C:\\Users\\atpha\\Desktop\\Temp Files\\105114-0.parquet")
 
-def load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id, pricing, curb_H):
+def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id, pricing, curb_H):
 
     # Read resstock results summary folder:
     resstock_results = pd.read_csv(model_dir + load_folder + 'results.csv')
+    resstock_results = resstock_results[resstock_results['building_characteristics_report.location_city'].str.contains(city) == True]
+    resstock_results = resstock_results.sort_values(by='build_existing_model.building_id')
+    resstock_results['build_existing_model.building_id'] = resstock_results['build_existing_model.building_id'] % 400
+    resstock_results.loc[resstock_results['build_existing_model.building_id'] == 0, 'build_existing_model.building_id'] = 400
+    resstock_results = resstock_results.reset_index()
+    resstock_results = resstock_results.drop(['index'], axis=1)
+
     resstock_building_id = building_id + 1
 
     folder_id = resstock_results.loc[resstock_results['build_existing_model.building_id'] == resstock_building_id, '_id']
@@ -65,10 +72,59 @@ def load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, buildi
     p_W_temp['hour'] = 0
     p_W_temp['day of week'] = 0
     p_W_temp['month'] = 0
-    p_W_temp['rate'] = 0.183
+
+    if city == 'Detroit':
+        p_W_temp['rate'] = 0.183
+    elif city == 'Los Angeles':
+        p_W_temp['rate'] = 0.257
+    elif city == 'New York':
+        p_W_temp['rate'] = 0.249
+    elif city == 'Orlando':
+        p_W_temp['rate'] = 0.16
+    elif  city == 'Seattle':
+        p_W_temp['rate'] = 0.118
+    elif city == 'Atlanta':
+        p_W_temp['rate'] = 0.16
+    elif city == 'Minneapolis':
+        p_W_temp['rate'] = 0.17
+    elif city == 'Phoenix':
+        p_W_temp['rate'] = 0.14
 
     if pricing == 'ToD':
-        p_W_temp['rate'] = 0.12
+        if city == 'Detroit':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'Los Angeles':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'New York':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'Orlando':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'Seattle':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'Atlanta':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'Minneapolis':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+        elif city == 'Phoenix':
+            off_peak_rate = 0.12
+            on_peak_rate_winter = 0.2
+            on_peak_rate_summer = 0.23
+
+        p_W_temp['rate'] = off_peak_rate
         for t in data:
             p_W_temp['dt'][t] = datetime.strptime(str(p_W_temp['timestamp'][t]), '%Y-%m-%d %H:%M:%S')
             p_W_temp['hour'][t] = p_W_temp['dt'][t].strftime('%H')
@@ -76,10 +132,10 @@ def load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, buildi
             p_W_temp['month'][t] = p_W_temp['dt'][t].strftime('%m')
             if int(p_W_temp['month'][t]) <=5 and int(p_W_temp['month'][t]) >= 10:
                 if int(p_W_temp['hour'][t]) >=11 and int(p_W_temp['hour'][t]) <=19:
-                    p_W_temp['rate'][t] = 0.2
+                    p_W_temp['rate'][t] = on_peak_rate_winter
             else:
                 if int(p_W_temp['hour'][t]) >=11 and int(p_W_temp['hour'][t]) <=19:
-                    p_W_temp['rate'][t] = 0.23
+                    p_W_temp['rate'][t] = on_peak_rate_summer
 
     p_W_temp2 = p_W_temp['rate']
     p_W_temp2 = p_W_temp2.to_frame()

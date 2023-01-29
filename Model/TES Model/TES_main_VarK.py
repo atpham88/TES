@@ -49,18 +49,26 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
         if tes_material == 'MgSO4':
             xData = [0, 0.268018305, 1]
             yData = [2.816408928/1000, 83.20127263/1000, 281.2673055/1000]
+            xData_charge = [0, 1-0.268018305, 1]
+            yData_charge = [281.2673055/1000, 83.20127263/1000, 2.816408928/1000]
             c_salt = 0.75
         elif tes_material == 'MgCl2':
             xData = [0, 0.213856511, 1]
             yData = [0.930935172/1000, 20.35515839/1000, 84.76789215/1000]
+            xData_charge = [0, 1-0.213856511, 1]
+            yData_charge = [84.76789215/1000, 20.35515839/1000, 0.930935172/1000]
             c_salt = 0.193056
         elif tes_material == 'K2CO3':
             xData = [0, 0.129554216, 1]
             yData = [81.60749345/1000, 444.7337936/1000, 1646.738256/1000]
+            xData_charge = [0, 1-0.129554216, 1]
+            yData_charge = [1646.738256 / 1000, 444.7337936 / 1000, 81.60749345 / 1000]
             c_salt = 0.18611
         elif tes_material == 'SrBr2':
             xData = [0, 0.449284033, 1]
             yData = [9.844630229/1000, 402.2793362/1000, 811.2535806/1000]
+            xData_charge = [0, 1-0.449284033, 1]
+            yData_charge = [811.2535806 / 1000, 402.2793362 / 1000, 9.844630229 / 1000 ]
             c_salt = 0.3556
     elif replace_TES_w_Battery:
         xData = [0, 0.637072888, 1]
@@ -70,15 +78,18 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
     if not include_TES:
         xData = []
         yData = []
+        xData_charge = []
+        yData_charge = []
         c_salt = 0
     return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing, include_TES, starting_hour,
-            mon_to_run, cop_type, used_cop, bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id)
+            mon_to_run, cop_type, used_cop, bigM, include_bigM, xData, yData, xData_charge, yData_charge,
+            single_building, city_to_run, building_no, building_id)
 
 def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp, used_cop,
-                       cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H):
+                       cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H, city):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
-     xData, yData, single_building, city_to_run,
+     xData, yData, xData_charge, yData_charge, single_building, city_to_run,
      building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery,
                                              include_bigM, super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
                                              single_building, city_to_run, building_no, building_id)
@@ -87,18 +98,19 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, 
     T = main_sets(hour)
 
     # Read total system cost under no TES:
-    if include_TES:
-        if super_comp == 1:
-            totcost_noTES = pd.read_excel('/home/anph/projects/TES/Results/Detroit/Compiled/total cost all building - no TES.xlsx')
-        elif super_comp == 0:
-            totcost_noTES = pd.read_excel(r"C:\Users\atpha\Documents\Postdocs\Projects\TES\Results\Detroit\Compiled\total cost all building - no TES 2.xlsx")
-        totcost_noTES = float(totcost_noTES.loc[totcost_noTES['Unnamed: 0'] == building_no, 'total cost ($)'])
-    else:
-        totcost_noTES = 0
+    #if include_TES:
+    #    if super_comp == 1:
+    #        totcost_noTES = pd.read_excel('/home/anph/projects/TES/Results/Detroit/Compiled/total cost all building - no TES.xlsx')
+    #    elif super_comp == 0:
+    #        totcost_noTES = pd.read_excel(r"C:\Users\atpha\Documents\Postdocs\Projects\TES\Results\Detroit\Compiled\total cost all building - no TES 2.xlsx")
+    #    totcost_noTES = float(totcost_noTES.loc[totcost_noTES['Unnamed: 0'] == building_no, 'total cost ($)'])
+    #else:
+    totcost_noTES = 0
 
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
-                bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id, zeroIntialSOC)
+                bigM, include_bigM, xData, yData, xData_charge, yData_charge, single_building, city_to_run, building_no,
+                building_id, zeroIntialSOC, city)
 
 
 # %% Set working directory:
@@ -127,14 +139,15 @@ def main_sets(hour):
 # %% Solving HDV model:
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
-                bigM, include_bigM, xData, yData, single_building, city_to_run, building_no, building_id, zeroInitialSOC):
+                bigM, include_bigM, xData, yData, xData_charge, yData_charge, single_building, city_to_run,
+                building_no, building_id, zeroInitialSOC, city):
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
 
     # Load data:
-    d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, starting_hour, building_id, pricing, curb_H)
-    cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop)
+    d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id, pricing, curb_H)
+    cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city)
 
     # Size of TES:
     e_T_temp = math.ceil(peakLoad)
@@ -142,10 +155,10 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_TES:
         if tes_sizing == 'Varied':
             v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData))
-            if tes_material == 'MgSO4' or tes_material == 'K2CO3':
-                v_salt = int(math.ceil(v_salt / 100.0)) * 100
-            elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
-                v_salt = int(math.ceil(v_salt / 100.0)) * 100
+            #if tes_material == 'MgSO4' or tes_material == 'K2CO3':
+            #    v_salt = int(math.ceil(v_salt / 100.0)) * 100
+            #elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
+            #    v_salt = int(math.ceil(v_salt / 100.0)) * 100
         elif tes_sizing == 'Fixed':
             v_salt = 150
 
@@ -153,6 +166,8 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
         for item in list((range(len(yData)))):
             yData[item] = v_salt * yData[item]
+        for item in list((range(len(yData_charge)))):
+            yData_charge[item] = v_salt * yData_charge[item]
 
     # %% Define variables and ordered set:
     model.T = Set(initialize=T, ordered=True)
@@ -168,10 +183,12 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     # TES states of charges:
     if include_TES:
-        model.k_T = Var(T, bounds=(0, max(yData)))                  # TES power rating
+        model.k_T = Var(T, bounds=(0, max(yData)))                  # TES power rating for discharging
+        model.k_Tc = Var(T, bounds=(0, max(yData_charge)))          # TES power rating for charging
         model.x_T = Var(T, within=NonNegativeReals)                 # TES state of charge
         model.xpt_T = Var(T, bounds=(0, 1))                         # SOC in percentage
-        model.v = Var(T, within=Binary)                             # binary variable: == 1 when TES charges
+        if bigM:
+            model.v = Var(T, within=Binary)                             # binary variable: == 1 when TES charges
         if curb_H:
             model.hp_cap_red = Var(bounds=(0, 1))                    # Percentage of peak load reduction
 
@@ -181,7 +198,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_TES:
         # Heat pump's output to charge TES:
         def ub_d_TES(model, t):
-            return model.g_HT[t] <= model.k_T[t]
+            return model.g_HT[t] <= model.k_Tc[t]
         model.ub_d_T = Constraint(T, rule=ub_d_TES)
 
         def ub_g_TES(model, t):
@@ -237,6 +254,8 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # Piece-wise linear power rating vs SOC constraints:
     if include_TES:
         model.piecewise = Piecewise(T, model.k_T, model.xpt_T, pw_pts=xData, pw_constr_type='EQ', f_rule=yData, pw_repn='SOS2')
+        model.piecewise_charge = Piecewise(T, model.k_Tc, model.xpt_T, pw_pts=xData_charge, pw_constr_type='EQ',
+                                           f_rule=yData_charge, pw_repn='CC')
 
     # Big M constraints:
     if include_bigM:
@@ -290,7 +309,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # model.dual = Suffix(direction=Suffix.IMPORT_EXPORT)
     solver = SolverFactory('cplex')
     # solver.options['mipgap'] = 0.005
-    solver.options['mipgap'] = 0.027
+    # solver.options['mipgap'] = 0.027
     results = solver.solve(model, tee=True)
     # model.pprint()
     # model.display()
