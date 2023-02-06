@@ -6,24 +6,38 @@ The TES model is an optimization-based model that minimizes the total heating el
 
 The TES model can be run for a single building of choice or all 400 representative buildings in any of the 16 major US cities included in the study.
 
-# Available city options to run up to date:
+# Available city options to run up to date
 Detroit
+
 LA
+
 NYC
+
 Orlando
+
 Minneapolis
+
 Atlanta
+
 Seattle
+
 Phoenix
 
-# Cities to add:
+# Cities to add
 Boston
+
 Denver
+
 Chicago
+
 Boise
+
 Omaha
+
 Philly
+
 Dallas
+
 Salt Lake City
 
 # Running Model
