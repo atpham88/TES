@@ -41,12 +41,19 @@ Dallas
 Salt Lake City
 
 # Running Model
-Run model from dashboard.py.
+Run model from dashboard.py. Main options to choose from:
 | Option | Description |
 | --- | --- |
+| `super_comp` | `0` if run locally, `1` if run on supercomputer|
 | `city` | Options: *Atlanta, Detroit, Los Angeles, Minneapolis, New York, Orlando, Phoenix, Seattle* |
 | `single_building` | `True` if run only **one** single building, specify building number next |
-| `building_no ` | Specify building number to run. Options: 1-400 |
+| `building_no` | Specify building number to run. Options:  `1` to  `400` |
+| `building_range` | `True` if run a **range** of individual buildings, specify building range next|
+| `first_building`,`last_building`  | Specify building range to run. Options:  `1` to  `400`|
+| `pricing` | `Fixed` to apply fixed utility rate, `ToD` to apply time-of-day rate|
+| `include_TES` | `True` to couple TES with ASHP, `False` to exclude TES (only ASHP to provide load)|
+| `tes_material` | Four different salt hydrates `MgSO4`, `MgCl2`, `K2CO3`, and `SrBr2`|
+| `tes_sizing` | How TES is size, `Varied` if sized based on peak load, `Fixed` if assumed one size (150 kg of salt) |
 
 # Model Outputs
 Hourly operations of TES (charging, discharging, SOC) and heat pump (output to TES, output to serve load).
