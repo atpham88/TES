@@ -145,5 +145,4 @@ def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, 
     for t in T:
         p_W[t] = p_W_temp3[t, 0]
 
-
     return d_heating, p_W, peakLoad, load_weight

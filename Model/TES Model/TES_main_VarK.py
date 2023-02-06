@@ -47,10 +47,14 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
     # Piecewise linear function of power rating vs SOC:
     if not replace_TES_w_Battery:
         if tes_material == 'MgSO4':
-            xData = [0, 0.268018305, 1]
-            yData = [2.816408928/1000, 83.20127263/1000, 281.2673055/1000]
-            xData_charge = [0, 1-0.268018305, 1]
-            yData_charge = [281.2673055/1000, 83.20127263/1000, 2.816408928/1000]
+            #xData = [0, 0.268018305, 1]
+            #yData = [2.816408928/1000, 83.20127263/1000, 281.2673055/1000]
+            #xData_charge = [0, 1-0.268018305, 1]
+            #yData_charge = [281.2673055/1000, 83.20127263/1000, 2.816408928/1000]
+            xData = [0, 1]
+            yData = [2.816408928/1000, 281.2673055/1000]
+            xData_charge = [0, 1]
+            yData_charge = [281.2673055/1000, 2.816408928/1000]
             c_salt = 0.75
         elif tes_material == 'MgCl2':
             xData = [0, 0.213856511, 1]
@@ -94,7 +98,7 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, 
                                              include_bigM, super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
                                              single_building, city_to_run, building_no, building_id)
 
-    (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run)
+    (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run, city)
     T = main_sets(hour)
 
     # Read total system cost under no TES:
@@ -114,21 +118,25 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, 
 
 
 # %% Set working directory:
-def working_directory(super_comp, single_building, city_to_run):
+def working_directory(super_comp, single_building, city_to_run, city):
+    if city == 'Los Angeles':
+        city = 'LA'
+    elif city == 'New York':
+        city = 'NY'
     if super_comp == 1:
         model_dir = '/home/anph/projects/TES/Data/'
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
         if single_building:
-            results_folder = '/home/anph/projects/TES/Results/' + city_to_run + '/Single/'
+            results_folder = '/home/anph/projects/TES/Results/' + city + '/Single/'
         else:
-            results_folder = '/home/anph/projects/TES/Results/' + city_to_run + '/All/'
+            results_folder = '/home/anph/projects/TES/Results/' + city + '/All/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'
         load_folder = '400_Buildings_EB\\' + city_to_run + '\\'
         if single_building:
-            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city_to_run + '\\Single\\'
+            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city + '\\Single\\'
         else:
-            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city_to_run + '\\All\\'
+            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city + '\\All\\'
     return model_dir, load_folder, results_folder
 
 # %% Define set:

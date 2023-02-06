@@ -6,17 +6,22 @@ from get_Opt_k_e import *
 def main():
     # Define Switches:
     super_comp = 0                          # =1: run on super computer, =0: run on local laptop
-    city = 'Detroit'                        # Name of city to running building/s located in
-    single_building = True                  # =True: run only one single building in a city
-                                            # =False: run all buildings in that city
+    city = 'New York'                        # Name of city to running building/s located in
+    single_building = True                  # = True: run only one single building in a city
+                                            # = False: run all buildings in that city or a range of building
+    building_range = False                   # = True: run building within range specified
     # If running single building (single_building = True), pick building ID to run (from 1 to 400):
     building_no = 5                         # =ID of building to run (if running single building)
+
+    # if running multiple buildings can also specify building range:
+    if building_range:
+        first_building, last_building = 176, 177
 
     # Utility rate options:
     pricing = 'Fixed'                         # =Fixed, ToD=Time of day, DP=Dynamic peak
 
     # Coupled TES with heat pump to shift load or not:
-    include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
+    include_TES = False                      # Using coupled TES and heat pump, == False: Using heat pump only
     replace_TES_w_Battery = False           # Replace a TES system with battery
 
     # If include_TES = True, these options can be chosen:
@@ -24,7 +29,7 @@ def main():
     include_bigM = False                    # Include bigM constraints for TES
     used_cop = "TES"                        # =Resstock: use estimated resstock COP, =TES: use Modi paper calculated COPs
     cop_type = 'NEEP50'                     # Type of COP used if used_cop =TES: NEEP90, NEEP50, DOE
-    tes_material = 'K2CO3'                  # Type of TES material, choosing from:
+    tes_material = 'MgSO4'                  # Type of TES material, choosing from:
                                             # MgSO4, K2CO3, MgCl2, SrBr2
     tes_sizing = 'Varied'                    # TES sizing methods:
                                             # =Varied: Varying based on peak load, =Fixed: fixed size
@@ -57,7 +62,10 @@ def main():
     if single_building:
         B = list(range(1))
     else:
-        B = list(range(400))
+        if building_range:
+            B = list(range(first_building, last_building+1))
+        else:
+            B = list(range(400))
 
     for b in B:
         building_id = b

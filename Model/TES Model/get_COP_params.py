@@ -3,6 +3,12 @@ import pandas as pd
 import numpy as np
 
 def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city):
+
+    if city == 'Los Angeles':
+        city = 'LA'
+    elif city == 'New York':
+        city = 'NY'
+
     if used_cop == "TES":
         load_cop50_raw = pd.read_excel(model_dir  + 'cop_temp.xlsx', sheet_name='cop NEEP50')
         load_cop90_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop NEEP90')
