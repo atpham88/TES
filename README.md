@@ -42,6 +42,11 @@ Salt Lake City
 
 # Running Model
 Run model from dashboard.py.
+| Option | Description |
+| --- | --- |
+| `city` | Options: *Atlanta, Detroit, Los Angeles, Minneapolis, New York, Orlando, Phoenix, Seattle* |
+| `single_building` | `True` if run only **one** single building, specify building number next |
+| `building_no ` | Specify building number to run. Options: 1-400 |
 
 # Model Outputs
 Hourly operations of TES (charging, discharging, SOC) and heat pump (output to TES, output to serve load).
