@@ -1,12 +1,12 @@
 # About
 Thermal Energy Storage Model for space heating coupled with heat pumps in residential buildings
 
-# Model Overview
+# Model overview
 The TES model is an optimization-based model that minimizes the total heating electricity cost to meet buildings space heating load using a system of thermal energy storage coupled with heat pump.
 
-The TES model can be run for a single building of choice or all 400 representative buildings in any of the 16 major US cities included in the study.
+The TES model can be run for a single building of choice, a range of buildings of choice, or all 400 representative buildings in any of the 16 major US cities included in the study (detailed below).
 
-# Running Model
+# Running model
 Run model from dashboard.py. Main options to choose from:
 | Option | Description |
 | --- | --- |
@@ -22,40 +22,29 @@ Run model from dashboard.py. Main options to choose from:
 | `tes_sizing` | How TES is size, `Varied` if sized based on peak load, `Fixed` if assumed one size (150 kg of salt) |
 
 # Available city options to run up to date
-Detroit
+* Detroit
 * LA
 * NYC
+* Orlando
+* Minneapolis
+* Atlanta
+* Seattle
+* Phoenix
 
-Orlando
+# Cities soon to be available
+* Boston
+* Denver
+* Chicago
+* Boise
+* Omaha
+* Philly
+* Dallas
+* Salt Lake City
 
-Minneapolis
-
-Atlanta
-
-Seattle
-
-Phoenix
-
-# Cities to add
-Boston
-
-Denver
-
-Chicago
-
-Boise
-
-Omaha
-
-Philly
-
-Dallas
-
-Salt Lake City
-
-# Model Outputs
-Hourly operations of TES (charging, discharging, SOC) and heat pump (output to TES, output to serve load).
-
-Hourly purchase of electricity from utilities
-
-Total system cost.
+# Model outputs for each building
+* Hourly operations of TES (charging/output to shift load, discharging, SOC). 
+* Hourly charing and discharging power ratings of TES.
+* Hourly operation of ASHP (output to TES, output to serve load).
+* Hourly purchase of electricity from utilities to power ASHP.
+* TES sizes based on specified sizing methods and TES materials.
+* Total system cost.
