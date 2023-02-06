@@ -23,8 +23,8 @@ Run model from dashboard.py. Main options to choose from:
 
 # Available city options to run up to date
 Detroit
-*LA
-*NYC
+* LA
+* NYC
 
 Orlando
 
