@@ -89,6 +89,14 @@ def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, 
         p_W_temp['rate'] = 0.17
     elif city == 'Phoenix':
         p_W_temp['rate'] = 0.14
+    elif city == 'Boston':
+        p_W_temp['rate'] = 0.291
+    elif city == 'Dallas':
+        p_W_temp['rate'] = 0.12
+    elif city == 'Boulder':
+        p_W_temp['rate'] = 0.15
+    elif city == 'Chicago':
+        p_W_temp['rate'] = 0.151
 
     if pricing == 'ToD':
         if city == 'Detroit':

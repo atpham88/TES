@@ -6,12 +6,12 @@ from get_Opt_k_e import *
 def main():
     # Define Switches:
     super_comp = 0                          # =1: run on super computer, =0: run on local laptop
-    city = 'New York'                        # Name of city to running building/s located in
+    city = 'Boston'                        # Name of city to running building/s located in
     single_building = True                  # = True: run only one single building in a city
                                             # = False: run all buildings in that city or a range of building
     building_range = False                   # = True: run building within range specified
     # If running single building (single_building = True), pick building ID to run (from 1 to 400):
-    building_no = 5                         # =ID of building to run (if running single building)
+    building_no = 1                         # =ID of building to run (if running single building)
 
     # if running multiple buildings can also specify building range:
     if building_range:
@@ -21,7 +21,7 @@ def main():
     pricing = 'Fixed'                         # =Fixed, ToD=Time of day, DP=Dynamic peak
 
     # Coupled TES with heat pump to shift load or not:
-    include_TES = False                      # Using coupled TES and heat pump, == False: Using heat pump only
+    include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
     replace_TES_w_Battery = False           # Replace a TES system with battery
 
     # If include_TES = True, these options can be chosen:
@@ -46,6 +46,8 @@ def main():
     elif city == 'Los Angeles' or city == 'New York' or city == 'Orlando' or city == 'Seattle' \
             or city == 'Atlanta' or city == 'Minneapolis' or city == 'Phoenix':
         city_to_run = 'LA_NYC_ORL_SEA_ATL_MIN_PHX'
+    elif city == 'Boston' or city == 'Boulder' or city == 'Chicago' or city == 'Dallas':
+        city_to_run = 'BOS_CHI_DAL_BOU'
 
     p_T = 0                                 # TES operating cost ($/kW)
     ef_T = 0.98                             # Round trip efficiency

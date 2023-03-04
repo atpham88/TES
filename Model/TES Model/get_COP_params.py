@@ -28,9 +28,10 @@ def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city):
             min_id90 = load_cop90_raw['temp_diff'].idxmin(axis=0)
             min_idDOE = load_copDOE_raw['temp_diff'].idxmin(axis=0)
 
-            ext_temp.iloc[i,1] = load_cop50_raw['COP NEEP50'][min_id50]
-            ext_temp.iloc[i,2] = load_cop90_raw['COP NEEP90'][min_id90]
-            ext_temp.iloc[i,3] = load_copDOE_raw['COP DOE'][min_idDOE]
+            ext_temp['COP NEEP 50'][i] = load_cop50_raw['COP NEEP50'][min_id50]
+            ext_temp['COP NEEP 90'][i] = load_cop90_raw['COP NEEP90'][min_id90]
+            ext_temp['COP DOE'][i] = load_copDOE_raw['COP DOE'][min_idDOE]
+            #print(i)
 
         if cop_type == 'DOE':
             cop = ext_temp['COP DOE']
