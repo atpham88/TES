@@ -1,5 +1,5 @@
 # About
-Thermal Energy Storage Model for space heating coupled with heat pumps in residential buildings
+Thermal Energy Storage Model for space heating coupled with heat pumps in residential homes in U.S. Cities across different climates
 
 # Model overview
 The TES model is an optimization-based model that minimizes the total heating electricity cost to meet buildings space heating load using a system of thermal energy storage coupled with heat pump.
