@@ -33,7 +33,7 @@ Run model from dashboard.py. Main options to choose from:
 
 # Cities soon to be available
 * Boston
-* Denver
+* Boulder
 * Chicago
 * Dallas
 
