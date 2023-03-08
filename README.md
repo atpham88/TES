@@ -1,5 +1,5 @@
 # About
-Thermal Energy Storage Model for space heating coupled with heat pumps in residential buildings
+Thermal Energy Storage Model for space heating coupled with heat pumps in residential homes in U.S. Cities across different climates
 
 # Model overview
 The TES model is an optimization-based model that minimizes the total heating electricity cost to meet buildings space heating load using a system of thermal energy storage coupled with heat pump.
@@ -11,7 +11,7 @@ Run model from dashboard.py. Main options to choose from:
 | Option | Description |
 | --- | --- |
 | `super_comp` | `0` if run locally, `1` if run on supercomputer|
-| `city` | Options: *Atlanta, Detroit, Los Angeles, Minneapolis, New York, Orlando, Phoenix, Seattle* |
+| `city` | Options: *Atlanta, Boston, Boulder, Chicago, Detroit, Dallas, Los Angeles, Minneapolis, New York, Orlando, Phoenix, Seattle* |
 | `single_building` | `True` if run only **one** single building, specify building number next |
 | `building_no` | Specify building number to run. Options:  `1` to  `400` |
 | `building_range` | `True` if run a **range** of individual buildings, specify building range next|
@@ -20,22 +20,6 @@ Run model from dashboard.py. Main options to choose from:
 | `include_TES` | `True` to couple TES with ASHP, `False` to exclude TES (only ASHP to provide load)|
 | `tes_material` | Four different salt hydrates `MgSO4`, `MgCl2`, `K2CO3`, and `SrBr2`|
 | `tes_sizing` | How TES is size, `Varied` if sized based on peak load, `Fixed` if assumed one size (150 kg of salt) |
-
-# Available city options to run up to date
-* Detroit
-* LA
-* NYC
-* Orlando
-* Minneapolis
-* Atlanta
-* Seattle
-* Phoenix
-
-# Cities soon to be available
-* Boston
-* Boulder
-* Chicago
-* Dallas
 
 # Model outputs for each building
 * Hourly operations of TES (charging/output to shift load, discharging, SOC). 
