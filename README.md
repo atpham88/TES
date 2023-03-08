@@ -8,6 +8,8 @@ The TES model can be run for a single building of choice, a range of buildings o
 
 ![image (1)](https://user-images.githubusercontent.com/56058936/223792219-ca237aac-603c-4dc8-abdb-2a7117e20d3d.png)
 
+# Programming language
+Model is programmed in Pyomo/Python and solved using CPLEX.
 
 # Running model
 Run model from dashboard.py. Main options to choose from:
