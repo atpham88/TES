@@ -15,7 +15,7 @@ The TES model is programmed in Pyomo/Python and solved using CPLEX.
 Run model from dashboard.py. Main options to choose from:
 | Option | Description |
 | --- | --- |
-| `super_comp` | `0` if run locally, `1` if run on supercomputer|
+| `super_comp` | `False` if run locally, `True` if run on supercomputer|
 | `city` | Options: *Atlanta, Boston, Boulder, Chicago, Detroit, Dallas, Los Angeles, Minneapolis, New York, Orlando, Phoenix, Seattle* |
 | `single_building` | `True` if run only **one** single building, specify building number next |
 | `building_no` | Specify building number to run. Options:  `1` to  `400` |
@@ -24,7 +24,9 @@ Run model from dashboard.py. Main options to choose from:
 | `pricing` | `Fixed` to apply fixed utility rate, `ToD` to apply time-of-day rate|
 | `include_TES` | `True` to couple TES with ASHP, `False` to exclude TES (only ASHP to provide load)|
 | `tes_material` | Four different salt hydrates `MgSO4`, `MgCl2`, `K2CO3`, and `SrBr2`|
-| `tes_sizing` | How TES is size, `Varied` if sized based on peak load, `Fixed` if assumed one size (150 kg of salt) |
+| `tes_sizing` | How TES is size, `Varied` if sized based on peak load, `Incremental` if sized based on peak load then round up to the next 25 kg ,`Fixed` if assumed one size (150 kg of salt) |
+| `const_pr` | `False` if use Ragone plots, `True` if assumed constant power rating|
+| `power_rating` | (only eligible if `const_pr`=`True`) `Peak` if setting constant power rating at peak load, `Average` if setting power rating at 100 W per kg, and `Low` if setting power rating at 10 W per kg|
 
 # Model outputs for each building
 * Hourly operations of TES (charging/output to shift load, discharging, SOC). 
