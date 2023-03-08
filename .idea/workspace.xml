@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="605f844f-2eaf-4d02-beae-1e4cec97be2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Specific Power Plots for Reactor Scale_bk_12.19.22.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Specific Power Plots for Reactor Scale_bk_12.19.22.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/ext_temp.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ext_temp.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/weather/DTW.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/weather/DTW.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/weather/ext_temp_Orlando.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/weather/ext_temp_Orlando.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/weather/ext_temp_Seattle.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/weather/ext_temp_Seattle.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/TES Model/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_COP_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_COP_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/TES Model/get_load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/TES Model/get_load_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Process Results/TES_Results_Processing/CostSaving.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Process Results/TES_Results_Processing/CostSaving.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Process Results/TES_Results_Processing/IndBuildingAnalysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Process Results/TES_Results_Processing/IndBuildingAnalysis.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/genFleet_before.csv" beforeDir="false" />
@@ -332,6 +326,8 @@
       <workItem from="1677277819069" duration="7000" />
       <workItem from="1677379719707" duration="589000" />
       <workItem from="1677967451740" duration="2067000" />
+      <workItem from="1677988552467" duration="1299000" />
+      <workItem from="1677999430275" duration="98000" />
     </task>
     <servers />
   </component>
