@@ -82,25 +82,25 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, include
                 xData_charge = [0, 1]
                 yData_charge = [811.2535806/1000, 9.844630229/1000 ]
                 c_salt = 0.3556
+            yData_ref = yData
         else:
+            yData_ref = [2.816408928 / 1000, 281.2673055 / 1000]
             if power_rating == 'Peak':
                 xData = [0, 1]
                 yData = [281.2673055/1000, 281.2673055/1000]
                 xData_charge = [0, 1]
                 yData_charge = [281.2673055/1000, 281.2673055/1000]
-                c_salt = 0.75
             elif power_rating == 'Average':
                 xData = [0, 1]
                 yData = [100/1000, 100/1000]
                 xData_charge = [0, 1]
                 yData_charge = [100/1000, 100/1000]
-                c_salt = 0.75
             elif power_rating == 'Low':
                 xData = [0, 1]
                 yData = [10/1000, 10/1000]
                 xData_charge = [0, 1]
                 yData_charge = [10/1000, 10/1000]
-                c_salt = 0.75
+            c_salt = 0.75
     elif not include_TES:
         xData = []
         yData = []
@@ -109,7 +109,7 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, include
         c_salt = 0
 
     return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing, include_TES, starting_hour,
-            mon_to_run, cop_type, used_cop, bigM, include_bigM, xData, yData, xData_charge, yData_charge,
+            mon_to_run, cop_type, used_cop, bigM, include_bigM, xData, yData, xData_charge, yData_charge, yData_ref,
             single_building, city_to_run, building_no, building_id)
 
 def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, include_bigM, super_comp, used_cop,
@@ -117,7 +117,7 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, 
                        curb_H, city, const_pr, power_rating):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
-     xData, yData, xData_charge, yData_charge, single_building, city_to_run,
+     xData, yData, xData_charge, yData_charge, yData_ref, single_building, city_to_run,
      building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, tes_sizing,
                                              include_bigM, super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
                                              single_building, city_to_run, building_no, building_id, const_pr, power_rating)
@@ -137,7 +137,7 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, 
 
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
-                bigM, include_bigM, xData, yData, xData_charge, yData_charge, single_building, city_to_run, building_no,
+                bigM, include_bigM, xData, yData, xData_charge, yData_charge, yData_ref, single_building, city_to_run, building_no,
                 building_id, zeroIntialSOC, city,  const_pr, power_rating)
 
 
@@ -171,7 +171,7 @@ def main_sets(hour):
 # %% Solving HDV model:
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
-                bigM, include_bigM, xData, yData, xData_charge, yData_charge, single_building, city_to_run,
+                bigM, include_bigM, xData, yData, xData_charge, yData_charge, yData_ref, single_building, city_to_run,
                 building_no, building_id, zeroInitialSOC, city,  const_pr, power_rating):
 
     # %% Set model type - Concrete Model:
@@ -186,9 +186,9 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     if include_TES:
         if tes_sizing == 'Varied':
-            v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData))
+            v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData_ref))
         elif tes_sizing == 'Incremental':
-            v_salt = max(e_T_temp / c_salt, e_T_temp / max(yData))
+            v_salt = max(e_T_temp / c_salt, e_T_temp / max(yData_ref))
             v_salt = int(math.ceil(v_salt / 25.0)) * 25
         elif tes_sizing == 'Fixed':
             v_salt = 150
@@ -386,10 +386,9 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
                                    + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_'
                                    + 'Size_' + tes_sizing + '_' + str(building_id+1) + '.xlsx')
         if const_pr:
-            if power_rating == 'Peak':
-                results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_'
-                                           + power_rating + '_' + pricing + '_Building_id_'
-                                           + 'Size_' + tes_sizing + '_' + str(building_id + 1) + '.xlsx')
+            results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_'
+                                       + power_rating + '_' + pricing + '_Building_id_'
+                                       + 'Size_' + tes_sizing + '_' + str(building_id + 1) + '.xlsx')
 
     elif curb_H:
         results_book = xw.Workbook(update_results_folder + 'Results_' + 'curbH_includeTES_' + str(include_TES) + '_' + tes_material

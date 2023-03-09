@@ -52,8 +52,8 @@ def main_function_Opt_k_e(year, mon_to_run, super_comp, used_cop, cop_type, curb
 
 # %% Set working directory:
 def working_directory(super_comp, single_building, city_to_run):
-    if super_comp == 1:
-        model_dir = '/home/anph/projects/TES/Data/'
+    if super_comp:
+        model_dir = '/nfs/turbo/seas-mtcraig/anph/TES/Data/'
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'

@@ -4,7 +4,7 @@ from get_Opt_k_e import *
 
 def main():
     # Define Switches:
-    super_comp =  True                      # = True: run on super computer, = False: run on local laptop
+    super_comp =  False                     # = True: run on super computer, = False: run on local laptop
     city = 'Boston'                         # Name of city to running building/s located in
     single_building = True                  # = True: run only one single building in a city
                                             # = False: run all buildings in that city or a range of building
@@ -33,10 +33,9 @@ def main():
                                             # MgSO4, K2CO3, MgCl2, SrBr2
     const_pr = True                         # = True: use constant rating (no Ragone plot regardless of salt types)
     if const_pr:
-        power_rating = 'Peak'               # Constant power rating:
-                                            # = Peak: at peak load
-                                            # = Average: at 100 W per kg
-                                            # = Low: at 10 W per kg
+        power_rating = 'Peak'               # Constant power rating, = Peak: at peak load, = Average: at 100 W per kg, = Low: at 10 W per kg
+    else:
+        power_rating = 'None'
 
     # Instead of minimizing cost, maximizing total peak load reduction:
     curb_H = False                          # Curb heat pump output when with TES to reduce peak load
