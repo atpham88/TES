@@ -9,7 +9,7 @@ def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city):
     elif city == 'New York':
         city = 'NY'
 
-    if used_cop == "TES":
+    if used_cop == "Waite_Modi":
         load_cop50_raw = pd.read_excel(model_dir  + 'cop_temp.xlsx', sheet_name='cop NEEP50')
         load_cop90_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop NEEP90')
         load_copDOE_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop DOE')

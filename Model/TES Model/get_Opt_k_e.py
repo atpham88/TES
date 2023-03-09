@@ -6,14 +6,9 @@ Get optimal TES storage capacity and heat pump capacity for specific building
 Then using optimal sizings of TEs and heat pump in TES model
 """
 
-import numpy as np
-import pandas as pd
 from pyomo.environ import *
 from pyomo.opt import SolverFactory
 import time
-import glob
-import os
-import xlsxwriter as xw
 
 from get_load_data import load_data
 from get_COP_params import est_COP

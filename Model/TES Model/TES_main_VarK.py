@@ -1,18 +1,14 @@
 """
 An Pham
-Updated 11/27/2021
-TES Model for Building and Water Heating
-Original approach -- No temperature considered
-No CAPEX
+Updated 03/08/2023
+TES Model for Space Heating
 Power rating as a function of SOC
 """
 
 import numpy as np
-import pandas as pd
 from pyomo.environ import *
 from pyomo.opt import SolverFactory
 import time
-import glob
 import os
 import xlsxwriter as xw
 import math
@@ -26,8 +22,9 @@ from datetime import date
 start_time = time.time()
 
 # %% Main parameters:
-def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp,
-                used_cop, cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id):
+def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, include_bigM, super_comp,
+                used_cop, cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no,
+                building_id, const_pr, power_rating):
 
     if mon_to_run == 'Year':
         day = 365                                   # Equivalent days
@@ -45,76 +42,103 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace
     f_c = ef_T/f_d                                  # Charging efficiency
 
     # Piecewise linear function of power rating vs SOC:
-    if not replace_TES_w_Battery:
-        if tes_material == 'MgSO4':
-            #xData = [0, 0.268018305, 1]
-            #yData = [2.816408928/1000, 83.20127263/1000, 281.2673055/1000]
-            #xData_charge = [0, 1-0.268018305, 1]
-            #yData_charge = [281.2673055/1000, 83.20127263/1000, 2.816408928/1000]
-            xData = [0, 1]
-            yData = [2.816408928/1000, 281.2673055/1000]
-            xData_charge = [0, 1]
-            yData_charge = [281.2673055/1000, 2.816408928/1000]
-            c_salt = 0.75
-        elif tes_material == 'MgCl2':
-            xData = [0, 0.213856511, 1]
-            yData = [0.930935172/1000, 20.35515839/1000, 84.76789215/1000]
-            xData_charge = [0, 1-0.213856511, 1]
-            yData_charge = [84.76789215/1000, 20.35515839/1000, 0.930935172/1000]
-            c_salt = 0.193056
-        elif tes_material == 'K2CO3':
-            xData = [0, 0.129554216, 1]
-            yData = [81.60749345/1000, 444.7337936/1000, 1646.738256/1000]
-            xData_charge = [0, 1-0.129554216, 1]
-            yData_charge = [1646.738256 / 1000, 444.7337936 / 1000, 81.60749345 / 1000]
-            c_salt = 0.18611
-        elif tes_material == 'SrBr2':
-            xData = [0, 0.449284033, 1]
-            yData = [9.844630229/1000, 402.2793362/1000, 811.2535806/1000]
-            xData_charge = [0, 1-0.449284033, 1]
-            yData_charge = [811.2535806 / 1000, 402.2793362 / 1000, 9.844630229 / 1000 ]
-            c_salt = 0.3556
-    elif replace_TES_w_Battery:
-        xData = [0, 0.637072888, 1]
-        yData = [0/1000, 627.021051/1000, 2803.504518/1000]
-        c_salt = 0
+    if include_TES:
+        if not const_pr:
+            if tes_material == 'MgSO4':
+                # xData = [0, 0.268018305, 1]
+                # yData = [2.816408928/1000, 83.20127263/1000, 281.2673055/1000]
+                # xData_charge = [0, 1-0.268018305, 1]
+                # yData_charge = [281.2673055/1000, 83.20127263/1000, 2.816408928/1000]
+                xData = [0, 1]
+                yData = [2.816408928/1000, 281.2673055/1000]
+                xData_charge = [0, 1]
+                yData_charge = [281.2673055/1000, 2.816408928/1000]
+                c_salt = 0.75
+            elif tes_material == 'MgCl2':
+                # xData = [0, 0.213856511, 1]
+                # yData = [0.930935172 / 1000, 20.35515839 / 1000, 84.76789215 / 1000]
+                # xData_charge = [0, 1 - 0.213856511, 1]
+                # yData_charge = [84.76789215 / 1000, 20.35515839 / 1000, 0.930935172 / 1000]
 
-    if not include_TES:
+                xData = [0, 1]
+                yData = [0.930935172/1000, 84.76789215/1000]
+                xData_charge = [0, 1]
+                yData_charge = [84.76789215/1000, 0.930935172/1000]
+                c_salt = 0.193056
+            elif tes_material == 'K2CO3':
+                xData = [0, 0.129554216, 1]
+                yData = [81.60749345/1000, 444.7337936/1000, 1646.738256/1000]
+                xData_charge = [0, 1-0.129554216, 1]
+                yData_charge = [1646.738256/1000, 444.7337936/1000, 81.60749345/1000]
+                c_salt = 0.18611
+            elif tes_material == 'SrBr2':
+                # xData = [0, 0.449284033, 1]
+                # yData = [9.844630229 / 1000, 402.2793362 / 1000, 811.2535806 / 1000]
+                # xData_charge = [0, 1 - 0.449284033, 1]
+                # yData_charge = [811.2535806 / 1000, 402.2793362 / 1000, 9.844630229 / 1000]
+
+                xData = [0, 1]
+                yData = [9.844630229/1000, 811.2535806/1000]
+                xData_charge = [0, 1]
+                yData_charge = [811.2535806/1000, 9.844630229/1000 ]
+                c_salt = 0.3556
+        else:
+            if power_rating == 'Peak':
+                xData = [0, 1]
+                yData = [281.2673055/1000, 281.2673055/1000]
+                xData_charge = [0, 1]
+                yData_charge = [281.2673055/1000, 281.2673055/1000]
+                c_salt = 0.75
+            elif power_rating == 'Average':
+                xData = [0, 1]
+                yData = [100/1000, 100/1000]
+                xData_charge = [0, 1]
+                yData_charge = [100/1000, 100/1000]
+                c_salt = 0.75
+            elif power_rating == 'Low':
+                xData = [0, 1]
+                yData = [10/1000, 10/1000]
+                xData_charge = [0, 1]
+                yData_charge = [10/1000, 10/1000]
+                c_salt = 0.75
+    elif not include_TES:
         xData = []
         yData = []
         xData_charge = []
         yData_charge = []
         c_salt = 0
+
     return (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing, include_TES, starting_hour,
             mon_to_run, cop_type, used_cop, bigM, include_bigM, xData, yData, xData_charge, yData_charge,
             single_building, city_to_run, building_no, building_id)
 
-def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery, include_bigM, super_comp, used_cop,
-                       cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing, curb_H, city):
+def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, include_bigM, super_comp, used_cop,
+                       cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing,
+                       curb_H, city, const_pr, power_rating):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
      xData, yData, xData_charge, yData_charge, single_building, city_to_run,
-     building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, replace_TES_w_Battery,
+     building_no, building_id) = main_params(year, mon_to_run, include_TES, tes_material, tes_sizing,
                                              include_bigM, super_comp, used_cop, cop_type, p_T, ef_T, f_d, k_H, ir,
-                                             single_building, city_to_run, building_no, building_id)
+                                             single_building, city_to_run, building_no, building_id, const_pr, power_rating)
 
     (model_dir, load_folder, results_folder) = working_directory(super_comp, single_building, city_to_run, city)
     T = main_sets(hour)
 
     # Read total system cost under no TES:
-    #if include_TES:
-    #    if super_comp == 1:
-    #        totcost_noTES = pd.read_excel('/home/anph/projects/TES/Results/Detroit/Compiled/total cost all building - no TES.xlsx')
-    #    elif super_comp == 0:
-    #        totcost_noTES = pd.read_excel(r"C:\Users\atpha\Documents\Postdocs\Projects\TES\Results\Detroit\Compiled\total cost all building - no TES 2.xlsx")
-    #    totcost_noTES = float(totcost_noTES.loc[totcost_noTES['Unnamed: 0'] == building_no, 'total cost ($)'])
-    #else:
+    # if include_TES:
+    #     if super_comp == 1:
+    #         totcost_noTES = pd.read_excel('/home/anph/projects/TES/Results/Detroit/Compiled/total cost all building - no TES.xlsx')
+    #     elif super_comp == 0:
+    #         totcost_noTES = pd.read_excel(r"C:\Users\atpha\Documents\Postdocs\Projects\TES\Results\Detroit\Compiled\total cost all building - no TES 2.xlsx")
+    #     totcost_noTES = float(totcost_noTES.loc[totcost_noTES['Unnamed: 0'] == building_no, 'total cost ($)'])
+    # else:
     totcost_noTES = 0
 
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, xData_charge, yData_charge, single_building, city_to_run, building_no,
-                building_id, zeroIntialSOC, city)
+                building_id, zeroIntialSOC, city,  const_pr, power_rating)
 
 
 # %% Set working directory:
@@ -123,13 +147,13 @@ def working_directory(super_comp, single_building, city_to_run, city):
         city = 'LA'
     elif city == 'New York':
         city = 'NY'
-    if super_comp == 1:
-        model_dir = '/home/anph/projects/TES/Data/'
+    if super_comp:
+        model_dir = '/nfs/turbo/seas-mtcraig/anph/TES/Data/'
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
         if single_building:
-            results_folder = '/home/anph/projects/TES/Results/' + city + '/Single/'
+            results_folder = '/nfs/turbo/seas-mtcraig/anph/TES/Results/' + city + '/Single/'
         else:
-            results_folder = '/home/anph/projects/TES/Results/' + city + '/All/'
+            results_folder = '/nfs/turbo/seas-mtcraig/anph/TES/Results/' + city + '/All/'
     else:
         model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'
         load_folder = '400_Buildings_EB\\' + city_to_run + '\\'
@@ -148,7 +172,7 @@ def main_sets(hour):
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, xData_charge, yData_charge, single_building, city_to_run,
-                building_no, building_id, zeroInitialSOC, city):
+                building_no, building_id, zeroInitialSOC, city,  const_pr, power_rating):
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
@@ -163,10 +187,9 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_TES:
         if tes_sizing == 'Varied':
             v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData))
-            #if tes_material == 'MgSO4' or tes_material == 'K2CO3':
-            #    v_salt = int(math.ceil(v_salt / 100.0)) * 100
-            #elif tes_material == 'MgCl2' or tes_material == 'SrBr2':
-            #    v_salt = int(math.ceil(v_salt / 100.0)) * 100
+        elif tes_sizing == 'Incremental':
+            v_salt = max(e_T_temp / c_salt, e_T_temp / max(yData))
+            v_salt = int(math.ceil(v_salt / 25.0)) * 25
         elif tes_sizing == 'Fixed':
             v_salt = 150
 
@@ -354,7 +377,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     total_cost = cost_T.sum()
 
-    update_results_folder = results_folder   # + fixed_time_for_results
+    update_results_folder = results_folder                   # + fixed_time_for_results
     if not os.path.exists(update_results_folder):
         os.makedirs(update_results_folder)
 
@@ -362,6 +385,12 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_' + tes_material
                                    + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_'
                                    + 'Size_' + tes_sizing + '_' + str(building_id+1) + '.xlsx')
+        if const_pr:
+            if power_rating == 'Peak':
+                results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_'
+                                           + power_rating + '_' + pricing + '_Building_id_'
+                                           + 'Size_' + tes_sizing + '_' + str(building_id + 1) + '.xlsx')
+
     elif curb_H:
         results_book = xw.Workbook(update_results_folder + 'Results_' + 'curbH_includeTES_' + str(include_TES) + '_' + tes_material
                                    + '_month_' + str(mon_to_run) + '_' + cop_type + '_' + pricing + '_Building_id_'
