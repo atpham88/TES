@@ -30,7 +30,7 @@ Run model from dashboard.py. Main options to choose from:
 
 # Model outputs for each building
 * Hourly operations of TES (charging/output to shift load, discharging, SOC). 
-* Hourly charing and discharging power ratings of TES.
+* Hourly charging and discharging power ratings of TES.
 * Hourly operation of ASHP (output to TES, output to serve load).
 * Hourly purchase of electricity from utilities to power ASHP.
 * TES sizes based on specified sizing methods and TES materials.
