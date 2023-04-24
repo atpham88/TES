@@ -36,4 +36,4 @@ Run model from dashboard.py. Main options to choose from:
 * Hourly purchase of electricity from utilities to power ASHP.
 * TES sizes based on specified sizing methods and TES materials.
 * Total system cost.
-* TES break-even cost (\$/kg, \$/kWh thermal).
+* TES break-even cost ($$/kg, $$/kWh thermal).
