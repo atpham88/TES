@@ -37,3 +37,4 @@ Run model from dashboard.py. Main options to choose from:
 * TES sizes based on specified sizing methods and TES materials.
 * Total system cost.
 * TES break-even cost.
+* Peak load reduction.
