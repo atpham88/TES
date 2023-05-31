@@ -5,7 +5,7 @@ from get_Opt_k_e import *
 def main():
     # Define Switches:
     super_comp =  False                     # = True: run on super computer, = False: run on local laptop
-    city = 'Boston'                         # Name of city to running building/s located in
+    city = 'Detroit'                         # Name of city to running building/s located in
     single_building = True                  # = True: run only one single building in a city
                                             # = False: run all buildings in that city or a range of building
     building_range = False                  # = True: run building within range specified

@@ -14,7 +14,7 @@ def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city):
         load_cop90_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop NEEP90')
         load_copDOE_raw = pd.read_excel(model_dir + 'cop_temp.xlsx', sheet_name='cop DOE')
 
-        ext_temp = pd.read_excel(model_dir + 'weather\\' + 'ext_temp_' + city + '.xlsx')
+        ext_temp = pd.read_excel(model_dir + 'weather/' + 'ext_temp_' + city + '.xlsx')
         ext_temp['COP NEEP 50'] = 0.0000
         ext_temp['COP NEEP 90'] = 0.0000
         ext_temp['COP DOE'] = 0.0000
