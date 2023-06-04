@@ -29,9 +29,12 @@ Run model from dashboard.py. Main options to choose from:
 | `power_rating` | (only eligible if `const_pr`=`True`) `Peak` if setting constant power rating at peak load, `Average` if setting power rating at 100 W per kg, and `Low` if setting power rating at 10 W per kg|
 
 # Model outputs for each building
+* ASHP's capacity
 * Hourly operations of TES (charging/output to shift load, discharging, SOC). 
-* Hourly charing and discharging power ratings of TES.
-* Hourly operation of ASHP (output to TES, output to serve load).
+* Hourly charging and discharging power ratings of TES.
+* Hourly operation of ASHP (output to charge TES, output to serve load).
 * Hourly purchase of electricity from utilities to power ASHP.
 * TES sizes based on specified sizing methods and TES materials.
 * Total system cost.
+* TES break-even cost.
+* Peak load reduction.

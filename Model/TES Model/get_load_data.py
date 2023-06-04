@@ -25,11 +25,11 @@ def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, 
     folder_id = folder_id.iloc[0,0]
 
     if not super_comp:
-        archive = zipfile.ZipFile(model_dir + load_folder + folder_id + '\\' + 'data_point.zip')
+        archive = zipfile.ZipFile(model_dir + load_folder + folder_id + '/' + 'data_point.zip')
     elif super_comp:
         archive = zipfile.ZipFile(model_dir + load_folder + folder_id + '/' + 'data_point.zip')
 
-    load_data_path = archive.extract('enduse_timeseries.csv', model_dir + load_folder + folder_id + '\\')
+    load_data_path = archive.extract('enduse_timeseries.csv', model_dir + load_folder + folder_id + '/')
     load_data_raw = pd.read_csv(load_data_path)
     archive.close()
 

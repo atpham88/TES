@@ -159,12 +159,12 @@ def working_directory(super_comp, single_building, city_to_run, city):
         else:
             results_folder = '/nfs/turbo/seas-mtcraig/anph/TES/Results/' + city + '/All/'
     else:
-        model_dir = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Data\\'
-        load_folder = '400_Buildings_EB\\' + city_to_run + '\\'
+        model_dir = '/Users/apham/Documents/GitHub/TES/Data'
+        load_folder = '400_Buildings_EB/' + city_to_run + '/'
         if single_building:
-            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city + '\\Single\\'
+            results_folder = '/Users/apham/Documents/GitHub/TES/Results/' + city + '\\Single\\'
         else:
-            results_folder = 'C:\\Users\\atpha\\Documents\\Postdocs\\Projects\\TES\\Results\\' + city + '\\All\\'
+            results_folder = '/Users/apham/Documents/GitHub/TES/Results/' + city + '\\All\\'
     return model_dir, load_folder, results_folder
 
 # %% Define set:
