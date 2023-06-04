@@ -190,7 +190,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     if include_TES:
         if tes_sizing == 'Varied':
-            v_salt = max(e_T_temp/c_salt, e_T_temp/max(yData_ref))
+            v_salt = 120
         elif tes_sizing == 'Incremental':
             v_salt = max(e_T_temp / c_salt, e_T_temp / max(yData_ref))
             v_salt = int(math.ceil(v_salt / 25.0)) * 25
@@ -390,8 +390,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
                                    + 'Size_' + tes_sizing + '_' + str(building_id+1) + '.xlsx')
         if const_pr:
             results_book = xw.Workbook(update_results_folder + 'Results_' + 'includeTES_' + str(include_TES) + '_'
-                                       + power_rating + '_' + pricing + '_Building_id_'
-                                       + 'Size_' + tes_sizing + '_' + str(building_id + 1) + '.xlsx')
+                                       + power_rating + '_140kg' + '_Building_id_' + str(building_id + 1) + '.xlsx')
 
     elif curb_H:
         results_book = xw.Workbook(update_results_folder + 'Results_' + 'curbH_includeTES_' + str(include_TES) + '_' + tes_material
