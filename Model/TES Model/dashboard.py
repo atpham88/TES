@@ -19,7 +19,7 @@ def main():
     pricing = 'Fixed'                         # =Fixed, ToD=Time of day, DP=Dynamic peak
 
     # Coupled TES with heat pump to shift load or not:
-    include_TES = True                      # Using coupled TES and heat pump, == False: Using heat pump only
+    include_TES = False                      # Using coupled TES and heat pump, == False: Using heat pump only
     tes_sizing = 'Varied'                   # TES sizing methods:
                                             # = Varied: Varying based on peak load
                                             # = Incremental: based on peak load + round up to 25 kg
@@ -55,6 +55,7 @@ def main():
     p_T = 0                                 # TES operating cost ($/kWh)
     ef_T = 0.98                             # Round trip efficiency
     f_d = 0.98                              # Discharging efficiency
+    parasitic_load_MgSO4 = 0.39             # Parasitic load % for MgSO4 for TES humidification when charging
 
     # Model time and resolution:
     year = 2018
@@ -83,9 +84,8 @@ def main():
 
         # Heat pump parameters:
         k_H = k_H_star                           # Heat pump capacity (kWh)
-
         main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, include_bigM, super_comp, used_cop, cop_type,
                            p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing,
-                           curb_H, city, const_pr, power_rating)
+                           curb_H, city, const_pr, power_rating, parasitic_load_MgSO4)
 
 main()

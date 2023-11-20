@@ -4,8 +4,6 @@ import numpy as np
 import zipfile
 from datetime import datetime
 
-#parquetfile = pd.read_parquet("C:\\Users\\atpha\\Desktop\\Temp Files\\105114-0.parquet")
-
 def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id, pricing, curb_H):
 
     # Read resstock results summary folder:

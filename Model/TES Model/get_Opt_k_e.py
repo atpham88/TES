@@ -12,6 +12,8 @@ import time
 
 from get_load_data import load_data
 from get_COP_params import est_COP
+from get_fan_load import est_fan_load
+
 from calendar import monthrange
 from datetime import date
 
@@ -56,7 +58,7 @@ def working_directory(super_comp, single_building, city_to_run):
         model_dir = '/nfs/turbo/seas-mtcraig/anph/TES/Data/'
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
     else:
-        model_dir = '/Users/apham/Documents/GitHub/TES/Data/'
+        model_dir = 'C:/Users/atpha/Documents/Postdocs/Projects/TES/Data/'
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
     return model_dir, load_folder
 
@@ -78,6 +80,9 @@ def model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, 
     d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id, pricing, curb_H)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city)
 
+    # Fan load as fraction of total heating load (for both ASHP and TES discharging):
+    fan_load_ratio = est_fan_load(super_comp, model_dir, load_folder, T, hour, starting_hour, cop_type, used_cop, city, building_id, pricing, curb_H)
+
     # %% Define variables and ordered set:
     model.T = Set(initialize=T, ordered=True)
 
@@ -98,7 +103,7 @@ def model_solve_Opt_k_e(model_dir, load_folder, super_comp, ir, p_T, ef_T, f_d, 
     model.inflow_const = Constraint(T, rule=i_TES)
 
     def market_clearing(model, t):
-        return model.g[t] >= d_heating[t]
+        return model.g[t]*(1-fan_load_ratio[t]) >= d_heating[t]
     model.mc_const = Constraint(T, rule=market_clearing)
 
     # Objective function:

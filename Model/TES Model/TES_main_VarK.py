@@ -1,8 +1,9 @@
 """
 An Pham
-Updated 03/08/2023
+Updated 11/18/2023
 TES Model for Space Heating
 Power rating as a function of SOC
+Fan load as a function of total heating load
 """
 
 import numpy as np
@@ -16,6 +17,7 @@ import math
 
 from get_load_data import load_data
 from get_COP_params import est_COP
+from get_fan_load import est_fan_load
 
 from calendar import monthrange
 from datetime import date
@@ -116,7 +118,7 @@ def main_params(year, mon_to_run, include_TES, tes_material, tes_sizing, include
 
 def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, include_bigM, super_comp, used_cop,
                        cop_type, p_T, ef_T, f_d, k_H, ir, single_building, city_to_run, building_no, building_id, zeroIntialSOC, pricing,
-                       curb_H, city, const_pr, power_rating):
+                       curb_H, city, const_pr, power_rating, parasitic_load_MgSO4):
     (super_comp, ir, p_T, ef_T, f_d, f_c, hour, c_salt, k_H, tes_material, tes_sizing,
      include_TES, starting_hour, mon_to_run, cop_type, used_cop, bigM, include_bigM,
      xData, yData, xData_charge, yData_charge, yData_ref, single_building, city_to_run,
@@ -142,7 +144,7 @@ def main_function_VarK(year, mon_to_run, include_TES, tes_material, tes_sizing, 
     model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, xData_charge, yData_charge, yData_ref, single_building, city_to_run, building_no,
-                building_id, zeroIntialSOC, city,  const_pr, power_rating)
+                building_id, zeroIntialSOC, city,  const_pr, power_rating, parasitic_load_MgSO4)
 
 
 # %% Set working directory:
@@ -159,12 +161,12 @@ def working_directory(super_comp, single_building, city_to_run, city):
         else:
             results_folder = '/nfs/turbo/seas-mtcraig/anph/TES/Results/' + city + '/All/'
     else:
-        model_dir = '/Users/apham/Documents/GitHub/TES/Data'
+        model_dir = 'C:/Users/atpha/Documents/Postdocs/Projects/TES/Data/'
         load_folder = '400_Buildings_EB/' + city_to_run + '/'
         if single_building:
-            results_folder = '/Users/apham/Documents/GitHub/TES/Results/' + city + '\\Single\\'
+            results_folder = 'C:/Users/atpha/Documents/Postdocs/Projects/TES/Results/' + city + '\\Single\\'
         else:
-            results_folder = '/Users/apham/Documents/GitHub/TES/Results/' + city + '\\All\\'
+            results_folder = 'C:/Users/atpha/Documents/Postdocs/Projects/TES/Results/' + city + '\\All\\'
     return model_dir, load_folder, results_folder
 
 # %% Define set:
@@ -176,7 +178,7 @@ def main_sets(hour):
 def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_T, k_H, f_d, f_c, hour, T, pricing,
                 c_salt, include_TES, tes_material, tes_sizing, starting_hour, mon_to_run, cop_type, used_cop, curb_H, totcost_noTES,
                 bigM, include_bigM, xData, yData, xData_charge, yData_charge, yData_ref, single_building, city_to_run,
-                building_no, building_id, zeroInitialSOC, city,  const_pr, power_rating):
+                building_no, building_id, zeroInitialSOC, city,  const_pr, power_rating, parasitic_load_MgSO4):
 
     # %% Set model type - Concrete Model:
     model = ConcreteModel(name="TES_model")
@@ -184,6 +186,9 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # Load data:
     d_heating, p_W, peakLoad, load_weight = load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, building_id, pricing, curb_H)
     cop = est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city)
+
+    # Fan load as fraction of total heating load (for both ASHP and TES discharging):
+    fan_load_ratio = est_fan_load(super_comp, model_dir, load_folder, T, hour, starting_hour, cop_type, used_cop, city, building_id, pricing, curb_H)
 
     # Size of TES:
     e_T_temp = math.ceil(peakLoad)
@@ -233,7 +238,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_TES:
         # Heat pump's output to charge TES:
         def ub_d_TES(model, t):
-            return model.g_HT[t] <= model.k_Tc[t]
+            return model.g_HT[t]*(1+fan_load_ratio[t]) <= model.k_Tc[t]
         model.ub_d_T = Constraint(T, rule=ub_d_TES)
 
         def ub_g_TES(model, t):
@@ -250,13 +255,13 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
         if not zeroInitialSOC:
             def x_TES(model, t):
-                return model.x_T[t] == model.x_T[model.T.prevw(t)] + f_c * model.g_HT[t] - 1/f_d * model.g_T[t]
+                return model.x_T[t] == model.x_T[model.T.prevw(t)] + f_c * model.g_HT[t]*(1+fan_load_ratio[t]) - 1/f_d * model.g_T[t]
             model.x_t = Constraint(model.T, rule=x_TES)
         else:
             def x_TES(model, t):
                 if t == 0:
                     return model.x_T[t] == 0
-                return model.x_T[t] == model.x_T[t-1] + f_c * model.g_HT[t] - 1/f_d * model.g_T[t]
+                return model.x_T[t] == model.x_T[t-1] + f_c * model.g_HT[t]*(1+fan_load_ratio[t]) - 1/f_d * model.g_T[t]
             model.x_t = Constraint(T, rule=x_TES)
 
         def x_pt(model, t):
@@ -279,11 +284,11 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
 
     if include_TES:
         def hp_load(model, t):
-            return model.g_HL[t] + model.g_HT[t] == model.g[t]
+            return (model.g_HL[t] + model.g_HT[t])*(1+fan_load_ratio[t]) == model.g[t]
         model.hp_load_const = Constraint(T, rule=hp_load)
     else:
         def hp_load(model, t):
-            return model.g_HL[t] == model.g[t]
+            return model.g_HL[t]*(1+fan_load_ratio[t]) == model.g[t]
         model.hp_load_const = Constraint(T, rule=hp_load)
 
     # Piece-wise linear power rating vs SOC constraints:
@@ -296,11 +301,11 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_bigM:
         if include_TES:
             def big_M_1(model, t):
-                return model.g_HT[t] <= bigM*model.v[t]
+                return model.g_HT[t]*(1+fan_load_ratio[t]) <= bigM*model.v[t]
             model.bigM_const1 = Constraint(T, rule=big_M_1)
 
             def big_M_2(model, t):
-                return model.v[t] <= bigM*model.g_HT[t]
+                return model.v[t] <= bigM*model.g_HT[t]*(1+fan_load_ratio[t])
             model.bigM_const2 = Constraint(T, rule=big_M_2)
 
             def big_M_3(model, t):
@@ -319,7 +324,10 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     # Market clearing condition:
     if include_TES:
         def market_clearing(model, t):
-            return model.g_HL[t] + model.g_T[t] >= d_heating[t]
+            if tes_material != "MgSO4":
+                return model.g_HL[t] + model.g_T[t] * (1-fan_load_ratio[t]) >= d_heating[t]
+            else:
+                return model.g_HL[t] + model.g_T[t] * (1-fan_load_ratio[t] - parasitic_load_MgSO4) >= d_heating[t]
         model.mc_const = Constraint(T, rule=market_clearing)
     else:
         def market_clearing(model, t):

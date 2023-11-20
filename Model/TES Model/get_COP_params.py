@@ -1,6 +1,5 @@
 
 import pandas as pd
-import numpy as np
 
 def est_COP(model_dir, T, hour, starting_hour, cop_type, used_cop, city):
 
