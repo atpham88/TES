@@ -18,7 +18,7 @@ Run model from dashboard.py. Main options to choose from:
 | `super_comp` | `False` if run locally, `True` if run on supercomputer|
 | `city` | Options: *Atlanta, Boston, Boulder, Chicago, Detroit, Dallas, Los Angeles, Minneapolis, New York, Orlando, Phoenix, Seattle* |
 | `single_building` | `True` if run only **one** single building, specify building number next |
-| `building_no` | Specify building number to run. Options:  `1` to  `400` |
+| `building_no` | Specify building number to run. Options:  `1` to  `400`. The 400 buildings represent over 90% heating load for a city. Each building has different heating load profile provided in Data folder. |
 | `building_range` | `True` if run a **range** of individual buildings, specify building range next|
 | `first_building`,`last_building`  | Specify building range to run. Options:  `1` to  `400`|
 | `pricing` | `Fixed` to apply fixed utility rate, `ToD` to apply time-of-day rate|
