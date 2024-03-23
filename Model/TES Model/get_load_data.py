@@ -98,9 +98,13 @@ def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, 
 
     if pricing == 'ToD':
         if city == 'Detroit':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.1673
+            on_peak_rate_winter = 0.1809
+            on_peak_rate_summer = 0.2240
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 15
+            on_peak_hr_end = 19
         elif city == 'Los Angeles':
             off_peak_rate = 0.12
             on_peak_rate_winter = 0.2
@@ -136,11 +140,13 @@ def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, 
             p_W_temp['hour'][t] = p_W_temp['dt'][t].strftime('%H')
             p_W_temp['day of week'][t] = p_W_temp['dt'][t].strftime('%A')
             p_W_temp['month'][t] = p_W_temp['dt'][t].strftime('%m')
-            if int(p_W_temp['month'][t]) <=5 and int(p_W_temp['month'][t]) >= 10:
-                if int(p_W_temp['hour'][t]) >=11 and int(p_W_temp['hour'][t]) <=19:
+            # If in the winter month:
+            if int(p_W_temp['month'][t]) <=winter_month_end and int(p_W_temp['month'][t]) >= winter_month_start:
+                # Rate within on-peak hours:
+                if int(p_W_temp['hour'][t]) >=on_peak_hr_start and int(p_W_temp['hour'][t]) <=on_peak_hr_end:
                     p_W_temp['rate'][t] = on_peak_rate_winter
             else:
-                if int(p_W_temp['hour'][t]) >=11 and int(p_W_temp['hour'][t]) <=19:
+                if int(p_W_temp['hour'][t]) >=on_peak_hr_start and int(p_W_temp['hour'][t]) <=on_peak_hr_end:
                     p_W_temp['rate'][t] = on_peak_rate_summer
 
     p_W_temp2 = p_W_temp['rate']
