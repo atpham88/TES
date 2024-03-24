@@ -106,33 +106,93 @@ def load_data(super_comp, model_dir, load_folder, T, hour, city, starting_hour, 
             on_peak_hr_start = 15
             on_peak_hr_end = 19
         elif city == 'Los Angeles':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.16826
+            on_peak_rate_winter = 0.21659
+            on_peak_rate_summer = 0.21659
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 10
+            on_peak_hr_end = 20
         elif city == 'New York':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.0233
+            on_peak_rate_winter = 0.1223
+            on_peak_rate_summer = 0.3305
+            winter_month_start = 11
+            winter_month_end = 5
+            on_peak_hr_start = 20
+            on_peak_hr_end = 24
         elif city == 'Orlando':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.06520
+            on_peak_rate_winter = 0.08828
+            on_peak_rate_summer = 0.08828
+            winter_month_start = 11
+            winter_month_end = 5
+            on_peak_hr_start = 18
+            on_peak_hr_end = 21
         elif city == 'Seattle':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.08
+            on_peak_rate_winter = 0.15
+            on_peak_rate_summer = 0.15
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 6
+            on_peak_hr_end = 24
         elif city == 'Atlanta':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.012614
+            on_peak_rate_winter = 0.117993
+            on_peak_rate_summer = 0.117993
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 14
+            on_peak_hr_end = 19
         elif city == 'Minneapolis':
-            off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            off_peak_rate = 0.05171
+            on_peak_rate_winter = 0.21408
+            on_peak_rate_summer = 0.25879
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 9
+            on_peak_hr_end = 21
         elif city == 'Phoenix':
+            off_peak_rate = 0.12345
+            on_peak_rate_winter = 0.32543
+            on_peak_rate_summer = 0.34396
+            winter_month_start = 11
+            winter_month_end = 4
+            on_peak_hr_start = 16
+            on_peak_hr_end = 19
+        elif city == 'Boston':
+            off_peak_rate = 0.13477
+            on_peak_rate_winter = 0.28783
+            on_peak_rate_summer = 0.28783
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 7
+            on_peak_hr_end = 20
+        elif city == 'Dallas':
+            off_peak_rate = 0.077926
+            on_peak_rate_winter = 0.245241
+            on_peak_rate_summer = 0.245241
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 13
+            on_peak_hr_end = 19
+        elif city  == 'Boulder':
             off_peak_rate = 0.12
-            on_peak_rate_winter = 0.2
-            on_peak_rate_summer = 0.23
+            on_peak_rate_winter = 0.19
+            on_peak_rate_summer = 0.19
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 15
+            on_peak_hr_end = 19
+        elif city == 'Chicago':
+            off_peak_rate = 0.12447
+            on_peak_rate_winter = 0.16117
+            on_peak_rate_summer = 0.16117
+            winter_month_start = 10
+            winter_month_end = 5
+            on_peak_hr_start = 14
+            on_peak_hr_end = 19
 
         p_W_temp['rate'] = off_peak_rate
         for t in data:
