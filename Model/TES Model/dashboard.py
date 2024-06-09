@@ -29,7 +29,7 @@ def main():
     include_bigM = False                    # Include bigM constraints for TES
     used_cop = "Waite_Modi"                 # = Resstock: use estimated resstock COP, = Waite_Modi: use Waite and Modi paper's calculation of COPs
     cop_type = 'NEEP50'                     # Type of COP used if used_cop = Waite_Modi: NEEP90, NEEP50, DOE
-    tes_material = 'MgCl2'                  # Type of TES material, choosing from:
+    tes_material = 'SrBr2'                  # Type of TES material, choosing from:
                                             # MgSO4, K2CO3, MgCl2, SrBr2
     const_pr = False                        # = True: use constant rating (no Ragone plot regardless of salt types)
     if const_pr:
