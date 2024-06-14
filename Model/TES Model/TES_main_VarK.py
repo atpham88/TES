@@ -229,8 +229,6 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         model.xpt_T = Var(T, bounds=(0, 1))                         # SOC in percentage
         if bigM:
             model.v = Var(T, within=Binary)                             # binary variable: == 1 when TES charges
-        if curb_H:
-            model.hp_cap_red = Var(bounds=(0, 1))                    # Percentage of peak load reduction
 
     # %% Formulate constraints and  objective functions:
     # Constraints:
@@ -269,12 +267,8 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
         model.x_pt_t = Constraint(T, rule=x_pt)
 
         if curb_H:
-            def hp_max(model, t):
-                return model.g[t] <= e_T_temp*model.hp_cap_red
-            model.hp_max_const = Constraint(T, rule=hp_max)
-
             def obj_func_buffer(model):
-                return sum(p_T * model.g_T[t] for t in T) + sum(p_W[t] * model.d_T[t] for t in T) <= totcost_noTES
+                return sum(p_T * model.g_T[t] for t in T) + sum(p_W[t] * model.d_T[t] for t in T) <= totcost_noTES*1.1
             model.obj_func_buffer_const = Constraint(rule=obj_func_buffer)
 
     # Heat pump's total load:
@@ -338,7 +332,7 @@ def model_solve(model_dir, load_folder, results_folder, super_comp, ir, p_T, ef_
     if include_TES:
         def obj_function(model):
             if curb_H:
-                return model.hp_cap_red
+                return -sum(model.g_T[t] for t in T)
             else:
                 return sum(p_T * model.g_T[t] for t in T) + sum(p_W[t] * model.d_T[t] for t in T)
         model.obj_func = Objective(rule=obj_function)
