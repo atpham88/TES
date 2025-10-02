@@ -1,4 +1,6 @@
 # About
+Model code and inputs for Pham et al., Assessing the value of coupling thermal energy storage with air source heat pumps for residential space heating in US cities, Cell Reports Sustainability (2025): https://doi.org/10.1016/j.crsus.2025.100460
+
 Thermal Energy Storage Model for space heating coupled with air-source heat pumps in residential homes in U.S. Cities across different climates.
 
 # Model overview
